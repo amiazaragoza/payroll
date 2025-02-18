@@ -814,7 +814,7 @@ public final class LoginFrame extends javax.swing.JFrame {
                 usernameTFKeyTyped(evt);
             }
         });
-        pnlMAIN.add(usernameTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 278, -1));
+        pnlMAIN.add(usernameTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 290, 278, 40));
 
         showpasswordCB.setBackground(new java.awt.Color(253, 253, 253));
         showpasswordCB.setToolTipText("Show/Hide Password");
