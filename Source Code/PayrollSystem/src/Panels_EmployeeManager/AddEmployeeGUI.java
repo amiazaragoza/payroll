@@ -415,7 +415,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 70, 84));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
