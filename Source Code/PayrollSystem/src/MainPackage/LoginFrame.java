@@ -959,7 +959,7 @@ public final class LoginFrame extends javax.swing.JFrame {
                 forgotpasswordBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 410, 150, 39));
+        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 110, 20));
 
         userlevelLABEL.setFont(new java.awt.Font("Microsoft Tai Le", 1, 10)); // NOI18N
         userlevelLABEL.setForeground(new java.awt.Color(102, 102, 102));
@@ -996,7 +996,7 @@ public final class LoginFrame extends javax.swing.JFrame {
                 clearBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 50, 20));
+        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 50, 20));
 
         guiTitle.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 24)); // NOI18N
         guiTitle.setText("Log In to Your Account");
