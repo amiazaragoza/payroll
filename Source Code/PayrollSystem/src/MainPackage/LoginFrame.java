@@ -996,7 +996,7 @@ public final class LoginFrame extends javax.swing.JFrame {
                 clearBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 50, 20));
+        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 40, 20));
 
         guiTitle.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 24)); // NOI18N
         guiTitle.setText("Log In to Your Account");
