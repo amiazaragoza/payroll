@@ -95,11 +95,14 @@
               <Color blue="66" green="66" red="66" type="rgb"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="0" right="0" top="0">
-                  <Color PropertyName="color" blue="a0" green="5b" red="c" type="rgb"/>
-                </MatteColorBorder>
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="7b" green="7b" red="7b" type="rgb"/>
+                </LineBorder>
               </Border>
+            </Property>
+            <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[32767, 32767]"/>
             </Property>
             <Property name="nextFocusableComponent" type="java.awt.Component" editor="org.netbeans.modules.form.RADConnectionPropertyEditor">
               <Connection code="null" type="code"/>
@@ -170,10 +173,10 @@
               <Color blue="66" green="66" red="66" type="rgb"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="0" right="0" top="0">
-                  <Color PropertyName="color" blue="a0" green="5b" red="c" type="rgb"/>
-                </MatteColorBorder>
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="7b" green="7b" red="7b" type="rgb"/>
+                </LineBorder>
               </Border>
             </Property>
             <Property name="doubleBuffered" type="boolean" value="true"/>
@@ -330,7 +333,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="423" width="150" height="39"/>
+              <AbsoluteConstraints x="110" y="420" width="150" height="39"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -362,10 +365,10 @@
               <Color blue="66" green="66" red="66" type="rgb"/>
             </Property>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-              <Border info="org.netbeans.modules.form.compat2.border.MatteColorBorderInfo">
-                <MatteColorBorder bottom="2" left="0" right="0" top="0">
-                  <Color PropertyName="color" blue="a0" green="5b" red="c" type="rgb"/>
-                </MatteColorBorder>
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder>
+                  <Color PropertyName="color" blue="7b" green="7b" red="7b" type="rgb"/>
+                </LineBorder>
               </Border>
             </Property>
             <Property name="lightWeightPopupEnabled" type="boolean" value="false"/>
@@ -379,7 +382,7 @@
           </AuxValues>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="220" width="278" height="-1"/>
+              <AbsoluteConstraints x="40" y="206" width="278" height="40"/>
             </Constraint>
           </Constraints>
         </Component>
