@@ -983,7 +983,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         chooselevel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         pnlMAIN.add(chooselevel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 484, 320, 20));
 
-        clearBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        clearBTN.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
         clearBTN.setText("CLEAR");
         clearBTN.setBorder(null);
         clearBTN.setBorderPainted(false);
