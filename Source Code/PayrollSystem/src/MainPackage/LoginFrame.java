@@ -798,7 +798,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         usernameTF.setBackground(new java.awt.Color(253, 253, 253));
         usernameTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         usernameTF.setForeground(new java.awt.Color(102, 102, 102));
-        usernameTF.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        usernameTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         usernameTF.setNextFocusableComponent(null);
         usernameTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -837,7 +837,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         passwordTF.setBackground(new java.awt.Color(253, 253, 253));
         passwordTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         passwordTF.setForeground(new java.awt.Color(102, 102, 102));
-        passwordTF.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        passwordTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         passwordTF.setDoubleBuffered(true);
         passwordTF.setEchoChar('\u25cf');
         passwordTF.addActionListener(new java.awt.event.ActionListener() {
@@ -958,7 +958,7 @@ public final class LoginFrame extends javax.swing.JFrame {
                 forgotpasswordBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 423, 150, 39));
+        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 100, 20));
 
         userlevelLABEL.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         userlevelLABEL.setForeground(new java.awt.Color(102, 102, 102));
@@ -968,7 +968,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         userlevelCB.setBackground(new java.awt.Color(253, 253, 253));
         userlevelCB.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         userlevelCB.setForeground(new java.awt.Color(102, 102, 102));
-        userlevelCB.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        userlevelCB.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         userlevelCB.setLightWeightPopupEnabled(false);
         userlevelCB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
