@@ -767,7 +767,6 @@ public final class LoginFrame extends javax.swing.JFrame {
         passwordLABEL = new javax.swing.JLabel();
         passwordTF = new javax.swing.JPasswordField();
         pnlTop = new javax.swing.JPanel();
-        guiTitle = new javax.swing.JLabel();
         exitButton = new javax.swing.JButton();
         minimizeButton = new javax.swing.JButton();
         loginBTN = new rojerusan.RSMaterialButtonRectangle();
@@ -776,6 +775,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         userlevelCB = new javax.swing.JComboBox<>();
         chooselevel = new javax.swing.JLabel();
         clearBTN = new javax.swing.JButton();
+        guiTitle = new javax.swing.JLabel();
 
         jMenu1.setText("jMenu1");
 
@@ -858,7 +858,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         });
         pnlMAIN.add(passwordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 278, -1));
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(116, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -875,27 +875,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         });
         pnlTop.setLayout(null);
 
-        guiTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        guiTitle.setForeground(new java.awt.Color(255, 255, 255));
-        guiTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
-        guiTitle.setText("LOG IN");
-        guiTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
-            public void mouseDragged(java.awt.event.MouseEvent evt) {
-                guiTitleMouseDragged(evt);
-            }
-        });
-        guiTitle.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                guiTitleMouseClicked(evt);
-            }
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                guiTitleMousePressed(evt);
-            }
-        });
-        pnlTop.add(guiTitle);
-        guiTitle.setBounds(5, 0, 250, 30);
-
-        exitButton.setBackground(new java.awt.Color(0, 102, 204));
+        exitButton.setBackground(new java.awt.Color(255, 70, 84));
         exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/exit_button_icon.png"))); // NOI18N
         exitButton.setToolTipText("Close");
         exitButton.setBorder(null);
@@ -928,7 +908,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         pnlTop.add(exitButton);
         exitButton.setBounds(334, 0, 18, 30);
 
-        minimizeButton.setBackground(new java.awt.Color(0, 102, 204));
+        minimizeButton.setBackground(new java.awt.Color(255, 70, 84));
         minimizeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/minimize_button_icon.png"))); // NOI18N
         minimizeButton.setToolTipText("Minimize");
         minimizeButton.setBorder(null);
@@ -968,20 +948,22 @@ public final class LoginFrame extends javax.swing.JFrame {
         });
         pnlMAIN.add(loginBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, 39));
 
-        forgotpasswordBTN.setBackground(new java.awt.Color(12, 91, 160));
+        forgotpasswordBTN.setBackground(new java.awt.Color(255, 255, 255));
+        forgotpasswordBTN.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+        forgotpasswordBTN.setForeground(new java.awt.Color(123, 123, 123));
         forgotpasswordBTN.setText("FORGOT PASSWORD");
-        forgotpasswordBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        forgotpasswordBTN.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
         forgotpasswordBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 forgotpasswordBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 423, -1, 39));
+        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 423, 150, 39));
 
         userlevelLABEL.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
         userlevelLABEL.setForeground(new java.awt.Color(102, 102, 102));
         userlevelLABEL.setText("USER LEVEL");
-        pnlMAIN.add(userlevelLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, -1, -1));
+        pnlMAIN.add(userlevelLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
 
         userlevelCB.setBackground(new java.awt.Color(253, 253, 253));
         userlevelCB.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
@@ -1014,6 +996,23 @@ public final class LoginFrame extends javax.swing.JFrame {
             }
         });
         pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 460, 280, -1));
+
+        guiTitle.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 24)); // NOI18N
+        guiTitle.setText("Log In to Your Account");
+        guiTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                guiTitleMouseDragged(evt);
+            }
+        });
+        guiTitle.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                guiTitleMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                guiTitleMousePressed(evt);
+            }
+        });
+        pnlMAIN.add(guiTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 270, 20));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
