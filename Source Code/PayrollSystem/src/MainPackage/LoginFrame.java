@@ -959,7 +959,9 @@ public final class LoginFrame extends javax.swing.JFrame {
                 forgotpasswordBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 110, 20));
+
+        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 100, 20));
+
 
         userlevelLABEL.setFont(new java.awt.Font("Microsoft Tai Le", 1, 10)); // NOI18N
         userlevelLABEL.setForeground(new java.awt.Color(102, 102, 102));
