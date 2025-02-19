@@ -168,7 +168,11 @@
           <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             <TitledBorder justification="2" title="ADD EMPLOYEE">
+=======
+            <TitledBorder justification="2" title="ADD AGENT">
+>>>>>>> Stashed changes
 =======
             <TitledBorder justification="2" title="ADD AGENT">
 >>>>>>> Stashed changes
