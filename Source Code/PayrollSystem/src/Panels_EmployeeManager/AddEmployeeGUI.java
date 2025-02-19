@@ -436,9 +436,9 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         pnlTitle.add(lblTitleIcon);
 
-        lblTitle.setBackground(new java.awt.Color(0, 102, 204));
+        lblTitle.setBackground(new java.awt.Color(255, 70, 84));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblTitle.setForeground(new java.awt.Color(255, 70, 84));
         lblTitle.setText("PAYROLL SYSTEM | ADD EMPLOYEE");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
