@@ -392,7 +392,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         pnlActions.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
-        lblClose.setBackground(new java.awt.Color(0, 102, 204));
+        lblClose.setBackground(new java.awt.Color(255, 70, 84));
         lblClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_multiply_18px_1.png"))); // NOI18N
         lblClose.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblClose.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -463,8 +463,9 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADD EMPLOYEE | STEP 1 of 3", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
-        mainpanel.setForeground(new java.awt.Color(255, 255, 255));
+
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADD EMPLOYEE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -472,30 +473,39 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
         viewpanel.setBackground(new java.awt.Color(10, 36, 59));
-        viewpanel.setForeground(new java.awt.Color(255, 255, 255));
+
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Employee id :");
         viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 15, -1, 20));
 
-        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First name :");
-        viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 45, -1, -1));
+        viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Surname :");
-        viewpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 68, -1, -1));
+        viewpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 68, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Date of Birth :");
-        viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 94, -1, -1));
+        viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 94, -1, -1));
 
         txt_dob.setBackground(new java.awt.Color(10, 36, 59));
+
+        txt_dob.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_dob.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_dob.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_dobKeyPressed(evt);
@@ -504,6 +514,9 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 94, 168, -1));
 
         txt_surname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_surname.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_surname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_surname.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_surnameKeyPressed(evt);
@@ -512,6 +525,9 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 68, 168, -1));
 
         txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_firstname.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_firstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_firstname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_firstnameActionPerformed(evt);
@@ -526,6 +542,9 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         txt_id.setEditable(false);
         txt_id.setBackground(new java.awt.Color(10, 36, 59));
+        txt_id.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_id.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_id.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txt_idKeyTyped(evt);
@@ -534,6 +553,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 15, 168, -1));
 
         txt_dep.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dep.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_dep.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_dep.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_depKeyPressed(evt);
@@ -542,17 +563,21 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 txt_depKeyTyped(evt);
             }
         });
-        viewpanel.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 11, 160, -1));
+        viewpanel.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 15, 160, -1));
 
         txt_desig.setBackground(new java.awt.Color(10, 36, 59));
+        txt_desig.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_desig.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_desig.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_desigKeyPressed(evt);
             }
         });
-        viewpanel.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 37, 160, -1));
+        viewpanel.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 42, 160, -1));
 
         txt_status.setBackground(new java.awt.Color(10, 36, 59));
+        txt_status.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_status.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_status.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_statusKeyPressed(evt);
@@ -561,6 +586,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_status, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 68, 160, -1));
 
         txt_doj.setBackground(new java.awt.Color(10, 36, 59));
+        txt_doj.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_doj.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_doj.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_dojKeyPressed(evt);
@@ -569,6 +596,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_doj, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 94, 160, -1));
 
         txt_salary.setBackground(new java.awt.Color(10, 36, 59));
+        txt_salary.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_salary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_salaryActionPerformed(evt);
@@ -582,9 +611,11 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 txt_salaryKeyTyped(evt);
             }
         });
-        viewpanel.add(txt_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 125, 160, -1));
+        viewpanel.add(txt_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 120, 160, -1));
 
         txt_job.setBackground(new java.awt.Color(10, 36, 59));
+        txt_job.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_job.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_job.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_jobActionPerformed(evt);
@@ -596,6 +627,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
             }
         });
         viewpanel.add(txt_job, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 151, 160, -1));
+
+        lbl_img.setBackground(new java.awt.Color(255, 255, 255));
 
         jDesktopPane1.setLayer(lbl_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -619,8 +652,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(jDesktopPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 11, -1, 200));
 
         addrecordBTN.setBackground(new java.awt.Color(255, 70, 84));
-        addrecordBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        addrecordBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        addrecordBTN.setForeground(new java.awt.Color(255, 255, 255));
         addrecordBTN.setText("Add Record");
+        addrecordBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         addrecordBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addrecordBTNActionPerformed(evt);
@@ -634,8 +669,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(addrecordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 321, 134, 44));
 
         clearBTN.setBackground(new java.awt.Color(255, 70, 84));
-        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
+        clearBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clearBTNActionPerformed(evt);
@@ -643,37 +680,43 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(709, 321, 134, 44));
 
-        jLabel20.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Job Title :");
-        viewpanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 154, -1, -1));
+        viewpanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 151, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Basic Salary :");
-        viewpanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 128, -1, -1));
+        viewpanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 120, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Date Hired :");
-        viewpanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 97, -1, -1));
+        viewpanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 94, -1, -1));
 
-        jLabel17.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel17.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Status :");
-        viewpanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 71, -1, -1));
+        viewpanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 68, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Designation :");
-        viewpanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 40, -1, -1));
+        viewpanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 42, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
-        viewpanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 14, -1, -1));
+        viewpanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 15, -1, -1));
 
         r_female.setBackground(new java.awt.Color(10, 36, 59));
+        r_female.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         r_female.setForeground(new java.awt.Color(255, 255, 255));
         r_female.setText("Female");
         r_female.addActionListener(new java.awt.event.ActionListener() {
@@ -686,9 +729,11 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 r_femaleKeyPressed(evt);
             }
         });
-        viewpanel.add(r_female, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 124, -1, -1));
+        viewpanel.add(r_female, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 124, -1, -1));
 
         r_male.setBackground(new java.awt.Color(10, 36, 59));
+        r_male.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         r_male.setForeground(new java.awt.Color(255, 255, 255));
         r_male.setText("Male");
         r_male.addActionListener(new java.awt.event.ActionListener() {
@@ -701,44 +746,60 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 r_maleKeyPressed(evt);
             }
         });
-        viewpanel.add(r_male, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 124, -1, -1));
+        viewpanel.add(r_male, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 124, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Gender:");
-        viewpanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 128, -1, -1));
+        viewpanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 128, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Email :");
         viewpanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 154, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Contact :");
         viewpanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Address Line 1 :");
         viewpanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 206, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Address Line 2 :");
         viewpanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 232, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Apt./House No :");
         viewpanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+
+        jLabel16.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Postal Code :");
         viewpanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 294, -1, -1));
 
         txt_pc.setBackground(new java.awt.Color(10, 36, 59));
+        txt_pc.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_pc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_pc.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_pcKeyPressed(evt);
@@ -750,6 +811,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_pc, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 291, 168, -1));
 
         txt_apt.setBackground(new java.awt.Color(10, 36, 59));
+
+        txt_apt.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_apt.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_apt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_aptActionPerformed(evt);
@@ -763,6 +828,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_apt, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 260, 168, -1));
 
         txt_add2.setBackground(new java.awt.Color(10, 36, 59));
+
+        txt_add2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_add2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_add2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_add2KeyPressed(evt);
@@ -771,6 +840,9 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_add2, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 229, 168, -1));
 
         txt_address.setBackground(new java.awt.Color(10, 36, 59));
+        txt_address.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_address.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_address.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_addressKeyPressed(evt);
@@ -779,6 +851,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_address, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 203, 168, -1));
 
         txt_tel.setBackground(new java.awt.Color(10, 36, 59));
+
+        txt_tel.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_tel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_tel.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_telKeyPressed(evt);
@@ -790,6 +866,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_tel, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 177, 168, -1));
 
         txt_email.setBackground(new java.awt.Color(10, 36, 59));
+
+        txt_email.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        txt_email.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
+
         txt_email.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_emailKeyPressed(evt);
@@ -797,19 +877,21 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(txt_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 151, 168, -1));
 
-        txt_emp.setForeground(new java.awt.Color(253, 253, 253));
+        txt_emp.setForeground(new java.awt.Color(10, 36, 59));
         txt_emp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         txt_emp.setText("emp");
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 330, 20));
 
-        insertpictureBTN.setBackground(new java.awt.Color(249, 250, 253));
+        insertpictureBTN.setBackground(new java.awt.Color(255, 70, 84));
+        insertpictureBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        insertpictureBTN.setForeground(new java.awt.Color(255, 255, 255));
         insertpictureBTN.setText("Insert Picture");
         insertpictureBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 insertpictureBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(insertpictureBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 220, -1, -1));
+        viewpanel.add(insertpictureBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 220, 110, 30));
 
         jScrollPane1.setViewportView(viewpanel);
 
