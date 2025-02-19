@@ -538,7 +538,6 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         resetpasswordBTN = new rojerusan.RSMaterialButtonRectangle();
         backBTN = new rojerusan.RSMaterialButtonRectangle();
         clearBTN = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         confirmpasswordLABEL = new javax.swing.JLabel();
         showpasswordCBconfirm = new javax.swing.JCheckBox();
         confirmnewpasswordTF = new javax.swing.JPasswordField();
@@ -562,15 +561,15 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         setUndecorated(true);
         setResizable(false);
 
-        pnlMAIN.setBackground(new java.awt.Color(253, 253, 253));
+        pnlMAIN.setBackground(new java.awt.Color(10, 36, 59));
         pnlMAIN.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        oldpasswordLABEL.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        oldpasswordLABEL.setForeground(new java.awt.Color(102, 102, 102));
-        oldpasswordLABEL.setText("old password");
-        pnlMAIN.add(oldpasswordLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 270, -1, -1));
+        oldpasswordLABEL.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
+        oldpasswordLABEL.setForeground(new java.awt.Color(255, 255, 255));
+        oldpasswordLABEL.setText("Old Password");
+        pnlMAIN.add(oldpasswordLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
 
-        showpasswordCBnew.setBackground(new java.awt.Color(253, 253, 253));
+        showpasswordCBnew.setBackground(new java.awt.Color(10, 36, 59));
         showpasswordCBnew.setToolTipText("Show/Hide Password");
         showpasswordCBnew.setBorderPaintedFlat(true);
         showpasswordCBnew.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -582,20 +581,19 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 showpasswordCBnewActionPerformed(evt);
             }
         });
-        pnlMAIN.add(showpasswordCBnew, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 288, -1, -1));
+        pnlMAIN.add(showpasswordCBnew, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, -1, -1));
 
-        newpasswordLABEL.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        newpasswordLABEL.setForeground(new java.awt.Color(102, 102, 102));
-        newpasswordLABEL.setText("new password");
-        pnlMAIN.add(newpasswordLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 270, -1, -1));
+        newpasswordLABEL.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
+        newpasswordLABEL.setForeground(new java.awt.Color(255, 255, 255));
+        newpasswordLABEL.setText("New Password");
+        pnlMAIN.add(newpasswordLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, -1, -1));
 
-        newpasswordTF.setBackground(new java.awt.Color(253, 253, 253));
+        newpasswordTF.setBackground(new java.awt.Color(10, 36, 59));
         newpasswordTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         newpasswordTF.setForeground(new java.awt.Color(102, 102, 102));
-        newpasswordTF.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        newpasswordTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         newpasswordTF.setDoubleBuffered(true);
         newpasswordTF.setEchoChar('\u25cf');
-        newpasswordTF.setOpaque(false);
         newpasswordTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 newpasswordTFActionPerformed(evt);
@@ -612,9 +610,9 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 newpasswordTFKeyTyped(evt);
             }
         });
-        pnlMAIN.add(newpasswordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 290, 278, -1));
+        pnlMAIN.add(newpasswordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 240, 278, 40));
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(116, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -631,8 +629,9 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         });
         pnlTop.setLayout(null);
 
+        guiTitle.setBackground(new java.awt.Color(255, 70, 84));
         guiTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        guiTitle.setForeground(new java.awt.Color(255, 255, 255));
+        guiTitle.setForeground(new java.awt.Color(255, 70, 84));
         guiTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
         guiTitle.setText("Reset Password");
         guiTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -651,7 +650,7 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         pnlTop.add(guiTitle);
         guiTitle.setBounds(5, 0, 320, 30);
 
-        exitButton.setBackground(new java.awt.Color(0, 102, 204));
+        exitButton.setBackground(new java.awt.Color(255, 70, 84));
         exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/exit_button_icon.png"))); // NOI18N
         exitButton.setToolTipText("Close");
         exitButton.setBorder(null);
@@ -684,7 +683,7 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         pnlTop.add(exitButton);
         exitButton.setBounds(705, 0, 18, 30);
 
-        minimizeButton.setBackground(new java.awt.Color(0, 102, 204));
+        minimizeButton.setBackground(new java.awt.Color(255, 70, 84));
         minimizeButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/minimize_button_icon.png"))); // NOI18N
         minimizeButton.setToolTipText("Minimize");
         minimizeButton.setBorder(null);
@@ -714,9 +713,10 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
 
         pnlMAIN.add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, -1));
 
-        resetpasswordBTN.setBackground(new java.awt.Color(51, 204, 0));
+        resetpasswordBTN.setBackground(new java.awt.Color(255, 70, 84));
         resetpasswordBTN.setText("RESET PASSWORD");
-        resetpasswordBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        resetpasswordBTN.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 24)); // NOI18N
+        resetpasswordBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         resetpasswordBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 resetpasswordBTNMousePressed(evt);
@@ -727,19 +727,22 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 resetpasswordBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(resetpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 417, -1, 39));
+        pnlMAIN.add(resetpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, -1, 50));
 
-        backBTN.setBackground(new java.awt.Color(12, 91, 160));
+        backBTN.setBackground(new java.awt.Color(255, 70, 84));
         backBTN.setText("BACK TO LOG IN");
-        backBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        backBTN.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 14)); // NOI18N
+        backBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        backBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         backBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(backBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 450, -1, 39));
+        pnlMAIN.add(backBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 460, 140, 50));
 
         clearBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         clearBTN.setText("CLEAR");
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -749,17 +752,14 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 clearBTNMousePressed(evt);
             }
         });
-        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 486, 280, 20));
+        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, 50, 20));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/mainIcon2_128px.png"))); // NOI18N
-        pnlMAIN.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 50, -1, -1));
+        confirmpasswordLABEL.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
+        confirmpasswordLABEL.setForeground(new java.awt.Color(255, 255, 255));
+        confirmpasswordLABEL.setText("Confirm New Password");
+        pnlMAIN.add(confirmpasswordLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
 
-        confirmpasswordLABEL.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        confirmpasswordLABEL.setForeground(new java.awt.Color(102, 102, 102));
-        confirmpasswordLABEL.setText("confirm new password");
-        pnlMAIN.add(confirmpasswordLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, -1, -1));
-
-        showpasswordCBconfirm.setBackground(new java.awt.Color(253, 253, 253));
+        showpasswordCBconfirm.setBackground(new java.awt.Color(10, 36, 59));
         showpasswordCBconfirm.setToolTipText("Show/Hide Password");
         showpasswordCBconfirm.setBorderPaintedFlat(true);
         showpasswordCBconfirm.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -771,15 +771,14 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 showpasswordCBconfirmActionPerformed(evt);
             }
         });
-        pnlMAIN.add(showpasswordCBconfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 358, -1, -1));
+        pnlMAIN.add(showpasswordCBconfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 320, -1, -1));
 
-        confirmnewpasswordTF.setBackground(new java.awt.Color(253, 253, 253));
+        confirmnewpasswordTF.setBackground(new java.awt.Color(10, 36, 59));
         confirmnewpasswordTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         confirmnewpasswordTF.setForeground(new java.awt.Color(102, 102, 102));
-        confirmnewpasswordTF.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        confirmnewpasswordTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         confirmnewpasswordTF.setDoubleBuffered(true);
         confirmnewpasswordTF.setEchoChar('\u25cf');
-        confirmnewpasswordTF.setOpaque(false);
         confirmnewpasswordTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 confirmnewpasswordTFActionPerformed(evt);
@@ -796,17 +795,17 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 confirmnewpasswordTFKeyTyped(evt);
             }
         });
-        pnlMAIN.add(confirmnewpasswordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, 278, -1));
+        pnlMAIN.add(confirmnewpasswordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 278, 40));
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel2.setFont(new java.awt.Font("VALORANT", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("RESET PASSWORD");
-        pnlMAIN.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 70, -1, 80));
+        pnlMAIN.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, -1, 80));
 
-        fullnameTF.setBackground(new java.awt.Color(253, 253, 253));
+        fullnameTF.setBackground(new java.awt.Color(10, 36, 59));
         fullnameTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         fullnameTF.setForeground(new java.awt.Color(102, 102, 102));
-        fullnameTF.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        fullnameTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         fullnameTF.setNextFocusableComponent(null);
         fullnameTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -821,14 +820,14 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 fullnameTFKeyTyped(evt);
             }
         });
-        pnlMAIN.add(fullnameTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 278, -1));
+        pnlMAIN.add(fullnameTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 278, 40));
 
-        fullnameLABEL.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        fullnameLABEL.setForeground(new java.awt.Color(102, 102, 102));
-        fullnameLABEL.setText("fullname");
-        pnlMAIN.add(fullnameLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+        fullnameLABEL.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
+        fullnameLABEL.setForeground(new java.awt.Color(255, 255, 255));
+        fullnameLABEL.setText("Full Name");
+        pnlMAIN.add(fullnameLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
 
-        showpasswordCBold.setBackground(new java.awt.Color(253, 253, 253));
+        showpasswordCBold.setBackground(new java.awt.Color(10, 36, 59));
         showpasswordCBold.setToolTipText("Show/Hide Password");
         showpasswordCBold.setBorderPaintedFlat(true);
         showpasswordCBold.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -840,15 +839,14 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 showpasswordCBoldActionPerformed(evt);
             }
         });
-        pnlMAIN.add(showpasswordCBold, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 288, -1, -1));
+        pnlMAIN.add(showpasswordCBold, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, -1, -1));
 
-        oldpasswordTF.setBackground(new java.awt.Color(253, 253, 253));
+        oldpasswordTF.setBackground(new java.awt.Color(10, 36, 59));
         oldpasswordTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         oldpasswordTF.setForeground(new java.awt.Color(102, 102, 102));
-        oldpasswordTF.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        oldpasswordTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         oldpasswordTF.setDoubleBuffered(true);
         oldpasswordTF.setEchoChar('\u25cf');
-        oldpasswordTF.setOpaque(false);
         oldpasswordTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 oldpasswordTFActionPerformed(evt);
@@ -865,14 +863,14 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 oldpasswordTFKeyTyped(evt);
             }
         });
-        pnlMAIN.add(oldpasswordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, 278, -1));
+        pnlMAIN.add(oldpasswordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 278, 40));
 
-        pincodeLABEL.setFont(new java.awt.Font("Segoe UI", 0, 10)); // NOI18N
-        pincodeLABEL.setForeground(new java.awt.Color(102, 102, 102));
-        pincodeLABEL.setText("pin code");
-        pnlMAIN.add(pincodeLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 200, -1, -1));
+        pincodeLABEL.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
+        pincodeLABEL.setForeground(new java.awt.Color(255, 255, 255));
+        pincodeLABEL.setText("Pin Code");
+        pnlMAIN.add(pincodeLABEL, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 150, -1, -1));
 
-        showpincodeCB.setBackground(new java.awt.Color(253, 253, 253));
+        showpincodeCB.setBackground(new java.awt.Color(10, 36, 59));
         showpincodeCB.setToolTipText("Show/Hide Password");
         showpincodeCB.setBorderPaintedFlat(true);
         showpincodeCB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -884,15 +882,14 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 showpincodeCBActionPerformed(evt);
             }
         });
-        pnlMAIN.add(showpincodeCB, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 218, -1, -1));
+        pnlMAIN.add(showpincodeCB, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, -1, -1));
 
-        pincodeTF.setBackground(new java.awt.Color(253, 253, 253));
+        pincodeTF.setBackground(new java.awt.Color(10, 36, 59));
         pincodeTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         pincodeTF.setForeground(new java.awt.Color(102, 102, 102));
-        pincodeTF.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(12, 91, 160)));
+        pincodeTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         pincodeTF.setDoubleBuffered(true);
         pincodeTF.setEchoChar('\u25cf');
-        pincodeTF.setOpaque(false);
         pincodeTF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 pincodeTFActionPerformed(evt);
@@ -909,10 +906,9 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 pincodeTFKeyTyped(evt);
             }
         });
-        pnlMAIN.add(pincodeTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 220, 278, -1));
+        pnlMAIN.add(pincodeTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 170, 278, 40));
 
         txt_emp.setForeground(new java.awt.Color(253, 253, 253));
-        txt_emp.setText("emp");
         pnlMAIN.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 510, 240, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1536,7 +1532,6 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
     private javax.swing.JLabel fullnameLABEL;
     public javax.swing.JTextField fullnameTF;
     private javax.swing.JLabel guiTitle;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenuItem jMenuItem1;

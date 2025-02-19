@@ -276,7 +276,6 @@ public final class AboutSystem extends javax.swing.JDialog {
         exitButton.setFocusPainted(false);
         exitButton.setFocusable(false);
         exitButton.setIconTextGap(0);
-        exitButton.setOpaque(false);
         exitButton.setPreferredSize(new java.awt.Dimension(10, 18));
         exitButton.setRequestFocusEnabled(false);
         exitButton.setVerifyInputWhenFocusTarget(false);
@@ -318,12 +317,11 @@ public final class AboutSystem extends javax.swing.JDialog {
 
         sourceLBL.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         sourceLBL.setForeground(new java.awt.Color(0, 102, 255));
-        sourceLBL.setText("Source: Jobadder.com");
-        viewpanel.add(sourceLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 450, -1, -1));
+        viewpanel.add(sourceLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 433, -1, 30));
 
         aboutLBL.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         aboutLBL.setForeground(new java.awt.Color(0, 102, 204));
-        aboutLBL.setText("<html><center>Employee Payroll Management System, made by ECoders is used to manage and streamline the process of making payments to employees.<br><br>\n\nOnce an employee’s standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.<br><br>\n\nThe advantage of using Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to employees, that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.</center></html>");
+        aboutLBL.setText("<html><center>Employee Payroll Management System, made by ECoders is used to manage and streamline the process of making payments to employees.<br><br>  Once an employee’s standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.<br><br>  The advantage of using Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to employees, that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.</center></html>");
         viewpanel.add(aboutLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 540, 330));
 
         rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/about_128px.png"))); // NOI18N

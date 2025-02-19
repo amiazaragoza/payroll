@@ -155,7 +155,6 @@
             <Property name="focusPainted" type="boolean" value="false"/>
             <Property name="focusable" type="boolean" value="false"/>
             <Property name="iconTextGap" type="int" value="0"/>
-            <Property name="opaque" type="boolean" value="false"/>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
               <Dimension value="[10, 18]"/>
             </Property>
@@ -238,11 +237,10 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="66" red="0" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Source: Jobadder.com"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="420" y="450" width="-1" height="-1"/>
+                      <AbsoluteConstraints x="420" y="433" width="-1" height="30"/>
                     </Constraint>
                   </Constraints>
                 </Component>
@@ -254,7 +252,7 @@
                     <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="cc" green="66" red="0" type="rgb"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;Employee Payroll Management System, made by ECoders is used to manage and streamline the process of making payments to employees.&lt;br&gt;&lt;br&gt;&#xa;&#xa;Once an employee&#x2019;s standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.&lt;br&gt;&lt;br&gt;&#xa;&#xa;The advantage of using Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to employees, that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.&lt;/center&gt;&lt;/html&gt;"/>
+                    <Property name="text" type="java.lang.String" value="&lt;html&gt;&lt;center&gt;Employee Payroll Management System, made by ECoders is used to manage and streamline the process of making payments to employees.&lt;br&gt;&lt;br&gt;  Once an employee&#x2019;s standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.&lt;br&gt;&lt;br&gt;  The advantage of using Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to employees, that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.&lt;/center&gt;&lt;/html&gt;"/>
                   </Properties>
                   <Constraints>
                     <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
