@@ -617,7 +617,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -634,7 +634,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         pnlTop.setLayout(new java.awt.BorderLayout(0, 5));
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 70, 84));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -645,7 +645,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         pnlActions.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
-        lblClose.setBackground(new java.awt.Color(0, 102, 204));
+        lblClose.setBackground(new java.awt.Color(255, 70, 84));
         lblClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_multiply_18px_1.png"))); // NOI18N
         lblClose.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblClose.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -668,7 +668,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 70, 84));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -689,9 +689,9 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         pnlTitle.add(lblTitleIcon);
 
-        lblTitle.setBackground(new java.awt.Color(0, 102, 204));
+        lblTitle.setBackground(new java.awt.Color(255, 70, 84));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 255, 255));
+        lblTitle.setForeground(new java.awt.Color(255, 70, 84));
         lblTitle.setText("PAYROLL SYSTEM");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -715,17 +715,19 @@ public final class EditGUIOptions extends javax.swing.JDialog {
 
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
-        mainpanel.setBackground(new java.awt.Color(249, 250, 253));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "CONFIGURE GUI OPTIONS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
+        mainpanel.setBackground(new java.awt.Color(10, 36, 59));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "GUI OPTIONS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
         jScrollPane1.setBorder(null);
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        viewpanel.setBackground(new java.awt.Color(249, 250, 253));
+        viewpanel.setBackground(new java.awt.Color(10, 36, 59));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        lbl1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl1.setForeground(new java.awt.Color(255, 255, 255));
         lbl1.setText("Main Application Name:");
         viewpanel.add(lbl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 150, 30));
 
@@ -742,13 +744,17 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 10, -1, 30));
 
         tf1.setEditable(false);
-        tf1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf1.setBackground(new java.awt.Color(10, 36, 59));
+        tf1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf1.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 10, 180, 30));
 
+        lbl2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl2.setForeground(new java.awt.Color(255, 255, 255));
         lbl2.setText("Main Company Name:");
-        viewpanel.add(lbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 150, 30));
+        viewpanel.add(lbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 150, 30));
 
         cb2.setBackground(new java.awt.Color(249, 250, 253));
         cb2.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -763,13 +769,17 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 50, -1, 30));
 
         tf2.setEditable(false);
-        tf2.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf2.setBackground(new java.awt.Color(10, 36, 59));
+        tf2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf2.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 180, 30));
 
+        lbl3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl3.setForeground(new java.awt.Color(255, 255, 255));
         lbl3.setText("Home Menu Top Name:");
-        viewpanel.add(lbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 90, 150, 30));
+        viewpanel.add(lbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1, 90, 150, 30));
 
         cb3.setBackground(new java.awt.Color(249, 250, 253));
         cb3.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -784,13 +794,17 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb3, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, -1, 30));
 
         tf3.setEditable(false);
-        tf3.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf3.setBackground(new java.awt.Color(10, 36, 59));
+        tf3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf3.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 90, 180, 30));
 
+        lbl4.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl4.setForeground(new java.awt.Color(255, 255, 255));
         lbl4.setText("Popup Normal Name:");
-        viewpanel.add(lbl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 150, 30));
+        viewpanel.add(lbl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(13, 130, 150, 30));
 
         cb4.setBackground(new java.awt.Color(249, 250, 253));
         cb4.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -805,8 +819,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb4, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 130, -1, 30));
 
         tf4.setEditable(false);
-        tf4.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf4.setBackground(new java.awt.Color(10, 36, 59));
+        tf4.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf4.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf4, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 180, 30));
 
@@ -822,17 +838,23 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(cb5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, -1, 30));
 
+        lbl5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl5.setForeground(new java.awt.Color(255, 255, 255));
         lbl5.setText("Popup Error Name:");
-        viewpanel.add(lbl5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 150, 30));
+        viewpanel.add(lbl5, new org.netbeans.lib.awtextra.AbsoluteConstraints(27, 170, 150, 30));
 
         tf5.setEditable(false);
-        tf5.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf5.setBackground(new java.awt.Color(10, 36, 59));
+        tf5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf5.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf5.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf5, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 170, 180, 30));
 
+        lbl6.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl6.setForeground(new java.awt.Color(255, 255, 255));
         lbl6.setText("Currency Symbol:");
-        viewpanel.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 210, 150, 30));
+        viewpanel.add(lbl6, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 210, 150, 30));
 
         cb6.setBackground(new java.awt.Color(249, 250, 253));
         cb6.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -847,8 +869,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 210, -1, 30));
 
         tf6.setEditable(false);
-        tf6.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf6.setBackground(new java.awt.Color(10, 36, 59));
+        tf6.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf6.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf6.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -857,8 +881,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(tf6, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 180, 30));
 
+        lbl7.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl7.setForeground(new java.awt.Color(255, 255, 255));
         lbl7.setText("Currency Code:");
-        viewpanel.add(lbl7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 150, 30));
+        viewpanel.add(lbl7, new org.netbeans.lib.awtextra.AbsoluteConstraints(51, 250, 150, 30));
 
         cb7.setBackground(new java.awt.Color(249, 250, 253));
         cb7.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -873,13 +899,17 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 250, -1, 30));
 
         tf7.setEditable(false);
-        tf7.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf7.setBackground(new java.awt.Color(10, 36, 59));
+        tf7.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf7.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf7.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf7, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 250, 180, 30));
 
+        lbl8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl8.setForeground(new java.awt.Color(255, 255, 255));
         lbl8.setText("Overtime Rate:");
-        viewpanel.add(lbl8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 290, 150, 30));
+        viewpanel.add(lbl8, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 290, 150, 30));
 
         cb8.setBackground(new java.awt.Color(249, 250, 253));
         cb8.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -894,8 +924,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb8, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 290, -1, 30));
 
         tf8.setEditable(false);
-        tf8.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf8.setBackground(new java.awt.Color(10, 36, 59));
+        tf8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf8.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf8.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf8.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -904,8 +936,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(tf8, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 290, 180, 30));
 
+        lbl9.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl9.setForeground(new java.awt.Color(255, 255, 255));
         lbl9.setText("RPH Rate:");
-        viewpanel.add(lbl9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 330, 150, 30));
+        viewpanel.add(lbl9, new org.netbeans.lib.awtextra.AbsoluteConstraints(83, 330, 150, 30));
 
         cb9.setBackground(new java.awt.Color(249, 250, 253));
         cb9.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -920,8 +954,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 330, -1, 30));
 
         tf9.setEditable(false);
-        tf9.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf9.setBackground(new java.awt.Color(10, 36, 59));
+        tf9.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         tf9.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf9.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf9.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -930,6 +966,8 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(tf9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 330, 180, 30));
 
+        lbl10.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl10.setForeground(new java.awt.Color(255, 255, 255));
         lbl10.setText("Login GUI Top Name:");
         viewpanel.add(lbl10, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 10, 150, 30));
 
@@ -946,13 +984,18 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb10, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 10, -1, 30));
 
         tf10.setEditable(false);
+        tf10.setBackground(new java.awt.Color(10, 36, 59));
         tf10.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf10.setForeground(new java.awt.Color(255, 255, 255));
         tf10.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf10.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf10, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 10, 180, 30));
 
+        lbl11.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl11.setForeground(new java.awt.Color(255, 255, 255));
         lbl11.setText("Reset Pass. GUI Top Name:");
-        viewpanel.add(lbl11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 50, 150, 30));
+        viewpanel.add(lbl11, new org.netbeans.lib.awtextra.AbsoluteConstraints(387, 50, 160, 30));
 
         cb11.setBackground(new java.awt.Color(249, 250, 253));
         cb11.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -967,13 +1010,18 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb11, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 50, -1, 30));
 
         tf11.setEditable(false);
+        tf11.setBackground(new java.awt.Color(10, 36, 59));
         tf11.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf11.setForeground(new java.awt.Color(255, 255, 255));
         tf11.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf11.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         viewpanel.add(tf11, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, 180, 30));
 
+        lbl12.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl12.setForeground(new java.awt.Color(255, 255, 255));
         lbl12.setText("Default User:");
-        viewpanel.add(lbl12, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 90, 150, 30));
+        viewpanel.add(lbl12, new org.netbeans.lib.awtextra.AbsoluteConstraints(469, 90, 80, 30));
 
         cb12.setBackground(new java.awt.Color(249, 250, 253));
         cb12.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -988,8 +1036,11 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb12, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 90, -1, 30));
 
         tf12.setEditable(false);
+        tf12.setBackground(new java.awt.Color(10, 36, 59));
         tf12.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf12.setForeground(new java.awt.Color(255, 255, 255));
         tf12.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf12.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf12.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -998,8 +1049,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(tf12, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 90, 180, 30));
 
+        lbl13.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl13.setForeground(new java.awt.Color(255, 255, 255));
         lbl13.setText("Default User (CAPS):");
-        viewpanel.add(lbl13, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 130, 150, 30));
+        viewpanel.add(lbl13, new org.netbeans.lib.awtextra.AbsoluteConstraints(427, 130, 120, 30));
 
         cb13.setBackground(new java.awt.Color(249, 250, 253));
         cb13.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -1014,8 +1067,11 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb13, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 130, -1, 30));
 
         tf13.setEditable(false);
+        tf13.setBackground(new java.awt.Color(10, 36, 59));
         tf13.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf13.setForeground(new java.awt.Color(255, 255, 255));
         tf13.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf13.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf13.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -1024,8 +1080,10 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(tf13, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 130, 180, 30));
 
+        lbl14.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl14.setForeground(new java.awt.Color(255, 255, 255));
         lbl14.setText("Default Admin:");
-        viewpanel.add(lbl14, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 170, 150, 30));
+        viewpanel.add(lbl14, new org.netbeans.lib.awtextra.AbsoluteConstraints(457, 170, 90, 30));
 
         cb14.setBackground(new java.awt.Color(249, 250, 253));
         cb14.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -1040,8 +1098,11 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb14, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 170, -1, 30));
 
         tf14.setEditable(false);
+        tf14.setBackground(new java.awt.Color(10, 36, 59));
         tf14.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf14.setForeground(new java.awt.Color(255, 255, 255));
         tf14.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf14.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf14.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -1063,8 +1124,11 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb15, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 210, -1, 30));
 
         tf15.setEditable(false);
+        tf15.setBackground(new java.awt.Color(10, 36, 59));
         tf15.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf15.setForeground(new java.awt.Color(255, 255, 255));
         tf15.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf15.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1078,11 +1142,15 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(tf15, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 210, 180, 30));
 
+        lbl15.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl15.setForeground(new java.awt.Color(255, 255, 255));
         lbl15.setText("Default Admin (CAPS):");
-        viewpanel.add(lbl15, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 210, 150, 30));
+        viewpanel.add(lbl15, new org.netbeans.lib.awtextra.AbsoluteConstraints(415, 210, 140, 30));
 
+        lbl16.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl16.setForeground(new java.awt.Color(255, 255, 255));
         lbl16.setText("Default None:");
-        viewpanel.add(lbl16, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 250, 150, 30));
+        viewpanel.add(lbl16, new org.netbeans.lib.awtextra.AbsoluteConstraints(463, 250, 90, 30));
 
         cb16.setBackground(new java.awt.Color(249, 250, 253));
         cb16.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
@@ -1097,8 +1165,11 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(cb16, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 250, -1, 30));
 
         tf16.setEditable(false);
+        tf16.setBackground(new java.awt.Color(10, 36, 59));
         tf16.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
+        tf16.setForeground(new java.awt.Color(255, 255, 255));
         tf16.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        tf16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf16.setSelectedTextColor(new java.awt.Color(249, 250, 253));
         tf16.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -1107,75 +1178,95 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         });
         viewpanel.add(tf16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, 180, 30));
 
-        uncheckAllBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        uncheckAllBTN.setBackground(new java.awt.Color(255, 70, 84));
+        uncheckAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        uncheckAllBTN.setForeground(new java.awt.Color(255, 255, 255));
         uncheckAllBTN.setText("Uncheck All");
         uncheckAllBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         uncheckAllBTN.setFocusPainted(false);
         uncheckAllBTN.setFocusable(false);
+        uncheckAllBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        uncheckAllBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         uncheckAllBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 uncheckAllBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(uncheckAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 440, -1, -1));
+        viewpanel.add(uncheckAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 400, 120, 40));
 
-        applyBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        applyBTN.setBackground(new java.awt.Color(255, 70, 84));
+        applyBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        applyBTN.setForeground(new java.awt.Color(255, 255, 255));
         applyBTN.setText("Apply");
         applyBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         applyBTN.setEnabled(false);
         applyBTN.setFocusPainted(false);
         applyBTN.setFocusable(false);
+        applyBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         applyBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 applyBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(applyBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 440, -1, -1));
+        viewpanel.add(applyBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(772, 400, 80, 40));
 
-        checkAllBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        checkAllBTN.setBackground(new java.awt.Color(255, 70, 84));
+        checkAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        checkAllBTN.setForeground(new java.awt.Color(255, 255, 255));
         checkAllBTN.setText("Check All");
         checkAllBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         checkAllBTN.setFocusPainted(false);
         checkAllBTN.setFocusable(false);
+        checkAllBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        checkAllBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         checkAllBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkAllBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(checkAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 440, -1, -1));
+        viewpanel.add(checkAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 400, 100, 40));
 
-        savechangesBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        savechangesBTN.setBackground(new java.awt.Color(255, 70, 84));
+        savechangesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        savechangesBTN.setForeground(new java.awt.Color(255, 255, 255));
         savechangesBTN.setText("Save Changes");
         savechangesBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         savechangesBTN.setFocusPainted(false);
         savechangesBTN.setFocusable(false);
+        savechangesBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        savechangesBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         savechangesBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 savechangesBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(savechangesBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 440, -1, -1));
+        viewpanel.add(savechangesBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(566, 400, 140, 40));
 
-        reset2defaultBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        reset2defaultBTN.setBackground(new java.awt.Color(255, 70, 84));
+        reset2defaultBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        reset2defaultBTN.setForeground(new java.awt.Color(255, 255, 255));
         reset2defaultBTN.setText("Reset to Default");
         reset2defaultBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         reset2defaultBTN.setFocusPainted(false);
         reset2defaultBTN.setFocusable(false);
+        reset2defaultBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        reset2defaultBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         reset2defaultBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reset2defaultBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(reset2defaultBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(535, 440, -1, -1));
+        viewpanel.add(reset2defaultBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 150, 40));
+
+        txt_emp.setBackground(new java.awt.Color(10, 36, 59));
+        txt_emp.setForeground(new java.awt.Color(10, 36, 59));
+        txt_emp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        txt_emp.setText("emp");
+        viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 0, 90, -1));
 
         jScrollPane1.setViewportView(viewpanel);
 
         mainpanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 880, 480));
-
-        txt_emp.setForeground(new java.awt.Color(249, 250, 253));
-        txt_emp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        txt_emp.setText("emp");
-        mainpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 0, 90, -1));
 
         lblmain.setBackground(new java.awt.Color(249, 250, 253));
         lblmain.setForeground(new java.awt.Color(249, 250, 253));
