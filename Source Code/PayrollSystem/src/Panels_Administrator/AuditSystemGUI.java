@@ -309,7 +309,9 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         pnlTitle.add(lblTitleIcon);
 
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitle.setFont(new java.awt.Font("VALORANT", 1, 22)); // NOI18N
+
+        lblTitle.setFont(new java.awt.Font("Tungsten Bold", 1, 18)); // NOI18N
+
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -334,7 +336,9 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 30));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
+
         mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADMINISTRATORS ACTIVITIES", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 44), new java.awt.Color(255, 255, 255))); // NOI18N
+
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -345,12 +349,14 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(10, 36, 59));
+
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Audit Admin Activities", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 0, 14), new java.awt.Color(255, 255, 255))); // NOI18N
 
         jScrollPane3.setFont(new java.awt.Font("VALORANT", 0, 12)); // NOI18N
 
         auditadminactTable.setBackground(new java.awt.Color(10, 36, 59));
         auditadminactTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
         auditadminactTable.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         auditadminactTable.setForeground(new java.awt.Color(10, 36, 59));
         auditadminactTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -390,8 +396,10 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
 
         refreshactivitiesBTN.setBackground(new java.awt.Color(255, 51, 51));
         refreshactivitiesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
-        refreshactivitiesBTN.setForeground(new java.awt.Color(255, 51, 51));
-        refreshactivitiesBTN.setText("REFRESH");
+
+        refreshactivitiesBTN.setForeground(new java.awt.Color(255, 70, 84));
+        refreshactivitiesBTN.setText("Refresh");
+
         refreshactivitiesBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         refreshactivitiesBTN.setEnabled(false);
         refreshactivitiesBTN.setOpaque(true);
@@ -449,7 +457,9 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         jPanel4.setBackground(new java.awt.Color(10, 36, 59));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("   Admin:");
@@ -488,7 +498,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
                 txt_searchKeyTyped(evt);
             }
         });
-        jPanel4.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 10, 170, -1));
+        jPanel4.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 170, -1));
 
         viewpanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
