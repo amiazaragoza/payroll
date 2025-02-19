@@ -483,7 +483,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         pnlTitle.add(lblTitleIcon);
 
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Tungsten Bold", 1, 18)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle.setText("PAYROLL SYSTEM | ALLOWANCE");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -509,8 +509,8 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE ALLOWANCE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
-        mainpanel.setForeground(new java.awt.Color(204, 204, 255));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE ALLOWANCE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewScroll.setBackground(new java.awt.Color(249, 250, 253));
