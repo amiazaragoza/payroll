@@ -510,6 +510,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
         mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE ALLOWANCE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
+        mainpanel.setForeground(new java.awt.Color(204, 204, 255));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewScroll.setBackground(new java.awt.Color(249, 250, 253));
@@ -630,24 +631,29 @@ public final class AllowanceGUI extends javax.swing.JDialog {
                 txt_total_overtimeActionPerformed(evt);
             }
         });
-        jPanel3.add(txt_total_overtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 150, -1));
+        jPanel3.add(txt_total_overtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 150, -1));
 
         txt_rph.setEditable(false);
         txt_rph.setBackground(new java.awt.Color(249, 250, 253));
         txt_rph.setText("0");
         txt_rph.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_rph.setEnabled(false);
-        jPanel3.add(txt_rph, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 150, -1));
+        txt_rph.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_rphActionPerformed(evt);
+            }
+        });
+        jPanel3.add(txt_rph, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 150, -1));
 
         jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Total Overtime Rate:");
-        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, -1, 20));
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, 20));
 
         jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("RPH Rate:");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, -1, -1));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, -1, -1));
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jPanel3.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 10, 120));
@@ -940,6 +946,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         viewpanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, -1, 20));
 
         saveBTN.setBackground(new java.awt.Color(249, 250, 253));
+        saveBTN.setForeground(new java.awt.Color(255, 70, 84));
         saveBTN.setText("Save");
         saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         saveBTN.setDefaultCapable(false);
@@ -1493,6 +1500,10 @@ public final class AllowanceGUI extends javax.swing.JDialog {
     private void txt_empidActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_empidActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_empidActionPerformed
+
+    private void txt_rphActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_rphActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_rphActionPerformed
 
     /**
      * @param args the command line arguments
