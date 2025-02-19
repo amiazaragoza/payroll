@@ -483,7 +483,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         pnlTitle.add(lblTitleIcon);
 
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitle.setFont(new java.awt.Font("Tungsten Bold", 1, 18)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("Tungsten Bold", 1, 14)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle.setText("PAYROLL SYSTEM | ALLOWANCE");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {

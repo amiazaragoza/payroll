@@ -240,7 +240,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -257,7 +257,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         });
         pnlTop.setLayout(new java.awt.BorderLayout(0, 5));
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 70, 84));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -291,7 +291,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 70, 84));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -338,8 +338,9 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
 
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, -1));
 
-        mainpanel.setBackground(new java.awt.Color(249, 250, 253));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "UPDATE EMPLOYEE SALARY", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
+        mainpanel.setBackground(new java.awt.Color(10, 36, 59));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "UPDATE EMPLOYEE SALARY", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setPreferredSize(new java.awt.Dimension(560, 340));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -348,12 +349,14 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER);
 
-        viewpanel.setBackground(new java.awt.Color(249, 250, 253));
+        viewpanel.setBackground(new java.awt.Color(10, 36, 59));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel4.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel4.setBackground(new java.awt.Color(10, 36, 59));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Search Employee ID:");
         jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 110, 20));
 
@@ -372,8 +375,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         });
         jPanel4.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(485, 20, 25, 20));
 
-        txt_search.setBackground(new java.awt.Color(249, 250, 253));
-        txt_search.setOpaque(false);
+        txt_search.setBackground(new java.awt.Color(10, 36, 59));
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
                 txt_searchComponentRemoved(evt);
@@ -399,11 +401,11 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
 
         viewpanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel1.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txt_empid.setEditable(false);
-        txt_empid.setBackground(new java.awt.Color(249, 250, 253));
+        txt_empid.setBackground(new java.awt.Color(10, 36, 59));
         txt_empid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_empidActionPerformed(evt);
@@ -412,26 +414,36 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jPanel1.add(txt_empid, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 19, 160, -1));
 
         txt_dob.setEditable(false);
-        txt_dob.setBackground(new java.awt.Color(249, 250, 253));
+        txt_dob.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 19, 160, -1));
 
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Date of Birth :");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 19, -1, -1));
 
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Surname :");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 72, -1, -1));
 
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First name :");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 46, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Employee id :");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 22, -1, -1));
 
+        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Basic Salary :");
         jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 48, -1, -1));
 
         txt_basic_salary.setEditable(false);
-        txt_basic_salary.setBackground(new java.awt.Color(249, 250, 253));
+        txt_basic_salary.setBackground(new java.awt.Color(10, 36, 59));
         txt_basic_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_basic_salaryActionPerformed(evt);
@@ -440,21 +452,24 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jPanel1.add(txt_basic_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(352, 45, 160, -1));
 
         txt_dept.setEditable(false);
-        txt_dept.setBackground(new java.awt.Color(249, 250, 253));
+        txt_dept.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.add(txt_dept, new org.netbeans.lib.awtextra.AbsoluteConstraints(351, 71, 161, -1));
 
         txt_surname.setEditable(false);
-        txt_surname.setBackground(new java.awt.Color(249, 250, 253));
+        txt_surname.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.add(txt_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 69, 160, -1));
 
+        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(266, 74, -1, -1));
 
         txt_firstname.setEditable(false);
-        txt_firstname.setBackground(new java.awt.Color(249, 250, 253));
+        txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.add(txt_firstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 43, 160, -1));
 
-        r_percentage.setBackground(new java.awt.Color(249, 250, 253));
+        r_percentage.setBackground(new java.awt.Color(10, 36, 59));
+        r_percentage.setForeground(new java.awt.Color(255, 255, 255));
         r_percentage.setText("Percentage (%)");
         r_percentage.setEnabled(false);
         r_percentage.addActionListener(new java.awt.event.ActionListener() {
@@ -464,7 +479,8 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         });
         jPanel1.add(r_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(104, 109, -1, -1));
 
-        r_amount.setBackground(new java.awt.Color(249, 250, 253));
+        r_amount.setBackground(new java.awt.Color(10, 36, 59));
+        r_amount.setForeground(new java.awt.Color(255, 255, 255));
         r_amount.setText("Amount");
         r_amount.setEnabled(false);
         r_amount.addActionListener(new java.awt.event.ActionListener() {
@@ -474,11 +490,13 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         });
         jPanel1.add(r_amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 109, -1, -1));
 
+        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Update Salary by :");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 113, -1, -1));
 
         txt_percentage.setEditable(false);
-        txt_percentage.setBackground(new java.awt.Color(249, 250, 253));
+        txt_percentage.setBackground(new java.awt.Color(10, 36, 59));
         txt_percentage.setText("0");
         txt_percentage.setEnabled(false);
         txt_percentage.addActionListener(new java.awt.event.ActionListener() {
@@ -500,7 +518,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jPanel1.add(txt_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, 95, -1));
 
         txt_amountinsert.setEditable(false);
-        txt_amountinsert.setBackground(new java.awt.Color(249, 250, 253));
+        txt_amountinsert.setBackground(new java.awt.Color(10, 36, 59));
         txt_amountinsert.setText("0");
         txt_amountinsert.setEnabled(false);
         txt_amountinsert.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -516,9 +534,13 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         });
         jPanel1.add(txt_amountinsert, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 140, 95, -1));
 
+        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Percentage :");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 70, 20));
 
+        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Amount:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 50, 20));
 
@@ -540,12 +562,14 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         txt_emp.setText("emp");
         jPanel1.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 80, -1));
 
-        lbl_computed_salary.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_computed_salary.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl_computed_salary.setForeground(new java.awt.Color(255, 255, 255));
         lbl_computed_salary.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lbl_computed_salary.setText("0.00");
         jPanel1.add(lbl_computed_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 130, 100, 20));
 
-        lbl_computed_total.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_computed_total.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        lbl_computed_total.setForeground(new java.awt.Color(255, 255, 255));
         lbl_computed_total.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lbl_computed_total.setText("0.00");
         jPanel1.add(lbl_computed_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 100, 20));
@@ -562,16 +586,18 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         });
         jPanel1.add(calculateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 170, 90, 30));
 
-        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Salary after Update:  ₱");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, -1, 20));
 
-        jLabel10.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Total Basic Salary:     ₱");
         jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, -1, 20));
 
-        clearBTN.setBackground(new java.awt.Color(249, 250, 253));
-        clearBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        clearBTN.setBackground(new java.awt.Color(255, 70, 84));
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         clearBTN.setText("Clear");
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.addActionListener(new java.awt.event.ActionListener() {

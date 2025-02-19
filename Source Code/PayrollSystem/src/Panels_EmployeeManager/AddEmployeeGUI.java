@@ -438,7 +438,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         lblTitle.setBackground(new java.awt.Color(255, 70, 84));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        lblTitle.setForeground(new java.awt.Color(255, 70, 84));
+        lblTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle.setText("PAYROLL SYSTEM | ADD EMPLOYEE");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -462,26 +462,32 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
-        mainpanel.setBackground(new java.awt.Color(249, 250, 253));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADD EMPLOYEE | STEP 1 of 3", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
+        mainpanel.setBackground(new java.awt.Color(10, 36, 59));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADD EMPLOYEE | STEP 1 of 3", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
         jScrollPane1.setBorder(null);
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        viewpanel.setBackground(new java.awt.Color(249, 250, 253));
+        viewpanel.setBackground(new java.awt.Color(10, 36, 59));
+        viewpanel.setForeground(new java.awt.Color(255, 255, 255));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Employee id :");
         viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 15, -1, 20));
 
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First name :");
         viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 45, -1, -1));
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Surname :");
         viewpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 68, -1, -1));
 
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Date of Birth :");
         viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 94, -1, -1));
 
@@ -599,7 +605,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         viewpanel.add(jDesktopPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 11, -1, 200));
 
-        addrecordBTN.setBackground(new java.awt.Color(249, 250, 253));
+        addrecordBTN.setBackground(new java.awt.Color(255, 70, 84));
+        addrecordBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         addrecordBTN.setText("Add Record");
         addrecordBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -613,7 +620,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(addrecordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 321, 134, 44));
 
-        clearBTN.setBackground(new java.awt.Color(249, 250, 253));
+        clearBTN.setBackground(new java.awt.Color(255, 70, 84));
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         clearBTN.setText("Clear");
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -622,21 +630,27 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(709, 321, 134, 44));
 
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Job Title :");
         viewpanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 154, -1, -1));
 
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Basic Salary :");
         viewpanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 128, -1, -1));
 
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Date Hired :");
         viewpanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 97, -1, -1));
 
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Status :");
         viewpanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 71, -1, -1));
 
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Designation :");
         viewpanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 40, -1, -1));
 
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
         viewpanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 14, -1, -1));
 
@@ -668,24 +682,31 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(r_male, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 124, -1, -1));
 
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Gender:");
         viewpanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 128, -1, -1));
 
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Email :");
         viewpanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 154, -1, -1));
 
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Contact :");
         viewpanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Address Line 1 :");
         viewpanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 206, -1, -1));
 
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Address Line 2 :");
         viewpanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 232, -1, -1));
 
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Apt./House No :");
         viewpanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, -1, -1));
 
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Postal Code :");
         viewpanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 294, -1, -1));
 
