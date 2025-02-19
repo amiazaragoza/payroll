@@ -722,6 +722,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         clearBTN.setBackground(new java.awt.Color(255, 70, 84));
         clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
