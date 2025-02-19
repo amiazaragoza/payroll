@@ -1176,7 +1176,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 69, 86));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -1193,7 +1193,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         pnlTop.setLayout(new java.awt.BorderLayout(0, 5));
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 69, 86));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -1246,7 +1246,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 69, 86));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -1270,7 +1270,6 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         pnlTitle.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 6));
 
         lblTitleIcon.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitleIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
         lblTitleIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 lblTitleIconMousePressed(evt);
@@ -1279,7 +1278,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         pnlTitle.add(lblTitleIcon);
 
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblTitle.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle.setText("PAYROLL SYSTEM");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -1306,7 +1305,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
 
         pnlParent.setLayout(new java.awt.BorderLayout());
 
-        topNavigationPane.setBackground(new java.awt.Color(45, 118, 232));
+        topNavigationPane.setBackground(new java.awt.Color(255, 69, 86));
         topNavigationPane.setForeground(new java.awt.Color(51, 51, 51));
         topNavigationPane.setPreferredSize(new java.awt.Dimension(250, 60));
         topNavigationPane.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -1321,12 +1320,13 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         topNavigationPane.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        topappnameLBL.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        topappnameLBL.setBackground(new java.awt.Color(255, 69, 86));
+        topappnameLBL.setFont(new java.awt.Font("VALORANT", 1, 20)); // NOI18N
         topappnameLBL.setForeground(new java.awt.Color(255, 255, 255));
-        topappnameLBL.setText("PAYROLL SYSTEM");
-        topNavigationPane.add(topappnameLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 0, 510, 40));
+        topappnameLBL.setText("AGENT PAYROLL SYSTEM");
+        topNavigationPane.add(topappnameLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 0, 510, 40));
 
-        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_LEFT_ICON_SHADOW_64px.png"))); // NOI18N
+        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/50.png"))); // NOI18N
 
         javax.swing.GroupLayout rSPanelImage1Layout = new javax.swing.GroupLayout(rSPanelImage1);
         rSPanelImage1.setLayout(rSPanelImage1Layout);
@@ -1339,19 +1339,19 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        topNavigationPane.add(rSPanelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 0, 60, 60));
+        topNavigationPane.add(rSPanelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -10, 60, 60));
 
-        companynameLBL.setFont(new java.awt.Font("Segoe UI Semibold", 0, 11)); // NOI18N
+        companynameLBL.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         companynameLBL.setForeground(new java.awt.Color(255, 255, 255));
         companynameLBL.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        companynameLBL.setText("ECoders");
+        companynameLBL.setText("© SENTINELS");
         companynameLBL.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         topNavigationPane.add(companynameLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 30, 200, -1));
 
-        logoutBTN.setBackground(new java.awt.Color(45, 118, 232));
+        logoutBTN.setBackground(new java.awt.Color(255, 69, 86));
         logoutBTN.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
         logoutBTN.setForeground(new java.awt.Color(255, 255, 255));
-        logoutBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/logout_menu_32px.png"))); // NOI18N
+        logoutBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/alternate-sign-out 2.png"))); // NOI18N
         logoutBTN.setText("LOG OUT");
         logoutBTN.setToolTipText("");
         logoutBTN.setBorder(null);
@@ -1387,7 +1387,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         topNavigationPane.add(logoutBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(1180, 0, 120, 60));
 
-        homeBTN.setBackground(new java.awt.Color(45, 118, 232));
+        homeBTN.setBackground(new java.awt.Color(255, 69, 86));
         homeBTN.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
         homeBTN.setForeground(new java.awt.Color(255, 255, 255));
         homeBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/home_menu_2_32px.png"))); // NOI18N
@@ -1426,10 +1426,10 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         topNavigationPane.add(homeBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 0, 110, 60));
 
-        employeemanagerBTN.setBackground(new java.awt.Color(45, 118, 232));
+        employeemanagerBTN.setBackground(new java.awt.Color(255, 69, 86));
         employeemanagerBTN.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
         employeemanagerBTN.setForeground(new java.awt.Color(255, 255, 255));
-        employeemanagerBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/employee_management_menu_32px.png"))); // NOI18N
+        employeemanagerBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Employee Manager Icon.png"))); // NOI18N
         employeemanagerBTN.setText("EMPLOYEE MANAGER");
         employeemanagerBTN.setToolTipText("");
         employeemanagerBTN.setBorder(null);
@@ -1465,7 +1465,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         topNavigationPane.add(employeemanagerBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 0, 190, 60));
 
-        adminpanelBTN.setBackground(new java.awt.Color(45, 118, 232));
+        adminpanelBTN.setBackground(new java.awt.Color(255, 69, 86));
         adminpanelBTN.setFont(new java.awt.Font("Segoe UI Semibold", 1, 12)); // NOI18N
         adminpanelBTN.setForeground(new java.awt.Color(255, 255, 255));
         adminpanelBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/administrative_tools_menu_32px.png"))); // NOI18N
@@ -1504,7 +1504,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         topNavigationPane.add(adminpanelBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 0, 160, 60));
 
-        userlvlTF.setForeground(new java.awt.Color(45, 118, 232));
+        userlvlTF.setForeground(new java.awt.Color(255, 69, 86));
         userlvlTF.setText("jLabel1");
         topNavigationPane.add(userlvlTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 40, 60, -1));
 

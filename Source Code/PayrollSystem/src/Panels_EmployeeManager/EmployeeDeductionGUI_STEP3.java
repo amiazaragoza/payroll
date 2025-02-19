@@ -395,7 +395,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -412,7 +412,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         pnlTop.setLayout(new java.awt.BorderLayout(0, 5));
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 70, 84));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -446,7 +446,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 70, 84));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -493,29 +493,31 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
 
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, -1));
 
-        mainpanel.setBackground(new java.awt.Color(249, 250, 253));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE DEDUCTION | STEP 3 of 3", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
+        mainpanel.setBackground(new java.awt.Color(10, 36, 59));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE DEDUCTION | STEP 3 of 3", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewScroll.setBackground(new java.awt.Color(249, 250, 253));
         viewScroll.setBorder(null);
         viewScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        jPanel1.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel1.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel3.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Employee id :");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 19, -1, 20));
 
         txt_id.setEditable(false);
-        txt_id.setBackground(new java.awt.Color(249, 250, 253));
+        txt_id.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 19, 177, -1));
 
         txt_firstname.setEditable(false);
-        txt_firstname.setBackground(new java.awt.Color(249, 250, 253));
+        txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
         txt_firstname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_firstnameActionPerformed(evt);
@@ -523,56 +525,72 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         jPanel3.add(txt_firstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 46, 177, -1));
 
+        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("First name :");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 49, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Surname :");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 79, -1, -1));
 
         txt_surname.setEditable(false);
-        txt_surname.setBackground(new java.awt.Color(249, 250, 253));
+        txt_surname.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 76, 177, -1));
 
         txt_dob.setEditable(false);
-        txt_dob.setBackground(new java.awt.Color(249, 250, 253));
+        txt_dob.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 109, 177, -1));
 
+        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Date of Birth :");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 112, -1, -1));
 
+        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 143, -1, -1));
 
         txt_dep.setEditable(false);
-        txt_dep.setBackground(new java.awt.Color(249, 250, 253));
+        txt_dep.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 140, 177, -1));
 
+        jLabel17.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Designation :");
         jPanel3.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 22, -1, -1));
 
         txt_desig.setEditable(false);
-        txt_desig.setBackground(new java.awt.Color(249, 250, 253));
+        txt_desig.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 19, 177, -1));
 
         txt_status.setEditable(false);
-        txt_status.setBackground(new java.awt.Color(249, 250, 253));
+        txt_status.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_status, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 50, 177, -1));
 
+        jLabel18.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Status :");
         jPanel3.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 53, -1, -1));
 
+        jLabel19.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Date Hired :");
         jPanel3.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 79, -1, -1));
 
         txt_doj.setEditable(false);
-        txt_doj.setBackground(new java.awt.Color(249, 250, 253));
+        txt_doj.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_doj, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 76, 177, -1));
 
+        jLabel20.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Job Title :");
         jPanel3.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 112, -1, -1));
 
         txt_job.setEditable(false);
-        txt_job.setBackground(new java.awt.Color(249, 250, 253));
+        txt_job.setBackground(new java.awt.Color(10, 36, 59));
         txt_job.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_jobActionPerformed(evt);
@@ -581,7 +599,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         jPanel3.add(txt_job, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 109, 177, -1));
 
         txt_salary.setEditable(false);
-        txt_salary.setBackground(new java.awt.Color(249, 250, 253));
+        txt_salary.setBackground(new java.awt.Color(10, 36, 59));
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_salaryActionPerformed(evt);
@@ -589,13 +607,17 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         jPanel3.add(txt_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 140, 177, -1));
 
+        jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Basic Salary :");
         jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 143, -1, -1));
 
+        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Deduct Salary by :");
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 182, -1, -1));
 
-        r_percentage.setBackground(new java.awt.Color(249, 250, 253));
+        r_percentage.setBackground(new java.awt.Color(10, 36, 59));
         r_percentage.setText("Percentage (%)");
         r_percentage.setEnabled(false);
         r_percentage.addActionListener(new java.awt.event.ActionListener() {
@@ -605,7 +627,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         jPanel3.add(r_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 178, -1, -1));
 
-        r_amount.setBackground(new java.awt.Color(249, 250, 253));
+        r_amount.setBackground(new java.awt.Color(10, 36, 59));
         r_amount.setText("Amount");
         r_amount.setEnabled(false);
         r_amount.addActionListener(new java.awt.event.ActionListener() {
@@ -615,28 +637,32 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         jPanel3.add(r_amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 178, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Total Deduction: ₱");
         jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 220, 150, -1));
 
-        lbl_total.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_total.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        lbl_total.setForeground(new java.awt.Color(255, 255, 255));
         lbl_total.setText("0.00");
         jPanel3.add(lbl_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(492, 220, 110, -1));
 
-        lbl_salary_after.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lbl_salary_after.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        lbl_salary_after.setForeground(new java.awt.Color(255, 255, 255));
         lbl_salary_after.setText("0.00");
         jPanel3.add(lbl_salary_after, new org.netbeans.lib.awtextra.AbsoluteConstraints(492, 250, 110, -1));
 
-        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText("Salary after deduction: ₱");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         jPanel3.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 250, 160, -1));
 
         txt_amountinsert.setEditable(false);
-        txt_amountinsert.setBackground(new java.awt.Color(249, 250, 253));
+        txt_amountinsert.setBackground(new java.awt.Color(10, 36, 59));
         txt_amountinsert.setText("0");
         txt_amountinsert.setEnabled(false);
         txt_amountinsert.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -652,11 +678,13 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         jPanel3.add(txt_amountinsert, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 219, 95, -1));
 
+        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Amount :");
         jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 222, 50, -1));
 
         txt_percentage.setEditable(false);
-        txt_percentage.setBackground(new java.awt.Color(249, 250, 253));
+        txt_percentage.setBackground(new java.awt.Color(10, 36, 59));
         txt_percentage.setText("0");
         txt_percentage.setEnabled(false);
         txt_percentage.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -672,13 +700,17 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         jPanel3.add(txt_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 219, 95, -1));
 
+        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Percentage :");
         jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 222, -1, -1));
 
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Reason:");
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, -1, -1));
 
-        txt_reason.setBackground(new java.awt.Color(249, 250, 253));
+        txt_reason.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.add(txt_reason, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 257, 263, -1));
 
         calculateBTN.setBackground(new java.awt.Color(249, 250, 253));
@@ -692,7 +724,9 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         });
         jPanel3.add(calculateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 166, 36));
 
-        clearBTN.setBackground(new java.awt.Color(249, 250, 253));
+        clearBTN.setBackground(new java.awt.Color(255, 70, 84));
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -719,6 +753,8 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         lbl_emp.setText("emp");
         jPanel1.add(lbl_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 790, 150, 20));
 
+        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Search Employee ID :");
         jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, 20));
 
@@ -738,8 +774,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         jPanel1.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 25, 20));
 
         txt_search.setEditable(false);
-        txt_search.setBackground(new java.awt.Color(249, 250, 253));
-        txt_search.setOpaque(false);
+        txt_search.setBackground(new java.awt.Color(10, 36, 59));
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
                 txt_searchComponentRemoved(evt);
@@ -761,11 +796,11 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
                 txt_searchKeyTyped(evt);
             }
         });
-        jPanel1.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 140, -1));
+        jPanel1.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 130, -1));
 
         tableScroll.setBackground(new java.awt.Color(249, 250, 253));
 
-        empdeducionTable.setBackground(new java.awt.Color(249, 250, 253));
+        empdeducionTable.setBackground(new java.awt.Color(10, 36, 59));
         empdeducionTable.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
         empdeducionTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -808,7 +843,6 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         jPanel1.add(tableScroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 440, 610, 290));
 
         refreshtableBTN.setBackground(new java.awt.Color(249, 250, 253));
-        refreshtableBTN.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         refreshtableBTN.setText("Refresh Table");
         refreshtableBTN.setEnabled(false);
         refreshtableBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -819,13 +853,11 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         jPanel1.add(refreshtableBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 740, -1, -1));
 
         removerowBTN.setBackground(new java.awt.Color(249, 250, 253));
-        removerowBTN.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
         removerowBTN.setText("Remove this Row");
         removerowBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         removerowBTN.setDefaultCapable(false);
         removerowBTN.setEnabled(false);
         removerowBTN.setFocusPainted(false);
-        removerowBTN.setOpaque(false);
         removerowBTN.setPreferredSize(new java.awt.Dimension(105, 25));
         removerowBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

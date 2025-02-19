@@ -342,40 +342,40 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         jScrollPane1.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        jPanel1.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel1.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.setMinimumSize(new java.awt.Dimension(1310, 700));
         jPanel1.setPreferredSize(new java.awt.Dimension(1310, 700));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel1.setFont(new java.awt.Font("VALORANT", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Administrator Panel");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1310, -1));
 
+        printallBTN.setBackground(new java.awt.Color(250, 74, 84));
         printallBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         printallBTN.setToolTipText("");
-        printallBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        printallBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        printallBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        printallBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         printallBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 printallBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome2.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome2.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome2.setText("<html><center> PRINT ALL <br> \nEMPLOYEES DATA\n</br></center></html>");
+        totalmembersTFhome2.setText("<html><center> PRINT ALL <br> AGENTS DATA </br></center></html>");
+        totalmembersTFhome2.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel31.setText("Click this button to print employees data to excel");
         jLabel31.setIconTextGap(0);
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/excel1_64px.png"))); // NOI18N
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Wingman 2.png"))); // NOI18N
 
         javax.swing.GroupLayout printallBTNLayout = new javax.swing.GroupLayout(printallBTN);
         printallBTN.setLayout(printallBTNLayout);
@@ -391,111 +391,118 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
         printallBTNLayout.setVerticalGroup(
             printallBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(printallBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(34, 34, 34)
                 .addComponent(jLabel30)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(totalmembersTFhome2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(totalmembersTFhome2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel31)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(printallBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 270, 180));
 
+        printempallowanceBTN.setBackground(new java.awt.Color(250, 74, 84));
         printempallowanceBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         printempallowanceBTN.setToolTipText("");
-        printempallowanceBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        printempallowanceBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        printempallowanceBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        printempallowanceBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         printempallowanceBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 printempallowanceBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome3.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome3.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome3.setText("<html><center>PRINT  EMPLOYEES <br>  ALLOWANCE LIST </br></center></html>");
+        totalmembersTFhome3.setText("<html><center>PRINT  AGENTS <br>  ALLOWANCE LIST </br></center></html>");
 
         jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel32.setText("<html><center>Click this button to print employees allowance list to PDF</center></html>");
         jLabel32.setIconTextGap(1);
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/liturgy_64px.png"))); // NOI18N
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Orbital_Strike 2.png"))); // NOI18N
 
         javax.swing.GroupLayout printempallowanceBTNLayout = new javax.swing.GroupLayout(printempallowanceBTN);
         printempallowanceBTN.setLayout(printempallowanceBTNLayout);
         printempallowanceBTNLayout.setHorizontalGroup(
             printempallowanceBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(totalmembersTFhome3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(printempallowanceBTNLayout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(jLabel35)
-                .addContainerGap(102, Short.MAX_VALUE))
-            .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap(91, Short.MAX_VALUE))
+            .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, printempallowanceBTNLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(totalmembersTFhome3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
         );
         printempallowanceBTNLayout.setVerticalGroup(
             printempallowanceBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(printempallowanceBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(37, 37, 37)
                 .addComponent(jLabel35)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalmembersTFhome3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel32)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(printempallowanceBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, 270, 180));
 
+        printempdeductionBTN.setBackground(new java.awt.Color(250, 74, 84));
         printempdeductionBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         printempdeductionBTN.setToolTipText("");
-        printempdeductionBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        printempdeductionBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        printempdeductionBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        printempdeductionBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         printempdeductionBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 printempdeductionBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome7.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome7.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome7.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome7.setText("<html><center>PRINT  EMPLOYEES\n<br> DEDUCTION LIST\n</br></center></html>");
+        totalmembersTFhome7.setText("<html><center>PRINT  AGENTS <br> DEDUCTION LIST </br></center></html>");
+        totalmembersTFhome7.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel43.setText("<html><center>Click this button to print employees deduction list to PDF</center></html>");
         jLabel43.setIconTextGap(1);
 
-        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/liturgy_64px.png"))); // NOI18N
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Lockdown 2.png"))); // NOI18N
 
         javax.swing.GroupLayout printempdeductionBTNLayout = new javax.swing.GroupLayout(printempdeductionBTN);
         printempdeductionBTN.setLayout(printempdeductionBTNLayout);
         printempdeductionBTNLayout.setHorizontalGroup(
             printempdeductionBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome7)
             .addGroup(printempdeductionBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addContainerGap(42, Short.MAX_VALUE)
+                .addComponent(totalmembersTFhome7, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(30, 30, 30)
+                .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, printempdeductionBTNLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel44)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(89, 89, 89))
         );
         printempdeductionBTNLayout.setVerticalGroup(
             printempdeductionBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(printempdeductionBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(136, 136, 136)
+                .addComponent(jLabel43)
+                .addContainerGap(40, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, printempdeductionBTNLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel44)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalmembersTFhome7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel1.add(printempdeductionBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 90, 270, 180));
@@ -524,17 +531,18 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
 
         jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/sql_64px.png"))); // NOI18N
 
+        registerAdminBTN.setBackground(new java.awt.Color(250, 74, 84));
         registerAdminBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         registerAdminBTN.setToolTipText("");
-        registerAdminBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        registerAdminBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        registerAdminBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        registerAdminBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         registerAdminBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 registerAdminBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome8.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome8.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome8.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalmembersTFhome8.setText("<html><center> REGISTER\n<br> \nNEW ADMINISTRATOR\n</br></center></html>");
@@ -542,31 +550,29 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
         jLabel39.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel39.setForeground(new java.awt.Color(255, 255, 255));
         jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel39.setText("<html><center>Click this button to open the <br>Admin Registration form</center></html>");
         jLabel39.setIconTextGap(1);
 
-        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/register_admin_64px.png"))); // NOI18N
+        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Blast_Pack 2.png"))); // NOI18N
 
         javax.swing.GroupLayout registerAdminBTNLayout = new javax.swing.GroupLayout(registerAdminBTN);
         registerAdminBTN.setLayout(registerAdminBTNLayout);
         registerAdminBTNLayout.setHorizontalGroup(
             registerAdminBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel39)
+            .addComponent(jLabel39, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(totalmembersTFhome8, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
-            .addGroup(registerAdminBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, registerAdminBTNLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel45)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(98, 98, 98))
         );
         registerAdminBTNLayout.setVerticalGroup(
             registerAdminBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(registerAdminBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(26, 26, 26)
                 .addComponent(jLabel45)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(14, 14, 14)
                 .addComponent(totalmembersTFhome8, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel39, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -600,17 +606,18 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
 
         jPanel1.add(managedbBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 290, 270, 180));
 
+        manageprintedBTN.setBackground(new java.awt.Color(250, 74, 84));
         manageprintedBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         manageprintedBTN.setToolTipText("");
-        manageprintedBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        manageprintedBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        manageprintedBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        manageprintedBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         manageprintedBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 manageprintedBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome4.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome4.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome4.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalmembersTFhome4.setText("<html><center> CONFIGURE\n<br> \nGUI OPTIONS\n</br></center></html>");
@@ -618,48 +625,50 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
         jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel36.setText("Click this button to edit the gui naming label");
         jLabel36.setIconTextGap(1);
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manage_gui_64px.png"))); // NOI18N
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Overdrive 2.png"))); // NOI18N
 
         javax.swing.GroupLayout manageprintedBTNLayout = new javax.swing.GroupLayout(manageprintedBTN);
         manageprintedBTN.setLayout(manageprintedBTNLayout);
         manageprintedBTNLayout.setHorizontalGroup(
             manageprintedBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(manageprintedBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addContainerGap()
+                .addComponent(totalmembersTFhome4, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, manageprintedBTNLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel37)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(100, 100, 100))
         );
         manageprintedBTNLayout.setVerticalGroup(
             manageprintedBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageprintedBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(33, 33, 33)
                 .addComponent(jLabel37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalmembersTFhome4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(24, 24, 24)
                 .addComponent(jLabel36)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(manageprintedBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 270, 180));
 
+        auditactivitiesBTN.setBackground(new java.awt.Color(250, 74, 84));
         auditactivitiesBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         auditactivitiesBTN.setToolTipText("");
-        auditactivitiesBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        auditactivitiesBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        auditactivitiesBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        auditactivitiesBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         auditactivitiesBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 auditactivitiesBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome5.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome5.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome5.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalmembersTFhome5.setText("<html><center> AUDIT\n<br> \nSYSTEM ACTIVITIES\n</br></center></html>");
@@ -667,53 +676,53 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
         jLabel38.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel38.setText("Click this button to view the Admins Activity logs");
         jLabel38.setIconTextGap(1);
 
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/audit_activities_64px.png"))); // NOI18N
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Rendezvous 2.png"))); // NOI18N
 
         javax.swing.GroupLayout auditactivitiesBTNLayout = new javax.swing.GroupLayout(auditactivitiesBTN);
         auditactivitiesBTN.setLayout(auditactivitiesBTNLayout);
         auditactivitiesBTNLayout.setHorizontalGroup(
             auditactivitiesBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(auditactivitiesBTNLayout.createSequentialGroup()
                 .addGap(100, 100, 100)
                 .addComponent(jLabel40)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(91, Short.MAX_VALUE))
+            .addComponent(totalmembersTFhome5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
         );
         auditactivitiesBTNLayout.setVerticalGroup(
             auditactivitiesBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(auditactivitiesBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(30, 30, 30)
                 .addComponent(jLabel40)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(totalmembersTFhome5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel38)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(auditactivitiesBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 270, 180));
 
-        txt_emp.setForeground(new java.awt.Color(249, 250, 253));
+        txt_emp.setBackground(new java.awt.Color(10, 36, 59));
+        txt_emp.setForeground(new java.awt.Color(10, 36, 59));
         txt_emp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         txt_emp.setText("emp");
         jPanel1.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 20));
 
+        manageadminBTN.setBackground(new java.awt.Color(250, 74, 84));
         manageadminBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         manageadminBTN.setToolTipText("");
-        manageadminBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        manageadminBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        manageadminBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        manageadminBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         manageadminBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 manageadminBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome9.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome9.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome9.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalmembersTFhome9.setText("<html><center> MANAGE\n<br> \nADMIN ACCOUNT\n</br></center></html>");
@@ -721,11 +730,9 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
         jLabel46.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel46.setForeground(new java.awt.Color(255, 255, 255));
         jLabel46.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel46.setText("<html><center>Click this button to manage the <br>Admin Account</center></html>");
         jLabel46.setIconTextGap(1);
 
-        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/manage_admin_64px.png"))); // NOI18N
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/50.png"))); // NOI18N
 
         javax.swing.GroupLayout manageadminBTNLayout = new javax.swing.GroupLayout(manageadminBTN);
         manageadminBTN.setLayout(manageadminBTNLayout);
@@ -734,14 +741,14 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
             .addComponent(jLabel46, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
             .addComponent(totalmembersTFhome9)
             .addGroup(manageadminBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addGap(103, 103, 103)
                 .addComponent(jLabel47)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         manageadminBTNLayout.setVerticalGroup(
             manageadminBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(manageadminBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(38, 38, 38)
                 .addComponent(jLabel47)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalmembersTFhome9, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -750,7 +757,7 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(manageadminBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, 270, 180));
+        jPanel1.add(manageadminBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 480, 270, 180));
 
         jScrollPane1.setViewportView(jPanel1);
 
@@ -764,9 +771,9 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 680, Short.MAX_VALUE)
+            .addGap(0, 571, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
