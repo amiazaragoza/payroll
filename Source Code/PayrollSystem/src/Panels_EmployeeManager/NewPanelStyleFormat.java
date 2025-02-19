@@ -192,7 +192,7 @@ public final class NewPanelStyleFormat extends javax.swing.JDialog {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -209,7 +209,7 @@ public final class NewPanelStyleFormat extends javax.swing.JDialog {
         });
         pnlTop.setLayout(new java.awt.BorderLayout(0, 5));
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 70, 84));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -243,7 +243,7 @@ public final class NewPanelStyleFormat extends javax.swing.JDialog {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 70, 84));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -290,36 +290,38 @@ public final class NewPanelStyleFormat extends javax.swing.JDialog {
 
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
-        mainpanel.setBackground(new java.awt.Color(249, 250, 253));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EDIT GUI OPTIONS", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
+        mainpanel.setBackground(new java.awt.Color(10, 36, 59));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EDIT GUI OPTIONS", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
         jScrollPane1.setBorder(null);
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        viewpanel.setBackground(new java.awt.Color(249, 250, 253));
+        viewpanel.setBackground(new java.awt.Color(10, 36, 59));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Main Application Name:");
         viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(6, 60, 160, 30));
 
+        jTextField1.setBackground(new java.awt.Color(10, 36, 59));
         jTextField1.setFont(new java.awt.Font("Segoe UI Semibold", 0, 10)); // NOI18N
-        jTextField1.setOpaque(false);
+        jTextField1.setForeground(new java.awt.Color(255, 255, 255));
         viewpanel.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 60, 150, 30));
 
-        jCheckBox1.setBackground(new java.awt.Color(249, 250, 253));
-        jCheckBox1.setFont(new java.awt.Font("Segoe UI", 1, 11)); // NOI18N
+        jCheckBox1.setBackground(new java.awt.Color(10, 36, 59));
+        jCheckBox1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 11)); // NOI18N
+        jCheckBox1.setForeground(new java.awt.Color(255, 255, 255));
         jCheckBox1.setText("Edit");
         jCheckBox1.setFocusPainted(false);
-        jCheckBox1.setOpaque(false);
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
             }
         });
-        viewpanel.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, -1, 30));
+        viewpanel.add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 60, 70, 30));
 
         jScrollPane1.setViewportView(viewpanel);
 

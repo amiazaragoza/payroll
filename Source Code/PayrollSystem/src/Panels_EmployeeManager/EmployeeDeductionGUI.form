@@ -1013,7 +1013,7 @@
                     <Component class="javax.swing.JTable" name="empdeducionTable">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="fd" green="fa" red="f9" type="rgb"/>
+                          <Color blue="3b" green="24" red="a" type="rgb"/>
                         </Property>
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="Segoe UI Semilight" size="12" style="0"/>

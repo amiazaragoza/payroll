@@ -795,7 +795,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         tableScroll.setBackground(new java.awt.Color(249, 250, 253));
 
-        empdeducionTable.setBackground(new java.awt.Color(249, 250, 253));
+        empdeducionTable.setBackground(new java.awt.Color(10, 36, 59));
         empdeducionTable.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
         empdeducionTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

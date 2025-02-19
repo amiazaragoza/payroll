@@ -447,6 +447,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         jPanel4.setBackground(new java.awt.Color(10, 36, 59));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("   Admin:");
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, 20));
@@ -466,7 +467,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         });
         jPanel4.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 20, 20));
 
-        txt_search.setBackground(new java.awt.Color(249, 250, 253));
+        txt_search.setBackground(new java.awt.Color(10, 36, 59));
         txt_search.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         txt_search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

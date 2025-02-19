@@ -358,7 +358,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Search Employee ID:");
-        jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 110, 20));
+        jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 120, 20));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
         searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_12px.png"))); // NOI18N
@@ -397,7 +397,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
                 txt_searchKeyTyped(evt);
             }
         });
-        jPanel4.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 390, -1));
+        jPanel4.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 380, -1));
 
         viewpanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
