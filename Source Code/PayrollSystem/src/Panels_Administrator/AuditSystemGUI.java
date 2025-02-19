@@ -393,7 +393,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         });
 
         removerowBTN.setBackground(new java.awt.Color(249, 250, 253));
-        removerowBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        removerowBTN.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         removerowBTN.setText("Remove this Row");
         removerowBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         removerowBTN.setDefaultCapable(false);
