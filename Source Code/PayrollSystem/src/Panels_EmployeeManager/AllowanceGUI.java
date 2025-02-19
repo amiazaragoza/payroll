@@ -427,7 +427,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         pnlTop.setLayout(new java.awt.BorderLayout(0, 5));
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 70, 84));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -461,7 +461,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 70, 84));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -508,7 +508,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
-        mainpanel.setBackground(new java.awt.Color(249, 250, 253));
+        mainpanel.setBackground(new java.awt.Color(10, 36, 59));
         mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE ALLOWANCE", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -516,15 +516,16 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         viewScroll.setBorder(null);
         viewScroll.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        viewpanel.setBackground(new java.awt.Color(249, 250, 253));
+        viewpanel.setBackground(new java.awt.Color(10, 36, 59));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel3.setBackground(new java.awt.Color(10, 36, 59));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txt_med.setEditable(false);
         txt_med.setBackground(new java.awt.Color(249, 250, 253));
         txt_med.setText("0");
+        txt_med.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_med.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_medActionPerformed(evt);
@@ -546,6 +547,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         txt_bonus.setEditable(false);
         txt_bonus.setBackground(new java.awt.Color(249, 250, 253));
         txt_bonus.setText("0");
+        txt_bonus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_bonus.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_bonusKeyPressed(evt);
@@ -562,6 +564,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         txt_other.setEditable(false);
         txt_other.setBackground(new java.awt.Color(249, 250, 253));
         txt_other.setText("0");
+        txt_other.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_other.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_otherKeyPressed(evt);
@@ -575,22 +578,30 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         jPanel3.add(txt_other, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 137, 126, -1));
 
+        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Medical :");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 83, -1, -1));
 
+        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Bonus :");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 111, -1, -1));
 
+        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Other :");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Please enter the amount");
         jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 31, -1, -1));
 
         txt_overtime.setEditable(false);
         txt_overtime.setBackground(new java.awt.Color(249, 250, 253));
         txt_overtime.setText("0");
+        txt_overtime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_overtime.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_overtimeKeyPressed(evt);
@@ -604,41 +615,50 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         jPanel3.add(txt_overtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 54, 126, -1));
 
+        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Overtime :");
         jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 57, -1, -1));
 
         txt_total_overtime.setEditable(false);
         txt_total_overtime.setBackground(new java.awt.Color(249, 250, 253));
         txt_total_overtime.setText("0");
+        txt_total_overtime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_total_overtime.setEnabled(false);
         txt_total_overtime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_total_overtimeActionPerformed(evt);
             }
         });
-        jPanel3.add(txt_total_overtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 54, 150, -1));
+        jPanel3.add(txt_total_overtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 60, 150, -1));
 
         txt_rph.setEditable(false);
         txt_rph.setBackground(new java.awt.Color(249, 250, 253));
         txt_rph.setText("0");
+        txt_rph.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_rph.setEnabled(false);
-        jPanel3.add(txt_rph, new org.netbeans.lib.awtextra.AbsoluteConstraints(365, 85, 150, -1));
+        jPanel3.add(txt_rph, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 90, 150, -1));
 
+        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Total Overtime Rate:");
-        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 57, -1, -1));
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 60, -1, 20));
 
+        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("RPH Rate:");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 88, -1, -1));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 90, -1, -1));
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jPanel3.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 10, 120));
 
         viewpanel.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 40, -1, 180));
 
-        jPanel4.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel4.setBackground(new java.awt.Color(10, 36, 59));
 
         txt_empid.setEditable(false);
         txt_empid.setBackground(new java.awt.Color(249, 250, 253));
+        txt_empid.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_empid.setEnabled(false);
         txt_empid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -648,20 +668,32 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_dob.setEditable(false);
         txt_dob.setBackground(new java.awt.Color(249, 250, 253));
+        txt_dob.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_dob.setEnabled(false);
 
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Date of Birth :");
 
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Surname :");
 
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First name :");
 
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Employee id :");
 
+        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Basic Salary :");
 
         txt_salary.setEditable(false);
         txt_salary.setBackground(new java.awt.Color(249, 250, 253));
+        txt_salary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_salary.setEnabled(false);
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -671,16 +703,21 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_dept.setEditable(false);
         txt_dept.setBackground(new java.awt.Color(249, 250, 253));
+        txt_dept.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_dept.setEnabled(false);
 
         txt_surname.setEditable(false);
         txt_surname.setBackground(new java.awt.Color(249, 250, 253));
+        txt_surname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_surname.setEnabled(false);
 
+        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
 
         txt_firstname.setEditable(false);
         txt_firstname.setBackground(new java.awt.Color(249, 250, 253));
+        txt_firstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_firstname.setEnabled(false);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -744,9 +781,10 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         viewpanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, -1, 190));
 
-        jPanel5.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel5.setBackground(new java.awt.Color(10, 36, 59));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Search Employee ID:");
         jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 20));
 
@@ -765,6 +803,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         jPanel5.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 30, 20));
 
+        txt_search.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
                 txt_searchComponentRemoved(evt);
@@ -873,7 +912,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         txt_emp.setText("emp");
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 150, 30));
 
-        clearBTN.setBackground(new java.awt.Color(249, 250, 253));
+        clearBTN.setBackground(new java.awt.Color(255, 70, 84));
         clearBTN.setText("Clear");
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setDefaultCapable(false);
@@ -886,6 +925,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         viewpanel.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 250, 126, 31));
 
         lbl_total.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        lbl_total.setForeground(new java.awt.Color(255, 255, 255));
         lbl_total.setText("0.00");
         lbl_total.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -895,6 +935,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         viewpanel.add(lbl_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(579, 231, 117, 20));
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Total Amount:  ₱");
         viewpanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, -1, 20));
 
