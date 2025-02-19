@@ -939,7 +939,7 @@ public final class LoginFrame extends javax.swing.JFrame {
 
         pnlMAIN.add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 362, -1));
 
-        loginBTN.setBackground(new java.awt.Color(255, 0, 0));
+        loginBTN.setBackground(new java.awt.Color(255, 70, 84));
         loginBTN.setText("Log In");
         loginBTN.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 18)); // NOI18N
         loginBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -953,13 +953,13 @@ public final class LoginFrame extends javax.swing.JFrame {
         forgotpasswordBTN.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         forgotpasswordBTN.setForeground(new java.awt.Color(123, 123, 123));
         forgotpasswordBTN.setText("FORGOT PASSWORD");
-        forgotpasswordBTN.setFont(new java.awt.Font("Segoe UI", 1, 10)); // NOI18N
+        forgotpasswordBTN.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 12)); // NOI18N
         forgotpasswordBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 forgotpasswordBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 410, 110, 20));
+        pnlMAIN.add(forgotpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 120, 20));
 
         userlevelLABEL.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         userlevelLABEL.setForeground(new java.awt.Color(102, 102, 102));
