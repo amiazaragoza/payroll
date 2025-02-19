@@ -791,10 +791,10 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         });
         pnlMAIN.add(confirmnewpasswordTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 278, 40));
 
-        jLabel2.setFont(new java.awt.Font("VALORANT", 1, 48)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("VALORANT", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("RESET PASSWORD");
-        pnlMAIN.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 30, -1, 80));
+        pnlMAIN.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, -1, 80));
 
         fullnameTF.setBackground(new java.awt.Color(10, 36, 59));
         fullnameTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N

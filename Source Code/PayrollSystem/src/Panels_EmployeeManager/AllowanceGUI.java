@@ -479,7 +479,6 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tungsten Bold", 1, 14)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM | ALLOWANCE");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -503,7 +502,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE ALLOWANCE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE AGENT ALLOWANCE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 0, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -519,6 +518,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_med.setEditable(false);
         txt_med.setBackground(new java.awt.Color(10, 36, 59));
+        txt_med.setForeground(new java.awt.Color(255, 255, 255));
         txt_med.setText("0");
         txt_med.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_med.addActionListener(new java.awt.event.ActionListener() {
@@ -541,6 +541,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_bonus.setEditable(false);
         txt_bonus.setBackground(new java.awt.Color(10, 36, 59));
+        txt_bonus.setForeground(new java.awt.Color(255, 255, 255));
         txt_bonus.setText("0");
         txt_bonus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_bonus.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -558,6 +559,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_other.setEditable(false);
         txt_other.setBackground(new java.awt.Color(10, 36, 59));
+        txt_other.setForeground(new java.awt.Color(255, 255, 255));
         txt_other.setText("0");
         txt_other.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_other.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -573,20 +575,20 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         jPanel3.add(txt_other, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 137, 126, -1));
 
-        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Medical :");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 83, -1, -1));
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 80, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Bonus :");
-        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 111, -1, -1));
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Other :");
-        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, -1, -1));
+        jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 140, -1, -1));
 
         jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
@@ -595,6 +597,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_overtime.setEditable(false);
         txt_overtime.setBackground(new java.awt.Color(10, 36, 59));
+        txt_overtime.setForeground(new java.awt.Color(255, 255, 255));
         txt_overtime.setText("0");
         txt_overtime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_overtime.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -610,15 +613,17 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         jPanel3.add(txt_overtime, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 54, 126, -1));
 
-        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Overtime :");
-        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 57, -1, -1));
+        jPanel3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(14, 57, -1, -1));
 
         txt_total_overtime.setEditable(false);
         txt_total_overtime.setBackground(new java.awt.Color(10, 36, 59));
+        txt_total_overtime.setForeground(new java.awt.Color(255, 255, 255));
         txt_total_overtime.setText("0");
         txt_total_overtime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
+        txt_total_overtime.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txt_total_overtime.setEnabled(false);
         txt_total_overtime.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -629,8 +634,10 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_rph.setEditable(false);
         txt_rph.setBackground(new java.awt.Color(10, 36, 59));
+        txt_rph.setForeground(new java.awt.Color(255, 255, 255));
         txt_rph.setText("0");
         txt_rph.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
+        txt_rph.setDisabledTextColor(new java.awt.Color(255, 255, 255));
         txt_rph.setEnabled(false);
         txt_rph.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -639,15 +646,15 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         jPanel3.add(txt_rph, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 90, 150, -1));
 
-        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Total Overtime Rate:");
-        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 60, -1, 20));
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 60, -1, 20));
 
-        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("RPH Rate:");
-        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 90, -1, -1));
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(312, 90, -1, -1));
 
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jPanel3.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 10, 120));
@@ -671,23 +678,23 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         txt_dob.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_dob.setEnabled(false);
 
-        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Date of Birth :");
 
-        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Surname :");
 
-        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First name :");
 
-        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Employee id :");
 
-        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Basic Salary :");
 
@@ -711,7 +718,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         txt_surname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_surname.setEnabled(false);
 
-        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
 
@@ -725,19 +732,20 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         jPanel4Layout.setHorizontalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
-                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel5)
-                            .addComponent(jLabel12))
-                        .addGap(18, 18, 18))
                     .addGroup(jPanel4Layout.createSequentialGroup()
-                        .addComponent(jLabel9)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addContainerGap()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel4Layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel12))))
+                .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(txt_dept, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -784,7 +792,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         jPanel5.setBackground(new java.awt.Color(10, 36, 59));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Search Employee ID:");
         jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 120, 20));
@@ -836,6 +844,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         tableScroll.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         allowanceTable.setBackground(new java.awt.Color(10, 36, 59));
+        allowanceTable.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         allowanceTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -854,6 +863,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         allowanceTable.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
         allowanceTable.setOpaque(false);
+        allowanceTable.setSelectionBackground(new java.awt.Color(204, 204, 204));
         allowanceTable.setSelectionForeground(new java.awt.Color(249, 250, 253));
         allowanceTable.getTableHeader().setResizingAllowed(false);
         allowanceTable.getTableHeader().setReorderingAllowed(false);
@@ -885,33 +895,39 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         viewpanel.add(tableScroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 840, 234));
 
-        calculateBTN.setBackground(new java.awt.Color(249, 250, 253));
+        calculateBTN.setBackground(new java.awt.Color(255, 70, 84));
+        calculateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        calculateBTN.setForeground(new java.awt.Color(255, 255, 255));
         calculateBTN.setText("Calculate");
         calculateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         calculateBTN.setDefaultCapable(false);
         calculateBTN.setEnabled(false);
         calculateBTN.setFocusPainted(false);
+        calculateBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         calculateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calculateBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(calculateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 250, 126, 31));
+        viewpanel.add(calculateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 241, 126, 40));
 
-        refreshtableBTN.setBackground(new java.awt.Color(249, 250, 253));
+        refreshtableBTN.setBackground(new java.awt.Color(255, 70, 84));
+        refreshtableBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        refreshtableBTN.setForeground(new java.awt.Color(255, 255, 255));
         refreshtableBTN.setText("Refresh Table");
         refreshtableBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         refreshtableBTN.setDefaultCapable(false);
         refreshtableBTN.setFocusPainted(false);
+        refreshtableBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        refreshtableBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         refreshtableBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshtableBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(refreshtableBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, 126, 31));
+        viewpanel.add(refreshtableBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, 126, 40));
 
         txt_emp.setForeground(new java.awt.Color(253, 253, 253));
-        txt_emp.setText("emp");
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 150, 30));
 
         clearBTN.setBackground(new java.awt.Color(255, 70, 84));
@@ -921,12 +937,13 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setDefaultCapable(false);
         clearBTN.setFocusPainted(false);
+        clearBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clearBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 250, 126, 31));
+        viewpanel.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 241, 126, 40));
 
         lbl_total.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
         lbl_total.setForeground(new java.awt.Color(255, 255, 255));
@@ -936,39 +953,45 @@ public final class AllowanceGUI extends javax.swing.JDialog {
                 lbl_totalKeyTyped(evt);
             }
         });
-        viewpanel.add(lbl_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 230, 117, 20));
+        viewpanel.add(lbl_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 220, 117, 20));
 
         jLabel10.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Total Amount:  ₱");
-        viewpanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, -1, 20));
+        viewpanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, -1, 20));
 
-        saveBTN.setBackground(new java.awt.Color(249, 250, 253));
-        saveBTN.setForeground(new java.awt.Color(255, 70, 84));
+        saveBTN.setBackground(new java.awt.Color(255, 70, 84));
+        saveBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        saveBTN.setForeground(new java.awt.Color(255, 255, 255));
         saveBTN.setText("Save");
         saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         saveBTN.setDefaultCapable(false);
         saveBTN.setEnabled(false);
         saveBTN.setFocusPainted(false);
+        saveBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         saveBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(saveBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 250, 126, 31));
+        viewpanel.add(saveBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 241, 126, 40));
 
-        removerowBTN.setBackground(new java.awt.Color(249, 250, 253));
+        removerowBTN.setBackground(new java.awt.Color(255, 70, 84));
+        removerowBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        removerowBTN.setForeground(new java.awt.Color(255, 255, 255));
         removerowBTN.setText("Remove this Row");
         removerowBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         removerowBTN.setDefaultCapable(false);
         removerowBTN.setEnabled(false);
         removerowBTN.setFocusPainted(false);
+        removerowBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
+        removerowBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         removerowBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removerowBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(removerowBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 530, 126, 31));
+        viewpanel.add(removerowBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 530, 126, 40));
 
         viewScroll.setViewportView(viewpanel);
 
