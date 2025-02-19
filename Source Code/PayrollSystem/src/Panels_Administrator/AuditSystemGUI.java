@@ -236,7 +236,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 102, 102));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -253,7 +253,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         });
         pnlTop.setLayout(new java.awt.BorderLayout(0, 5));
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 102, 102));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -287,7 +287,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
 
         pnlTop.add(pnlActions, java.awt.BorderLayout.LINE_END);
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 102, 102));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -311,7 +311,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM | AUDIT ACTIVITIES");
+        lblTitle.setText("AUDIT ACTIVITIES");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -332,7 +332,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
 
         pnlTop.add(pnlTitle, java.awt.BorderLayout.LINE_START);
 
-        getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
+        getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 30));
 
         mainpanel.setBackground(new java.awt.Color(249, 250, 253));
         mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADMINISTRATORS ACTIVITIES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
@@ -399,7 +399,6 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         removerowBTN.setDefaultCapable(false);
         removerowBTN.setEnabled(false);
         removerowBTN.setFocusPainted(false);
-        removerowBTN.setOpaque(false);
         removerowBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removerowBTNActionPerformed(evt);
@@ -458,7 +457,6 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         jPanel4.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 20, 20));
 
         txt_search.setBackground(new java.awt.Color(249, 250, 253));
-        txt_search.setOpaque(false);
         txt_search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_searchActionPerformed(evt);
