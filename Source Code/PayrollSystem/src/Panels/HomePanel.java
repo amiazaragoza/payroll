@@ -282,7 +282,7 @@ public final class HomePanel extends javax.swing.JPanel {
             .addGap(0, 51, Short.MAX_VALUE)
         );
 
-        dateLABEL.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
+        dateLABEL.setFont(new java.awt.Font("Tungsten Bold", 0, 36)); // NOI18N
         dateLABEL.setForeground(new java.awt.Color(255, 255, 255));
         dateLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         dateLABEL.setText("January 1, 2020");
@@ -290,7 +290,6 @@ public final class HomePanel extends javax.swing.JPanel {
         dayLABEL.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         dayLABEL.setForeground(new java.awt.Color(255, 255, 255));
         dayLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        dayLABEL.setText("Today is Wednesday");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -332,7 +331,7 @@ public final class HomePanel extends javax.swing.JPanel {
             .addGap(0, 51, Short.MAX_VALUE)
         );
 
-        currenttimeLABEL.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
+        currenttimeLABEL.setFont(new java.awt.Font("Tungsten Bold", 0, 48)); // NOI18N
         currenttimeLABEL.setForeground(new java.awt.Color(255, 255, 255));
         currenttimeLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         currenttimeLABEL.setText("12:00:01 AM");
@@ -340,7 +339,6 @@ public final class HomePanel extends javax.swing.JPanel {
         jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel21.setText("System Time");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -383,7 +381,7 @@ public final class HomePanel extends javax.swing.JPanel {
             .addGap(0, 51, Short.MAX_VALUE)
         );
 
-        totalempTFhome.setFont(new java.awt.Font("Segoe UI Semibold", 1, 24)); // NOI18N
+        totalempTFhome.setFont(new java.awt.Font("Tungsten Bold", 0, 48)); // NOI18N
         totalempTFhome.setForeground(new java.awt.Color(255, 255, 255));
         totalempTFhome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalempTFhome.setText("1");
@@ -391,7 +389,6 @@ public final class HomePanel extends javax.swing.JPanel {
         jLabel18.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel18.setText("Total Employees");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
