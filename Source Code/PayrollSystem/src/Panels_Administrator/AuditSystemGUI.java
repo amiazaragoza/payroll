@@ -334,7 +334,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
 
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, 30));
 
-        mainpanel.setBackground(new java.awt.Color(249, 250, 253));
+        mainpanel.setBackground(new java.awt.Color(10, 36, 59));
         mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADMINISTRATORS ACTIVITIES", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -342,13 +342,16 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         jScrollPane1.setBorder(null);
         jScrollPane1.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
 
-        viewpanel.setBackground(new java.awt.Color(249, 250, 253));
+        viewpanel.setBackground(new java.awt.Color(10, 36, 59));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(249, 250, 253));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Audit Admin Activities", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Adobe Arabic", 1, 14))); // NOI18N
 
         auditadminactTable.setBackground(new java.awt.Color(249, 250, 253));
+        auditadminactTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
+        auditadminactTable.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        auditadminactTable.setForeground(new java.awt.Color(255, 255, 255));
         auditadminactTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -382,7 +385,9 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
             auditadminactTable.getColumnModel().getColumn(3).setPreferredWidth(600);
         }
 
-        refreshactivitiesBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        refreshactivitiesBTN.setBackground(new java.awt.Color(255, 70, 84));
+        refreshactivitiesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        refreshactivitiesBTN.setForeground(new java.awt.Color(255, 255, 255));
         refreshactivitiesBTN.setText("Refresh");
         refreshactivitiesBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         refreshactivitiesBTN.setEnabled(false);
@@ -392,8 +397,9 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
             }
         });
 
-        removerowBTN.setBackground(new java.awt.Color(249, 250, 253));
-        removerowBTN.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
+        removerowBTN.setBackground(new java.awt.Color(255, 70, 84));
+        removerowBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        removerowBTN.setForeground(new java.awt.Color(255, 70, 84));
         removerowBTN.setText("Remove this Row");
         removerowBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         removerowBTN.setDefaultCapable(false);
@@ -425,7 +431,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 351, Short.MAX_VALUE)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 359, Short.MAX_VALUE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(refreshactivitiesBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -435,9 +441,10 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
 
         viewpanel.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 880, 440));
 
-        jPanel4.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel4.setBackground(new java.awt.Color(10, 36, 59));
         jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("   Admin:");
         jPanel4.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 50, 20));
 
@@ -457,6 +464,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         jPanel4.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 20, 20));
 
         txt_search.setBackground(new java.awt.Color(249, 250, 253));
+        txt_search.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         txt_search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_searchActionPerformed(evt);

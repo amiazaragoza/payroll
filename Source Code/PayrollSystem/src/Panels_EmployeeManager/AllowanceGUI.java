@@ -410,7 +410,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -765,7 +765,6 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         });
         jPanel5.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 30, 20));
 
-        txt_search.setOpaque(false);
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
                 txt_searchComponentRemoved(evt);
@@ -863,7 +862,6 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         refreshtableBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         refreshtableBTN.setDefaultCapable(false);
         refreshtableBTN.setFocusPainted(false);
-        refreshtableBTN.setOpaque(false);
         refreshtableBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 refreshtableBTNActionPerformed(evt);
@@ -919,7 +917,6 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         removerowBTN.setDefaultCapable(false);
         removerowBTN.setEnabled(false);
         removerowBTN.setFocusPainted(false);
-        removerowBTN.setOpaque(false);
         removerowBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removerowBTNActionPerformed(evt);
