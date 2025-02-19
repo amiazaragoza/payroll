@@ -276,14 +276,16 @@
                   </Layout>
                   <SubComponents>
                     <Container class="javax.swing.JScrollPane" name="jScrollPane3">
+
                       <Properties>
+
                         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                           <Font name="VALORANT" size="12" style="0"/>
-                      </Properties>
+                      </Property>
                       
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="3b" green="24" red="a" type="rgb"/>
-                      </Properties>
+                      </Property>
 
                 
                       <AuxValues>
