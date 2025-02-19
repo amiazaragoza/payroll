@@ -148,312 +148,318 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
         setBackground(new java.awt.Color(249, 250, 253));
         setPreferredSize(new java.awt.Dimension(1313, 571));
 
-        jPanel1.setBackground(new java.awt.Color(249, 250, 253));
+        jPanel1.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel1.setFont(new java.awt.Font("VALORANT", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Employee Manager");
+        jLabel1.setText("AGENT Manager");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 1310, -1));
 
-        addemployeeBTN.setBackground(new java.awt.Color(51, 153, 255));
+        addemployeeBTN.setBackground(new java.awt.Color(250, 74, 84));
         addemployeeBTN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         addemployeeBTN.setToolTipText("");
-        addemployeeBTN.setColorHover(new java.awt.Color(90, 172, 254));
-        addemployeeBTN.setColorNormal(new java.awt.Color(51, 153, 255));
+        addemployeeBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        addemployeeBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         addemployeeBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 addemployeeBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome2.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome2.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome2.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome2.setText("<html><center> ADD NEW\n<br> \nEMPLOYEE\n</br></center></html>");
+        totalmembersTFhome2.setText("<html><center> ADD NEW <br>  AGENT </br></center></html>");
 
-        jLabel31.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("Tungsten Bold", 0, 12)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel31.setText("Click this button to add new employee");
         jLabel31.setIconTextGap(1);
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/new_employee_64px.png"))); // NOI18N
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Fakeout 1.png"))); // NOI18N
 
         javax.swing.GroupLayout addemployeeBTNLayout = new javax.swing.GroupLayout(addemployeeBTN);
         addemployeeBTN.setLayout(addemployeeBTNLayout);
         addemployeeBTNLayout.setHorizontalGroup(
             addemployeeBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(addemployeeBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addGap(96, 96, 96)
                 .addComponent(jLabel30)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, addemployeeBTNLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(totalmembersTFhome2, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addContainerGap())
         );
         addemployeeBTNLayout.setVerticalGroup(
             addemployeeBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(addemployeeBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(28, 28, 28)
                 .addComponent(jLabel30)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(12, 12, 12)
                 .addComponent(totalmembersTFhome2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel31)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(7, Short.MAX_VALUE))
         );
 
         jPanel1.add(addemployeeBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 270, 180));
 
-        searchemployeeBTN.setBackground(new java.awt.Color(0, 153, 51));
+        searchemployeeBTN.setBackground(new java.awt.Color(250, 74, 84));
         searchemployeeBTN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         searchemployeeBTN.setToolTipText("");
-        searchemployeeBTN.setColorHover(new java.awt.Color(1, 173, 58));
-        searchemployeeBTN.setColorNormal(new java.awt.Color(0, 153, 51));
+        searchemployeeBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        searchemployeeBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         searchemployeeBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 searchemployeeBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome3.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome3.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome3.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome3.setText("<html><center> SEARCH\n<br> \nEMPLOYEE\n</br></center></html>");
+        totalmembersTFhome3.setText("<html><center> SEARCH <br>  AGENT </br></center></html>");
+        totalmembersTFhome3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
-        jLabel32.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
+        jLabel32.setFont(new java.awt.Font("Tungsten Bold", 0, 12)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel32.setText("<html><center>Click this button to search and delete employee</center></html>");
         jLabel32.setIconTextGap(1);
 
-        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_employee_64px.png"))); // NOI18N
+        jLabel35.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Alarmbot 1.png"))); // NOI18N
 
         javax.swing.GroupLayout searchemployeeBTNLayout = new javax.swing.GroupLayout(searchemployeeBTN);
         searchemployeeBTN.setLayout(searchemployeeBTNLayout);
         searchemployeeBTNLayout.setHorizontalGroup(
             searchemployeeBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(totalmembersTFhome3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(searchemployeeBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addGap(96, 96, 96)
                 .addComponent(jLabel35)
-                .addContainerGap(102, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, searchemployeeBTNLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(searchemployeeBTNLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 246, Short.MAX_VALUE)
+                .addGroup(searchemployeeBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                    .addComponent(totalmembersTFhome3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
         searchemployeeBTNLayout.setVerticalGroup(
             searchemployeeBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(searchemployeeBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(28, 28, 28)
                 .addComponent(jLabel35)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(totalmembersTFhome3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(43, 43, 43)
+                .addComponent(jLabel32)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(searchemployeeBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 90, 270, 180));
 
-        employeeallowanceBTN.setBackground(new java.awt.Color(255, 102, 0));
+        employeeallowanceBTN.setBackground(new java.awt.Color(250, 74, 84));
         employeeallowanceBTN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         employeeallowanceBTN.setToolTipText("");
-        employeeallowanceBTN.setColorHover(new java.awt.Color(254, 131, 49));
-        employeeallowanceBTN.setColorNormal(new java.awt.Color(255, 102, 0));
+        employeeallowanceBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        employeeallowanceBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         employeeallowanceBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 employeeallowanceBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome7.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome7.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome7.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome7.setText("<html><center> MANAGE EMPLOYEE\n<br> \nALLOWANCE\n</br></center></html>");
+        totalmembersTFhome7.setText("<html><center> MANAGE AGENT <br>  ALLOWANCE </br></center></html>");
 
         jLabel43.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel43.setForeground(new java.awt.Color(255, 255, 255));
         jLabel43.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel43.setText("Click this button to manage employee allowance");
         jLabel43.setIconTextGap(1);
 
-        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/allowance_cash_64px.png"))); // NOI18N
+        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/84947-16678240085628-1920_1-removebg-preview 1.png"))); // NOI18N
+        jLabel44.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         javax.swing.GroupLayout employeeallowanceBTNLayout = new javax.swing.GroupLayout(employeeallowanceBTN);
         employeeallowanceBTN.setLayout(employeeallowanceBTNLayout);
         employeeallowanceBTNLayout.setHorizontalGroup(
             employeeallowanceBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome7)
             .addGroup(employeeallowanceBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addContainerGap()
+                .addComponent(totalmembersTFhome7, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(employeeallowanceBTNLayout.createSequentialGroup()
+                .addGap(68, 68, 68)
                 .addComponent(jLabel44)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         employeeallowanceBTNLayout.setVerticalGroup(
             employeeallowanceBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(employeeallowanceBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(17, 17, 17)
                 .addComponent(jLabel44)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalmembersTFhome7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(450, 450, 450)
                 .addComponent(jLabel43)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(employeeallowanceBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 90, 270, 180));
 
-        updatesalaryBTN.setBackground(new java.awt.Color(63, 97, 113));
+        updatesalaryBTN.setBackground(new java.awt.Color(250, 74, 84));
         updatesalaryBTN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         updatesalaryBTN.setToolTipText("");
-        updatesalaryBTN.setColorHover(new java.awt.Color(65, 116, 141));
-        updatesalaryBTN.setColorNormal(new java.awt.Color(63, 97, 113));
+        updatesalaryBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        updatesalaryBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         updatesalaryBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 updatesalaryBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome5.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome5.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome5.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome5.setText("<html><center> UPDATE\n<br> \nEMPLOYEE SALARY\n</br></center></html>");
+        totalmembersTFhome5.setText("<html><center> UPDATE <br>  AGENT SALARY </br></center></html>");
 
         jLabel38.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(255, 255, 255));
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel38.setText("Click this button to update the employee salary");
         jLabel38.setIconTextGap(1);
 
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/update_employees_64px.png"))); // NOI18N
+        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Neural_Theft 1.png"))); // NOI18N
 
         javax.swing.GroupLayout updatesalaryBTNLayout = new javax.swing.GroupLayout(updatesalaryBTN);
         updatesalaryBTN.setLayout(updatesalaryBTNLayout);
         updatesalaryBTNLayout.setHorizontalGroup(
             updatesalaryBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome5, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
             .addGroup(updatesalaryBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addComponent(jLabel40)
+                .addContainerGap()
+                .addComponent(totalmembersTFhome5, javax.swing.GroupLayout.DEFAULT_SIZE, 253, Short.MAX_VALUE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, updatesalaryBTNLayout.createSequentialGroup()
+                .addContainerGap(97, Short.MAX_VALUE)
+                .addComponent(jLabel40)
+                .addGap(94, 94, 94))
         );
         updatesalaryBTNLayout.setVerticalGroup(
             updatesalaryBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(updatesalaryBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(32, 32, 32)
                 .addComponent(jLabel40)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalmembersTFhome5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(123, 123, 123)
                 .addComponent(jLabel38)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(updatesalaryBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 290, 270, 180));
 
-        deductionBTN.setBackground(new java.awt.Color(255, 102, 102));
+        deductionBTN.setBackground(new java.awt.Color(250, 74, 84));
         deductionBTN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         deductionBTN.setToolTipText("");
-        deductionBTN.setColorHover(new java.awt.Color(255, 136, 136));
-        deductionBTN.setColorNormal(new java.awt.Color(255, 102, 102));
+        deductionBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        deductionBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         deductionBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 deductionBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome4.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome4.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome4.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome4.setText("<html><center> EMPLOYEE\n<br> \nDEDUCTION\n</br></center></html>");
+        totalmembersTFhome4.setText("<html><center> AGENT <br>  DEDUCTION </br></center></html>");
 
         jLabel36.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel36.setForeground(new java.awt.Color(255, 255, 255));
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel36.setText("Click this button to update employee deduction");
         jLabel36.setIconTextGap(1);
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/deduction_employee_64px.png"))); // NOI18N
+        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Group 10.png"))); // NOI18N
 
         javax.swing.GroupLayout deductionBTNLayout = new javax.swing.GroupLayout(deductionBTN);
         deductionBTN.setLayout(deductionBTNLayout);
         deductionBTNLayout.setHorizontalGroup(
             deductionBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome4, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(deductionBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, deductionBTNLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(totalmembersTFhome4, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, deductionBTNLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel37)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(87, 87, 87))
         );
         deductionBTNLayout.setVerticalGroup(
             deductionBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(deductionBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(23, 23, 23)
                 .addComponent(jLabel37)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalmembersTFhome4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(71, 71, 71)
                 .addComponent(jLabel36)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(deductionBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 290, 270, 180));
 
-        paymentBTN.setBackground(new java.awt.Color(204, 0, 255));
+        paymentBTN.setBackground(new java.awt.Color(250, 74, 84));
         paymentBTN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         paymentBTN.setToolTipText("");
-        paymentBTN.setColorHover(new java.awt.Color(216, 62, 254));
-        paymentBTN.setColorNormal(new java.awt.Color(204, 0, 255));
+        paymentBTN.setColorHover(new java.awt.Color(204, 0, 51));
+        paymentBTN.setColorNormal(new java.awt.Color(250, 74, 84));
         paymentBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 paymentBTNMousePressed(evt);
             }
         });
 
-        totalmembersTFhome6.setFont(new java.awt.Font("Segoe UI", 1, 20)); // NOI18N
+        totalmembersTFhome6.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         totalmembersTFhome6.setForeground(new java.awt.Color(255, 255, 255));
         totalmembersTFhome6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        totalmembersTFhome6.setText("<html><center> PRINT EMPLOYEE\n<br> \nPAYMENT RECEIPT\n</br></center></html>");
+        totalmembersTFhome6.setText("<html><center> PRINT AGENT <br>  PAYMENT RECEIPT </br></center></html>");
 
         jLabel41.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         jLabel41.setForeground(new java.awt.Color(255, 255, 255));
         jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/cursor_16px.png"))); // NOI18N
-        jLabel41.setText("Click this button to print the emp. receipt");
         jLabel41.setIconTextGap(1);
 
-        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/payment_employee_64px.png"))); // NOI18N
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/Valo points.png"))); // NOI18N
 
         javax.swing.GroupLayout paymentBTNLayout = new javax.swing.GroupLayout(paymentBTN);
         paymentBTN.setLayout(paymentBTNLayout);
         paymentBTNLayout.setHorizontalGroup(
             paymentBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(totalmembersTFhome6, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(paymentBTNLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, paymentBTNLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(totalmembersTFhome6, javax.swing.GroupLayout.DEFAULT_SIZE, 254, Short.MAX_VALUE)
+                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, paymentBTNLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel42)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(97, 97, 97))
         );
         paymentBTNLayout.setVerticalGroup(
             paymentBTNLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(paymentBTNLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(31, 31, 31)
                 .addComponent(jLabel42)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(totalmembersTFhome6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(totalmembersTFhome6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(12, 12, 12)
                 .addComponent(jLabel41)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );

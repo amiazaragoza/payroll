@@ -136,26 +136,31 @@ public final class SplashGUI extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(249, 250, 253));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        kGradientPanel1.setEndColor(new java.awt.Color(51, 153, 255));
-        kGradientPanel1.setGradientFocus(1300);
+        kGradientPanel1.setBackground(new java.awt.Color(255, 51, 51));
+        kGradientPanel1.setForeground(new java.awt.Color(102, 0, 51));
+        kGradientPanel1.setEndColor(new java.awt.Color(204, 0, 0));
+        kGradientPanel1.setFocusTraversalPolicyProvider(true);
+        kGradientPanel1.setFocusable(false);
+        kGradientPanel1.setGradientFocus(1);
         kGradientPanel1.setStartColor(new java.awt.Color(249, 250, 253));
 
-        zabsystem.setFont(new java.awt.Font("Century Gothic", 1, 22)); // NOI18N
-        zabsystem.setForeground(new java.awt.Color(0, 102, 204));
+        zabsystem.setFont(new java.awt.Font("VALORANT", 1, 12)); // NOI18N
+        zabsystem.setForeground(new java.awt.Color(255, 255, 255));
         zabsystem.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        zabsystem.setText("PAYROLL MGMT. SYSTEM");
+        zabsystem.setText("AGENT PAYROLL  SYSTEM");
         kGradientPanel1.add(zabsystem);
-        zabsystem.setBounds(0, 110, 270, 28);
+        zabsystem.setBounds(0, 110, 270, 14);
 
-        zabmeaning.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
-        zabmeaning.setForeground(new java.awt.Color(0, 102, 255));
+        zabmeaning.setFont(new java.awt.Font("Tahoma", 3, 10)); // NOI18N
+        zabmeaning.setForeground(new java.awt.Color(255, 255, 255));
         zabmeaning.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        zabmeaning.setText("© ECoders");
+        zabmeaning.setText("© SENTINELS");
+        zabmeaning.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         kGradientPanel1.add(zabmeaning);
-        zabmeaning.setBounds(0, 135, 270, 17);
+        zabmeaning.setBounds(0, 130, 270, 12);
 
         mainIcon.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        mainIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_LEFT_ICON_64px.png"))); // NOI18N
+        mainIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/50.png"))); // NOI18N
         kGradientPanel1.add(mainIcon);
         mainIcon.setBounds(0, 23, 270, 50);
 
@@ -163,19 +168,19 @@ public final class SplashGUI extends javax.swing.JFrame {
         progress.setFont(new java.awt.Font("Segoe UI", 0, 5)); // NOI18N
         progress.setForeground(new java.awt.Color(0, 153, 204));
         progress.setBorderPainted(false);
-        progress.setOpaque(false);
         kGradientPanel1.add(progress);
         progress.setBounds(0, 162, 270, 8);
 
+        mainAnimatedIcon.setForeground(new java.awt.Color(0, 0, 0));
         mainAnimatedIcon.setAnchoProgress(4);
         mainAnimatedIcon.setMinimumSize(new java.awt.Dimension(100, 80));
         mainAnimatedIcon.setPreferredSize(new java.awt.Dimension(100, 80));
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("VALORANT", 1, 10)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("0%");
         mainAnimatedIcon.add(jLabel1);
-        jLabel1.setBounds(30, 75, 40, 13);
+        jLabel1.setBounds(30, 75, 40, 12);
 
         kGradientPanel1.add(mainAnimatedIcon);
         mainAnimatedIcon.setBounds(85, 0, 100, 100);
