@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package Panels_EmployeeManager;
 
 import SystemDB.DBconnection;
@@ -31,10 +29,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class UpdateSalaryGUI extends javax.swing.JDialog {
     Connection conn;
     ResultSet rs=null;

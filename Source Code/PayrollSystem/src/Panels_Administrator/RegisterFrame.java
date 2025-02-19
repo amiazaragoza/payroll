@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package Panels_Administrator;
 
 import SystemDB.DBconnection;
@@ -39,10 +37,6 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.MatteBorder;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class RegisterFrame extends javax.swing.JDialog {
     Connection conn;
     static int clicked = 0;
@@ -1339,4 +1333,3 @@ public final class RegisterFrame extends javax.swing.JDialog {
     private javax.swing.JTextField usernameTF;
     // End of variables declaration//GEN-END:variables
 }
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //

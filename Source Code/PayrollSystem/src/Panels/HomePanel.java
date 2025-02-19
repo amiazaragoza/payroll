@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package Panels;
 
 import SystemDB.DBconnection;
@@ -29,10 +27,6 @@ import javax.swing.JProgressBar;
 import javax.swing.KeyStroke;
 import javax.swing.Timer;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class HomePanel extends javax.swing.JPanel {
     //for Database Connection Variable
     Connection conn;

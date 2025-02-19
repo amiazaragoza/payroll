@@ -61,10 +61,6 @@ import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 import javax.swing.JProgressBar;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
 
     //for Database Connection Variable

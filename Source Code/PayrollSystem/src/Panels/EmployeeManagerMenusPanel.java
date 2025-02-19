@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package Panels;
 
 import SystemDB.DBconnection;
@@ -16,10 +14,6 @@ import java.util.logging.Logger;
 import javax.swing.KeyStroke;
 import Panels_EmployeeManager.*;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
     //for Database Connection Variable
     Connection conn;

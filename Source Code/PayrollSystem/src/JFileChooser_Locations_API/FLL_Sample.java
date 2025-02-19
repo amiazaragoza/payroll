@@ -3,10 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.File;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public class FLL_Sample {
     public static void main(String[] args) {
         JFrame frame = createFrame();

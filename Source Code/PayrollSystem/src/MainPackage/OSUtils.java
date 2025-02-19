@@ -1,13 +1,7 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package MainPackage;
 
 import java.util.Locale;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public class OSUtils {
 
     public enum OSType {

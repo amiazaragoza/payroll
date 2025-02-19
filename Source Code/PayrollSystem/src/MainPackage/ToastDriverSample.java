@@ -1,15 +1,9 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package MainPackage;
 
 import javax.swing.*; 
 import java.awt.*; 
 import java.awt.event.*; 
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 class ToastDriverSample extends JFrame implements ActionListener { 
   
     // create a frame 

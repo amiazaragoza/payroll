@@ -1,14 +1,8 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package MainPackage;
 
 import java.awt.*; 
 import javax.swing.*;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class ToastManager extends JFrame { 
   
     //String of ToastManager 

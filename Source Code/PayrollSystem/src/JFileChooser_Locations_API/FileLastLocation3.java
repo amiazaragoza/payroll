@@ -1,12 +1,6 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package JFileChooser_Locations_API;
 import java.util.prefs.Preferences;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public enum FileLastLocation3 {
   FileLocation;
   private static final Preferences prefs3 = Preferences.userRoot()

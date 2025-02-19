@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-//PAYROLL
 package MainPackage;
 
 import SystemDB.DBconnection;
@@ -46,10 +44,6 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.MatteBorder;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class LoginFrame extends javax.swing.JFrame {
 
     Connection conn;
@@ -1591,4 +1585,3 @@ public final class LoginFrame extends javax.swing.JFrame {
     public javax.swing.JTextField usernameTF;
     // End of variables declaration//GEN-END:variables
 }
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //

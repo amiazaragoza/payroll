@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package Panels_EmployeeManager;
 
 import SystemDB.DBconnection;
@@ -36,10 +34,6 @@ import javax.swing.KeyStroke;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
     Connection conn;
     ResultSet rs=null;

@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package Panels_EmployeeManager;
 
 import ImageBrowse_JFileChooser_API.ImageBrowsePreview_CLASS_API;
@@ -44,10 +42,6 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.AbstractDocument;
 import javax.swing.text.DocumentFilter;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class SearchEmployeeGUI extends javax.swing.JDialog {
     Connection conn;
     ResultSet rs=null;

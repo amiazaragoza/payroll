@@ -1,12 +1,6 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package Panels_EmployeeManager;
 import java.util.*;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public class Exercise58 {
      public static void main(String[] args){
 	 Scanner in = new Scanner(System.in);

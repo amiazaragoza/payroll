@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package MainPackage;
 
 import SystemDB.DBconnection;
@@ -28,10 +26,6 @@ import java.util.logging.Logger;
 import javax.swing.ImageIcon;
 import javax.swing.KeyStroke;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class AboutSystem extends javax.swing.JDialog {
     Connection conn;
     ResultSet rs=null;

@@ -1,4 +1,3 @@
-
 package MainPackage;
 import java.awt.Color;  
 import java.awt.Graphics;  
@@ -7,10 +6,6 @@ import java.awt.event.FocusListener;
 import javax.swing.plaf.basic.BasicTextFieldUI;  
 import javax.swing.text.JTextComponent;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public class JTextFieldHintAPI extends BasicTextFieldUI implements FocusListener {  
     private final String hint;
     private final Color  hintColor;

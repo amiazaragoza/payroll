@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package MainPackage;
 
 import SystemDB.DBconnection;
@@ -43,10 +41,6 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.MatteBorder;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class ResetPasswordFrame extends javax.swing.JFrame {
     Connection conn;
     static int clicked = 0;
@@ -1557,4 +1551,3 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
     private javax.swing.JLabel txt_emp;
     // End of variables declaration//GEN-END:variables
 }
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //

@@ -1,4 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
 package Panels_Administrator;
 
 import Panels_EmployeeManager.*;
@@ -37,11 +36,7 @@ import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
 import javax.swing.text.AbstractDocument;
 import javax.swing.text.DocumentFilter;
-
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
+    
 public final class EditGUIOptions extends javax.swing.JDialog {
 
     Connection conn;

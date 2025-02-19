@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package SplashPackage;
 
 import com.formdev.flatlaf.FlatLightLaf;
@@ -22,10 +20,6 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.border.LineBorder;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class SplashGUI extends javax.swing.JFrame {
     public static ServerSocket payrollsystem_ServerSocketstatus;
     /**

@@ -1,11 +1,5 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package MainPackage;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public class StringFormatter {
     public static String capitalizeWord(String str) {
         String words [] = str.split("\\s");

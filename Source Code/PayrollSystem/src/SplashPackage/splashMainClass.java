@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-//PAYROLL SYSTEM
 package SplashPackage;
 
 import SystemDB.DBconnection;
@@ -24,10 +22,6 @@ import javax.swing.JDialog;
 import javax.swing.JOptionPane;
 import javax.swing.JProgressBar;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public final class splashMainClass {
 
     static LoginFrame LoginGUI;

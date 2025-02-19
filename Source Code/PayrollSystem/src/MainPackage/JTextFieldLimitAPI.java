@@ -1,14 +1,8 @@
-
-
 package MainPackage;
 import javax.swing.text.AttributeSet;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.PlainDocument;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public class JTextFieldLimitAPI extends PlainDocument {
    final private int limit;
    JTextFieldLimitAPI(int limit) {

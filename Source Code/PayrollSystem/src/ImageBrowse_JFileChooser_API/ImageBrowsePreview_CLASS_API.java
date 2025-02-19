@@ -1,5 +1,3 @@
-// ©  M A D E		B Y		E M M A N		B A R R A M E D A  © //
-
 package ImageBrowse_JFileChooser_API;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -17,10 +15,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JFileChooser;
 
-/**
- *
- * @author EMMANUEL PEÑAFLORIDA BARRAMEDA
- */
 public class ImageBrowsePreview_CLASS_API extends JComponent implements PropertyChangeListener {
    // Dimensions of image preview's preferred size.
 
