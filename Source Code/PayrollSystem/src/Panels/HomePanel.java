@@ -258,7 +258,7 @@ public final class HomePanel extends javax.swing.JPanel {
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 204));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("Home Panel");
+        jLabel1.setText("HOME PANEL");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1310, -1));
 
         jPanel4.setBackground(new java.awt.Color(255, 102, 0));

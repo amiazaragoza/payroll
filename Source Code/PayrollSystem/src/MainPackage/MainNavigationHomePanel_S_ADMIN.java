@@ -1517,7 +1517,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
 
         getContentPane().add(pnlParent, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 1313, 631));
 
-        pnlDown.setBackground(new java.awt.Color(0, 102, 204));
+        pnlDown.setBackground(new java.awt.Color(250, 74, 84));
         pnlDown.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 1, 1, new java.awt.Color(0, 102, 204)));
         pnlDown.setPreferredSize(new java.awt.Dimension(1024, 28));
         pnlDown.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -1535,53 +1535,57 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         });
         pnlDown.setLayout(null);
 
-        lblTitle1.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitle1.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        lblTitle1.setBackground(new java.awt.Color(250, 74, 84));
+        lblTitle1.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
         lblTitle1.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/notification_16px.png"))); // NOI18N
         lblTitle1.setText("Notifications");
         pnlDown.add(lblTitle1);
-        lblTitle1.setBounds(0, 0, 100, 28);
+        lblTitle1.setBounds(10, 0, 120, 28);
 
-        useronlineTF.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        useronlineTF.setBackground(new java.awt.Color(250, 74, 84));
+        useronlineTF.setFont(new java.awt.Font("VALORANT", 0, 11)); // NOI18N
         useronlineTF.setForeground(new java.awt.Color(255, 255, 255));
         pnlDown.add(useronlineTF);
-        useronlineTF.setBounds(205, 0, 110, 28);
+        useronlineTF.setBounds(270, 0, 110, 28);
 
-        notifTime.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        notifTime.setFont(new java.awt.Font("VALORANT", 1, 10)); // NOI18N
         notifTime.setForeground(new java.awt.Color(255, 255, 255));
         notifTime.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         notifTime.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 0, 255)));
         pnlDown.add(notifTime);
-        notifTime.setBounds(1170, 0, 138, 28);
+        notifTime.setBounds(1160, 0, 138, 28);
 
-        consoleText.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        consoleText.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
         consoleText.setForeground(new java.awt.Color(255, 255, 255));
         consoleText.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         consoleText.setText("Console");
         pnlDown.add(consoleText);
         consoleText.setBounds(650, 0, 350, 28);
 
-        consoleLoading.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
+        consoleLoading.setBackground(new java.awt.Color(255, 255, 255));
+        consoleLoading.setFont(new java.awt.Font("VALORANT", 1, 10)); // NOI18N
+        consoleLoading.setForeground(new java.awt.Color(255, 255, 255));
         consoleLoading.setStringPainted(true);
         pnlDown.add(consoleLoading);
         consoleLoading.setBounds(1010, 5, 146, 18);
 
-        loggedInAs.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        loggedInAs.setBackground(new java.awt.Color(250, 74, 84));
+        loggedInAs.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
         loggedInAs.setForeground(new java.awt.Color(255, 255, 255));
         loggedInAs.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         loggedInAs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/online_16px.png"))); // NOI18N
         loggedInAs.setText("Logged in As:");
         pnlDown.add(loggedInAs);
-        loggedInAs.setBounds(100, 0, 100, 28);
+        loggedInAs.setBounds(140, 0, 120, 28);
 
-        themeLABEL.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        themeLABEL.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
         themeLABEL.setForeground(new java.awt.Color(255, 255, 255));
         themeLABEL.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         themeLABEL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/defaulttheme_16px.png"))); // NOI18N
         themeLABEL.setText("Default Theme");
         pnlDown.add(themeLABEL);
-        themeLABEL.setBounds(315, 0, 160, 28);
+        themeLABEL.setBounds(350, 0, 160, 28);
 
         getContentPane().add(pnlDown, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 661, 1313, -1));
 
