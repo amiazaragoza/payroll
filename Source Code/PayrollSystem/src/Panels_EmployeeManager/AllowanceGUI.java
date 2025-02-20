@@ -519,6 +519,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_med.setEditable(false);
         txt_med.setBackground(new java.awt.Color(10, 36, 59));
+        txt_med.setForeground(new java.awt.Color(255, 255, 255));
         txt_med.setText("0");
         txt_med.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_med.addActionListener(new java.awt.event.ActionListener() {
@@ -541,6 +542,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_bonus.setEditable(false);
         txt_bonus.setBackground(new java.awt.Color(10, 36, 59));
+        txt_bonus.setForeground(new java.awt.Color(255, 255, 255));
         txt_bonus.setText("0");
         txt_bonus.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_bonus.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -558,6 +560,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_other.setEditable(false);
         txt_other.setBackground(new java.awt.Color(10, 36, 59));
+        txt_other.setForeground(new java.awt.Color(255, 255, 255));
         txt_other.setText("0");
         txt_other.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_other.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -595,6 +598,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_overtime.setEditable(false);
         txt_overtime.setBackground(new java.awt.Color(10, 36, 59));
+        txt_overtime.setForeground(new java.awt.Color(255, 255, 255));
         txt_overtime.setText("0");
         txt_overtime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_overtime.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -617,6 +621,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_total_overtime.setEditable(false);
         txt_total_overtime.setBackground(new java.awt.Color(10, 36, 59));
+        txt_total_overtime.setForeground(new java.awt.Color(255, 255, 255));
         txt_total_overtime.setText("0");
         txt_total_overtime.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_total_overtime.setEnabled(false);
@@ -629,6 +634,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_rph.setEditable(false);
         txt_rph.setBackground(new java.awt.Color(10, 36, 59));
+        txt_rph.setForeground(new java.awt.Color(255, 255, 255));
         txt_rph.setText("0");
         txt_rph.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_rph.setEnabled(false);
@@ -658,6 +664,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_empid.setEditable(false);
         txt_empid.setBackground(new java.awt.Color(10, 36, 59));
+        txt_empid.setForeground(new java.awt.Color(255, 255, 255));
         txt_empid.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_empid.setEnabled(false);
         txt_empid.addActionListener(new java.awt.event.ActionListener() {
@@ -668,6 +675,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_dob.setEditable(false);
         txt_dob.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dob.setForeground(new java.awt.Color(255, 255, 255));
         txt_dob.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_dob.setEnabled(false);
 
@@ -693,6 +701,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_salary.setEditable(false);
         txt_salary.setBackground(new java.awt.Color(10, 36, 59));
+        txt_salary.setForeground(new java.awt.Color(255, 255, 255));
         txt_salary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_salary.setEnabled(false);
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
@@ -703,11 +712,13 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_dept.setEditable(false);
         txt_dept.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dept.setForeground(new java.awt.Color(255, 255, 255));
         txt_dept.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_dept.setEnabled(false);
 
         txt_surname.setEditable(false);
         txt_surname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_surname.setForeground(new java.awt.Color(255, 255, 255));
         txt_surname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_surname.setEnabled(false);
 
@@ -717,6 +728,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         txt_firstname.setEditable(false);
         txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_firstname.setForeground(new java.awt.Color(255, 255, 255));
         txt_firstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_firstname.setEnabled(false);
 
@@ -805,6 +817,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         jPanel5.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 0, 30, 20));
 
         txt_search.setBackground(new java.awt.Color(10, 36, 59));
+        txt_search.setForeground(new java.awt.Color(255, 255, 255));
         txt_search.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
@@ -836,6 +849,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         tableScroll.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
         allowanceTable.setBackground(new java.awt.Color(10, 36, 59));
+        allowanceTable.setForeground(new java.awt.Color(255, 255, 255));
         allowanceTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 

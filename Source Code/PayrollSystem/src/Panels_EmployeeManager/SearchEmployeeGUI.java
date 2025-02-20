@@ -419,6 +419,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 94, -1, -1));
 
         txt_dob.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dob.setForeground(new java.awt.Color(255, 255, 255));
         txt_dob.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_dobKeyPressed(evt);
@@ -427,6 +428,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 94, 168, -1));
 
         txt_surname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_surname.setForeground(new java.awt.Color(255, 255, 255));
         txt_surname.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_surnameKeyPressed(evt);
@@ -435,6 +437,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 68, 168, -1));
 
         txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_firstname.setForeground(new java.awt.Color(255, 255, 255));
         txt_firstname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_firstnameActionPerformed(evt);
@@ -449,9 +452,11 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
 
         txt_id.setEditable(false);
         txt_id.setBackground(new java.awt.Color(10, 36, 59));
+        txt_id.setForeground(new java.awt.Color(255, 255, 255));
         viewpanel.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 15, 168, -1));
 
         txt_dep.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dep.setForeground(new java.awt.Color(255, 255, 255));
         txt_dep.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_depKeyPressed(evt);
@@ -460,6 +465,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 11, 160, -1));
 
         txt_desig.setBackground(new java.awt.Color(10, 36, 59));
+        txt_desig.setForeground(new java.awt.Color(255, 255, 255));
         txt_desig.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_desigKeyPressed(evt);
@@ -468,6 +474,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 37, 160, -1));
 
         txt_status.setBackground(new java.awt.Color(10, 36, 59));
+        txt_status.setForeground(new java.awt.Color(255, 255, 255));
         txt_status.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_statusKeyPressed(evt);
@@ -476,6 +483,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_status, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 68, 160, -1));
 
         txt_doj.setBackground(new java.awt.Color(10, 36, 59));
+        txt_doj.setForeground(new java.awt.Color(255, 255, 255));
         txt_doj.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_dojKeyPressed(evt);
@@ -484,6 +492,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_doj, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 94, 160, -1));
 
         txt_salary.setBackground(new java.awt.Color(10, 36, 59));
+        txt_salary.setForeground(new java.awt.Color(255, 255, 255));
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_salaryActionPerformed(evt);
@@ -500,6 +509,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 125, 160, -1));
 
         txt_job.setBackground(new java.awt.Color(10, 36, 59));
+        txt_job.setForeground(new java.awt.Color(255, 255, 255));
         txt_job.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_jobActionPerformed(evt);
@@ -629,6 +639,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 294, -1, -1));
 
         txt_pc.setBackground(new java.awt.Color(10, 36, 59));
+        txt_pc.setForeground(new java.awt.Color(255, 255, 255));
         txt_pc.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_pcKeyPressed(evt);
@@ -640,6 +651,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_pc, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 291, 168, -1));
 
         txt_apt.setBackground(new java.awt.Color(10, 36, 59));
+        txt_apt.setForeground(new java.awt.Color(255, 255, 255));
         txt_apt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_aptActionPerformed(evt);
@@ -653,6 +665,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_apt, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 260, 168, -1));
 
         txt_add2.setBackground(new java.awt.Color(10, 36, 59));
+        txt_add2.setForeground(new java.awt.Color(255, 255, 255));
         txt_add2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_add2KeyPressed(evt);
@@ -661,6 +674,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_add2, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 229, 168, -1));
 
         txt_address.setBackground(new java.awt.Color(10, 36, 59));
+        txt_address.setForeground(new java.awt.Color(255, 255, 255));
         txt_address.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_addressKeyPressed(evt);
@@ -669,6 +683,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_address, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 203, 168, -1));
 
         txt_tel.setBackground(new java.awt.Color(10, 36, 59));
+        txt_tel.setForeground(new java.awt.Color(255, 255, 255));
         txt_tel.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_telKeyPressed(evt);
@@ -680,6 +695,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_tel, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 177, 168, -1));
 
         txt_email.setBackground(new java.awt.Color(10, 36, 59));
+        txt_email.setForeground(new java.awt.Color(255, 255, 255));
         txt_email.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_emailKeyPressed(evt);
@@ -770,6 +786,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         mainpanel.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 41, 25, 20));
 
         txt_search.setBackground(new java.awt.Color(10, 36, 59));
+        txt_search.setForeground(new java.awt.Color(255, 255, 255));
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
                 txt_searchComponentRemoved(evt);

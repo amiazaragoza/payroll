@@ -687,7 +687,6 @@ public final class RegisterFrame extends javax.swing.JDialog {
         guiTitle.setBackground(new java.awt.Color(255, 70, 84));
         guiTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         guiTitle.setForeground(new java.awt.Color(255, 70, 84));
-        guiTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
         guiTitle.setText("Payroll System");
         pnlTop.add(guiTitle);
         guiTitle.setBounds(5, 0, 230, 30);

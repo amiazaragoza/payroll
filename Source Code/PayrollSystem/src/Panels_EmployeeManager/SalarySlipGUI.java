@@ -370,11 +370,13 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         txt_id.setEditable(false);
         txt_id.setBackground(new java.awt.Color(10, 36, 59));
+        txt_id.setForeground(new java.awt.Color(255, 255, 255));
         txt_id.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 28, 177, -1));
 
         txt_firstname.setEditable(false);
         txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_firstname.setForeground(new java.awt.Color(255, 255, 255));
         txt_firstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_firstname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -395,11 +397,13 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         txt_surname.setEditable(false);
         txt_surname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_surname.setForeground(new java.awt.Color(255, 255, 255));
         txt_surname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 85, 177, -1));
 
         txt_dob.setEditable(false);
         txt_dob.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dob.setForeground(new java.awt.Color(255, 255, 255));
         txt_dob.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 118, 177, -1));
 
@@ -415,6 +419,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         txt_dep.setEditable(false);
         txt_dep.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dep.setForeground(new java.awt.Color(255, 255, 255));
         txt_dep.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(88, 149, 177, -1));
 
@@ -425,6 +430,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         txt_salary.setEditable(false);
         txt_salary.setBackground(new java.awt.Color(10, 36, 59));
+        txt_salary.setForeground(new java.awt.Color(255, 255, 255));
         txt_salary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -435,6 +441,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         txt_job.setEditable(false);
         txt_job.setBackground(new java.awt.Color(10, 36, 59));
+        txt_job.setForeground(new java.awt.Color(255, 255, 255));
         txt_job.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_job.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -455,11 +462,13 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         txt_doj.setEditable(false);
         txt_doj.setBackground(new java.awt.Color(10, 36, 59));
+        txt_doj.setForeground(new java.awt.Color(255, 255, 255));
         txt_doj.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_doj, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 85, 177, -1));
 
         txt_status.setEditable(false);
         txt_status.setBackground(new java.awt.Color(10, 36, 59));
+        txt_status.setForeground(new java.awt.Color(255, 255, 255));
         txt_status.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_status, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 59, 177, -1));
 
@@ -475,6 +484,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         txt_desig.setEditable(false);
         txt_desig.setBackground(new java.awt.Color(10, 36, 59));
+        txt_desig.setForeground(new java.awt.Color(255, 255, 255));
         txt_desig.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 28, 177, -1));
 
@@ -536,6 +546,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
         jPanel4.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 12, 25, 20));
 
         txt_search.setBackground(new java.awt.Color(10, 36, 59));
+        txt_search.setForeground(new java.awt.Color(255, 255, 255));
         txt_search.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {

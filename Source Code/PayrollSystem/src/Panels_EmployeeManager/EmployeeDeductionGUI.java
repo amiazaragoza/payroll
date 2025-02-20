@@ -490,11 +490,13 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_id.setEditable(false);
         txt_id.setBackground(new java.awt.Color(10, 36, 59));
+        txt_id.setForeground(new java.awt.Color(255, 255, 255));
         txt_id.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 19, 177, -1));
 
         txt_firstname.setEditable(false);
         txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_firstname.setForeground(new java.awt.Color(255, 255, 255));
         txt_firstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_firstname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -515,11 +517,13 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_surname.setEditable(false);
         txt_surname.setBackground(new java.awt.Color(10, 36, 59));
+        txt_surname.setForeground(new java.awt.Color(255, 255, 255));
         txt_surname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 76, 177, -1));
 
         txt_dob.setEditable(false);
         txt_dob.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dob.setForeground(new java.awt.Color(255, 255, 255));
         txt_dob.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 109, 177, -1));
 
@@ -535,6 +539,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_dep.setEditable(false);
         txt_dep.setBackground(new java.awt.Color(10, 36, 59));
+        txt_dep.setForeground(new java.awt.Color(255, 255, 255));
         txt_dep.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(78, 140, 177, -1));
 
@@ -545,11 +550,13 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_desig.setEditable(false);
         txt_desig.setBackground(new java.awt.Color(10, 36, 59));
+        txt_desig.setForeground(new java.awt.Color(255, 255, 255));
         txt_desig.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 19, 177, -1));
 
         txt_status.setEditable(false);
         txt_status.setBackground(new java.awt.Color(10, 36, 59));
+        txt_status.setForeground(new java.awt.Color(255, 255, 255));
         txt_status.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_status, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 50, 177, -1));
 
@@ -565,6 +572,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_doj.setEditable(false);
         txt_doj.setBackground(new java.awt.Color(10, 36, 59));
+        txt_doj.setForeground(new java.awt.Color(255, 255, 255));
         txt_doj.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_doj, new org.netbeans.lib.awtextra.AbsoluteConstraints(374, 76, 177, -1));
 
@@ -575,6 +583,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_job.setEditable(false);
         txt_job.setBackground(new java.awt.Color(10, 36, 59));
+        txt_job.setForeground(new java.awt.Color(255, 255, 255));
         txt_job.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_job.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -585,6 +594,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_salary.setEditable(false);
         txt_salary.setBackground(new java.awt.Color(10, 36, 59));
+        txt_salary.setForeground(new java.awt.Color(255, 255, 255));
         txt_salary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -650,6 +660,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_amountinsert.setEditable(false);
         txt_amountinsert.setBackground(new java.awt.Color(10, 36, 59));
+        txt_amountinsert.setForeground(new java.awt.Color(255, 255, 255));
         txt_amountinsert.setText("0");
         txt_amountinsert.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_amountinsert.setEnabled(false);
@@ -672,6 +683,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         txt_percentage.setEditable(false);
         txt_percentage.setBackground(new java.awt.Color(10, 36, 59));
+        txt_percentage.setForeground(new java.awt.Color(255, 255, 255));
         txt_percentage.setText("0");
         txt_percentage.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_percentage.setEnabled(false);
@@ -699,6 +711,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         jPanel3.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 260, -1, -1));
 
         txt_reason.setBackground(new java.awt.Color(10, 36, 59));
+        txt_reason.setForeground(new java.awt.Color(255, 255, 255));
         txt_reason.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_reason, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 257, 263, -1));
 
@@ -764,6 +777,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         jPanel1.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 40, 25, 20));
 
         txt_search.setBackground(new java.awt.Color(10, 36, 59));
+        txt_search.setForeground(new java.awt.Color(255, 255, 255));
         txt_search.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
             public void componentRemoved(java.awt.event.ContainerEvent evt) {
@@ -792,6 +806,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         empdeducionTable.setBackground(new java.awt.Color(10, 36, 59));
         empdeducionTable.setFont(new java.awt.Font("Segoe UI Semilight", 0, 12)); // NOI18N
+        empdeducionTable.setForeground(new java.awt.Color(255, 255, 255));
         empdeducionTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
