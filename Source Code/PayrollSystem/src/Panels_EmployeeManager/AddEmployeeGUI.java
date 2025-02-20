@@ -432,7 +432,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(255, 70, 84));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM | ADD AGENT");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -468,25 +467,25 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.setForeground(new java.awt.Color(255, 255, 255));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Employee id :");
-        viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 15, -1, 20));
+        viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 15, -1, 20));
 
-        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First name :");
-        viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
+        viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 42, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Surname :");
-        viewpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 68, -1, -1));
+        viewpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 68, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Date of Birth :");
-        viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(5, 94, -1, -1));
+        viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 94, -1, -1));
 
         txt_dob.setBackground(new java.awt.Color(10, 36, 59));
         txt_dob.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
@@ -637,7 +636,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_img, javax.swing.GroupLayout.DEFAULT_SIZE, 178, Short.MAX_VALUE)
+                .addComponent(lbl_img, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -680,7 +679,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Basic Salary :");
-        viewpanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(323, 120, -1, -1));
+        viewpanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 120, -1, -1));
 
         jLabel18.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
@@ -695,12 +694,12 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Designation :");
-        viewpanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 42, -1, -1));
+        viewpanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 42, -1, -1));
 
         jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
-        viewpanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 15, -1, -1));
+        viewpanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 15, -1, -1));
 
         r_female.setBackground(new java.awt.Color(10, 36, 59));
         r_female.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
@@ -737,17 +736,17 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Gender:");
-        viewpanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 128, -1, -1));
+        viewpanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 128, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Email :");
-        viewpanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 154, -1, -1));
+        viewpanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 154, -1, -1));
 
         jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Contact :");
-        viewpanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
+        viewpanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 180, -1, -1));
 
         jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -762,12 +761,12 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Apt./House No :");
-        viewpanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, -1, -1));
+        viewpanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 263, -1, -1));
 
         jLabel16.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
         jLabel16.setText("Postal Code :");
-        viewpanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 294, -1, -1));
+        viewpanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 294, -1, -1));
 
         txt_pc.setBackground(new java.awt.Color(10, 36, 59));
         txt_pc.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
@@ -848,7 +847,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         txt_emp.setForeground(new java.awt.Color(10, 36, 59));
         txt_emp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        txt_emp.setText("emp");
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 330, 20));
 
         insertpictureBTN.setBackground(new java.awt.Color(255, 70, 84));
