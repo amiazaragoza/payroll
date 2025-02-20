@@ -701,7 +701,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
 
         jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Employee id :");
+        jLabel5.setText("Agent ID :");
 
         jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
