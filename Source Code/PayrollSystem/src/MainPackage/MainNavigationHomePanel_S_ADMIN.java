@@ -1391,6 +1391,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         homeBTN.setToolTipText("");
         homeBTN.setBorder(null);
         homeBTN.setBorderPainted(false);
+        homeBTN.setContentAreaFilled(false);
         homeBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         homeBTN.setDefaultCapable(false);
         homeBTN.setDoubleBuffered(true);
