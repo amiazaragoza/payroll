@@ -260,7 +260,7 @@
                 <Container class="rojerusan.RSPanelImage" name="rSPanelImage1">
                   <Properties>
                     <Property name="imagen" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/Images/about_128px.png"/>
+                      <Image iconType="3" name="/Images/info.png"/>
                     </Property>
                   </Properties>
                   <Constraints>

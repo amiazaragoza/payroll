@@ -317,7 +317,7 @@ public final class AboutSystem extends javax.swing.JDialog {
         viewpanel.add(aboutLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 540, 330));
         aboutLBL.getAccessibleContext().setAccessibleName("Valorant Agent Payroll Management System, made by SENTINELS is used to manage and streamline the process of making payments to Valorant Agents.  Once an agent's standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.  The advantage of using Valorant Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to Agents that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.");
 
-        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/about_128px.png"))); // NOI18N
+        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/info.png"))); // NOI18N
         viewpanel.add(rSPanelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 120, 120));
 
         jScrollPane1.setViewportView(viewpanel);
