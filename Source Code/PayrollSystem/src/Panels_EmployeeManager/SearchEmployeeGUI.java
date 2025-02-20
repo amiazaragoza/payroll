@@ -362,7 +362,6 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM | SEARCH");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -386,7 +385,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SEARCH EMPLOYEE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SEARCH EMPLOYEE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -707,11 +706,13 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         txt_emp.setText("emp");
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 170, 20));
 
-        insertpictureBTN.setBackground(new java.awt.Color(249, 250, 253));
+        insertpictureBTN.setBackground(new java.awt.Color(255, 70, 84));
+        insertpictureBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
+        insertpictureBTN.setForeground(new java.awt.Color(255, 255, 255));
         insertpictureBTN.setText("Update/Insert Picture");
+        insertpictureBTN.setBorderPainted(false);
         insertpictureBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         insertpictureBTN.setDefaultCapable(false);
-        insertpictureBTN.setEnabled(false);
         insertpictureBTN.setFocusPainted(false);
         insertpictureBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -720,11 +721,13 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(insertpictureBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 184, -1, -1));
 
-        updateBTN.setBackground(new java.awt.Color(249, 250, 253));
+        updateBTN.setBackground(new java.awt.Color(255, 70, 84));
+        updateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        updateBTN.setForeground(new java.awt.Color(255, 255, 255));
         updateBTN.setText("Update Record");
+        updateBTN.setBorderPainted(false);
         updateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         updateBTN.setDefaultCapable(false);
-        updateBTN.setEnabled(false);
         updateBTN.setFocusPainted(false);
         updateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -738,11 +741,13 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(updateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, -1, 44));
 
-        deleteBTN.setBackground(new java.awt.Color(249, 250, 253));
+        deleteBTN.setBackground(new java.awt.Color(255, 70, 84));
+        deleteBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        deleteBTN.setForeground(new java.awt.Color(255, 255, 255));
         deleteBTN.setText("Delete Record");
+        deleteBTN.setBorderPainted(false);
         deleteBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         deleteBTN.setDefaultCapable(false);
-        deleteBTN.setEnabled(false);
         deleteBTN.setFocusPainted(false);
         deleteBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -755,6 +760,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
+        clearBTN.setBorderPainted(false);
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setDefaultCapable(false);
         clearBTN.setFocusPainted(false);
@@ -770,7 +776,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         mainpanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 880, 450));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
-        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_12px.png"))); // NOI18N
+        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-outline 2.png"))); // NOI18N
         searchempBTN.setToolTipText("Search");
         searchempBTN.setBorder(null);
         searchempBTN.setBorderPainted(false);

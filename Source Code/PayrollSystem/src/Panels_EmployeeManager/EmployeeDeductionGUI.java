@@ -444,7 +444,6 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM | MANAGE DEDUCTION");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -468,7 +467,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE DEDUCTION", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE EMPLOYEE DEDUCTION", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewScroll.setBackground(new java.awt.Color(249, 250, 253));
@@ -613,24 +612,24 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 182, -1, -1));
 
         r_percentage.setBackground(new java.awt.Color(10, 36, 59));
+        r_percentage.setForeground(new java.awt.Color(255, 255, 255));
         r_percentage.setText("Percentage (%)");
-        r_percentage.setEnabled(false);
         r_percentage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 r_percentageActionPerformed(evt);
             }
         });
-        jPanel3.add(r_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 178, -1, -1));
+        jPanel3.add(r_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, -1, -1));
 
         r_amount.setBackground(new java.awt.Color(10, 36, 59));
+        r_amount.setForeground(new java.awt.Color(255, 255, 255));
         r_amount.setText("Amount");
-        r_amount.setEnabled(false);
         r_amount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 r_amountActionPerformed(evt);
             }
         });
-        jPanel3.add(r_amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(234, 178, -1, -1));
+        jPanel3.add(r_amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 180, -1, -1));
 
         jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
@@ -714,11 +713,13 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         txt_reason.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel3.add(txt_reason, new org.netbeans.lib.awtextra.AbsoluteConstraints(66, 257, 263, -1));
 
-        calculateBTN.setBackground(new java.awt.Color(10, 36, 59));
+        calculateBTN.setBackground(new java.awt.Color(255, 70, 84));
+        calculateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
+        calculateBTN.setForeground(new java.awt.Color(255, 255, 255));
         calculateBTN.setText("Calculate");
-        calculateBTN.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
+        calculateBTN.setBorder(new javax.swing.border.MatteBorder(null));
+        calculateBTN.setBorderPainted(false);
         calculateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        calculateBTN.setEnabled(false);
         calculateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calculateBTNActionPerformed(evt);
@@ -727,9 +728,11 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         jPanel3.add(calculateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 166, 36));
 
         clearBTN.setBackground(new java.awt.Color(255, 70, 84));
-        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
+        clearBTN.setBorder(new javax.swing.border.MatteBorder(null));
+        clearBTN.setBorderPainted(false);
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -738,10 +741,13 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         });
         jPanel3.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 310, 168, 36));
 
-        saveBTN.setBackground(new java.awt.Color(10, 36, 59));
+        saveBTN.setBackground(new java.awt.Color(255, 70, 84));
+        saveBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
+        saveBTN.setForeground(new java.awt.Color(255, 255, 255));
         saveBTN.setText("Save");
+        saveBTN.setBorder(new javax.swing.border.MatteBorder(null));
+        saveBTN.setBorderPainted(false);
         saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        saveBTN.setEnabled(false);
         saveBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 saveBTNActionPerformed(evt);
@@ -757,11 +763,11 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
 
         jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Search Employee ID :");
-        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, 20));
+        jLabel11.setText("Search Agent ID :");
+        jPanel1.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, 20));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
-        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_12px.png"))); // NOI18N
+        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-outline 2.png"))); // NOI18N
         searchempBTN.setToolTipText("Search");
         searchempBTN.setBorder(null);
         searchempBTN.setBorderPainted(false);

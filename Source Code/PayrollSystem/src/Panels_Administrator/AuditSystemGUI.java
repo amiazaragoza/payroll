@@ -342,8 +342,8 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Audit Admin Activities", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Adobe Arabic", 1, 14), new java.awt.Color(255, 255, 255))); // NOI18N
         jPanel3.setForeground(new java.awt.Color(255, 255, 255));
 
-        jScrollPane3.setFont(new java.awt.Font("VALORANT", 0, 12)); // NOI18N
         jScrollPane3.setBackground(new java.awt.Color(10, 36, 59));
+        jScrollPane3.setFont(new java.awt.Font("VALORANT", 0, 12)); // NOI18N
 
         auditadminactTable.setBackground(new java.awt.Color(10, 36, 59));
         auditadminactTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -366,6 +366,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
             }
         });
         auditadminactTable.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);
+        auditadminactTable.setEnabled(false);
         auditadminactTable.setGridColor(new java.awt.Color(10, 36, 59));
         auditadminactTable.setSelectionBackground(new java.awt.Color(10, 36, 59));
         auditadminactTable.setSelectionForeground(new java.awt.Color(10, 36, 59));
@@ -384,12 +385,13 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
             auditadminactTable.getColumnModel().getColumn(3).setPreferredWidth(600);
         }
 
-        refreshactivitiesBTN.setBackground(new java.awt.Color(255, 51, 51));
+        refreshactivitiesBTN.setBackground(new java.awt.Color(250, 74, 84));
         refreshactivitiesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
-        refreshactivitiesBTN.setForeground(new java.awt.Color(255, 70, 84));
+        refreshactivitiesBTN.setForeground(new java.awt.Color(255, 255, 255));
         refreshactivitiesBTN.setText("REFRESH");
+        refreshactivitiesBTN.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        refreshactivitiesBTN.setBorderPainted(false);
         refreshactivitiesBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        refreshactivitiesBTN.setEnabled(false);
         refreshactivitiesBTN.setOpaque(true);
         refreshactivitiesBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -397,15 +399,13 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
             }
         });
 
-        removerowBTN.setBackground(new java.awt.Color(255, 70, 84));
+        removerowBTN.setBackground(new java.awt.Color(250, 74, 84));
         removerowBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
-        removerowBTN.setForeground(new java.awt.Color(255, 70, 84));
+        removerowBTN.setForeground(new java.awt.Color(255, 255, 255));
         removerowBTN.setText("REMOVE THIS ROW");
+        removerowBTN.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(250, 74, 84)));
         removerowBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         removerowBTN.setDefaultCapable(false);
-        removerowBTN.setEnabled(false);
-        removerowBTN.setFocusPainted(false);
-        removerowBTN.setOpaque(true);
         removerowBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 removerowBTNActionPerformed(evt);
@@ -422,9 +422,9 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 858, Short.MAX_VALUE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(removerowBTN)
+                        .addComponent(removerowBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 121, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(refreshactivitiesBTN)
+                        .addComponent(refreshactivitiesBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(11, 11, 11)))
                 .addContainerGap())
         );
@@ -432,11 +432,11 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 362, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(refreshactivitiesBTN, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(removerowBTN))
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+                .addGap(13, 13, 13)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(removerowBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(refreshactivitiesBTN, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -468,6 +468,7 @@ public final class AuditSystemGUI extends javax.swing.JDialog {
 
         txt_search.setBackground(new java.awt.Color(10, 36, 59));
         txt_search.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        txt_search.setForeground(new java.awt.Color(255, 255, 255));
         txt_search.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_searchActionPerformed(evt);

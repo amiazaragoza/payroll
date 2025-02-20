@@ -595,7 +595,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         jLabel8.setText("Other :");
         jPanel3.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(38, 140, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Please enter the amount");
         jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 31, -1, -1));
@@ -800,10 +800,10 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         jPanel5.setBackground(new java.awt.Color(10, 36, 59));
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Search Agent ID:");
-        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 0, 120, 20));
+        jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 120, 20));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
         searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-outline 2.png"))); // NOI18N
@@ -907,12 +907,12 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         viewpanel.add(tableScroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 840, 234));
 
         calculateBTN.setBackground(new java.awt.Color(255, 70, 84));
-        calculateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        calculateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         calculateBTN.setForeground(new java.awt.Color(255, 255, 255));
         calculateBTN.setText("Calculate");
+        calculateBTN.setBorderPainted(false);
         calculateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         calculateBTN.setDefaultCapable(false);
-        calculateBTN.setEnabled(false);
         calculateBTN.setFocusPainted(false);
         calculateBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         calculateBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -920,7 +920,7 @@ public final class AllowanceGUI extends javax.swing.JDialog {
                 calculateBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(calculateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 240, 126, 40));
+        viewpanel.add(calculateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 240, 126, 40));
 
         refreshtableBTN.setBackground(new java.awt.Color(255, 70, 84));
         refreshtableBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
@@ -941,9 +941,10 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 150, 30));
 
         clearBTN.setBackground(new java.awt.Color(255, 70, 84));
-        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
+        clearBTN.setBorderPainted(false);
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setDefaultCapable(false);
         clearBTN.setFocusPainted(false);
@@ -971,12 +972,12 @@ public final class AllowanceGUI extends javax.swing.JDialog {
         viewpanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, -1, 20));
 
         saveBTN.setBackground(new java.awt.Color(255, 70, 84));
-        saveBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        saveBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         saveBTN.setForeground(new java.awt.Color(255, 255, 255));
         saveBTN.setText("Save");
+        saveBTN.setBorderPainted(false);
         saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         saveBTN.setDefaultCapable(false);
-        saveBTN.setEnabled(false);
         saveBTN.setFocusPainted(false);
         saveBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         saveBTN.addActionListener(new java.awt.event.ActionListener() {

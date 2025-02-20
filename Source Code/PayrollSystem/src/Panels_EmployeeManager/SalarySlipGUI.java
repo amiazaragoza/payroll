@@ -324,7 +324,6 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM | SALARY SLIP");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -348,7 +347,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EMPLOYEE PAYROLL SLIP", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EMPLOYEE PAYROLL SLIP", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -487,24 +486,26 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
         txt_desig.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(123, 123, 123)));
         jPanel1.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(368, 28, 177, -1));
 
-        generateslipBTN.setBackground(new java.awt.Color(249, 250, 253));
-        generateslipBTN.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        generateslipBTN.setBackground(new java.awt.Color(255, 70, 84));
+        generateslipBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        generateslipBTN.setForeground(new java.awt.Color(255, 255, 255));
         generateslipBTN.setText("Generate Slip");
+        generateslipBTN.setBorderPainted(false);
         generateslipBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         generateslipBTN.setDefaultCapable(false);
-        generateslipBTN.setEnabled(false);
         generateslipBTN.setFocusPainted(false);
         generateslipBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 generateslipBTNActionPerformed(evt);
             }
         });
-        jPanel1.add(generateslipBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, -1, 38));
+        jPanel1.add(generateslipBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 190, -1, 38));
 
         clearBTN.setBackground(new java.awt.Color(255, 70, 84));
         clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear All");
+        clearBTN.setBorderPainted(false);
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setDefaultCapable(false);
         clearBTN.setFocusPainted(false);
@@ -513,9 +514,9 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
                 clearBTNActionPerformed(evt);
             }
         });
-        jPanel1.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 190, -1, 38));
+        jPanel1.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 190, 90, 38));
 
-        lbl_moneysign.setForeground(new java.awt.Color(249, 250, 253));
+        lbl_moneysign.setForeground(new java.awt.Color(10, 36, 59));
         lbl_moneysign.setText("jLabel1");
         jPanel1.add(lbl_moneysign, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 216, -1, 20));
 
@@ -530,7 +531,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
         jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 12, -1, -1));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
-        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_12px.png"))); // NOI18N
+        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-outline 2.png"))); // NOI18N
         searchempBTN.setToolTipText("Search");
         searchempBTN.setBorder(null);
         searchempBTN.setBorderPainted(false);
@@ -542,7 +543,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
                 searchempBTNActionPerformed(evt);
             }
         });
-        jPanel4.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 12, 25, 20));
+        jPanel4.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 25, 20));
 
         txt_search.setBackground(new java.awt.Color(10, 36, 59));
         txt_search.setForeground(new java.awt.Color(255, 255, 255));
@@ -572,7 +573,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         viewpanel.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, -1));
 
-        txt_emp.setForeground(new java.awt.Color(249, 250, 253));
+        txt_emp.setForeground(new java.awt.Color(10, 36, 59));
         txt_emp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         txt_emp.setText("emp");
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(2, 260, 140, 30));

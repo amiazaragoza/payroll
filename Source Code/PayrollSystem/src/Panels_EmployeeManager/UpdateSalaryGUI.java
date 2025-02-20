@@ -298,7 +298,6 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         pnlTitle.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 6));
 
         lblTitleIcon.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitleIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
         lblTitleIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 lblTitleIconMousePressed(evt);
@@ -309,7 +308,6 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM | SALARY");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -333,7 +331,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "UPDATE EMPLOYEE SALARY", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tungsten Bold", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "UPDATE EMPLOYEE SALARY", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setPreferredSize(new java.awt.Dimension(560, 340));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -355,7 +353,6 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 120, 20));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
-        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search_12px.png"))); // NOI18N
         searchempBTN.setToolTipText("Search");
         searchempBTN.setBorder(null);
         searchempBTN.setBorderPainted(false);
@@ -470,31 +467,31 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jPanel1.add(txt_firstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(96, 43, 160, -1));
 
         r_percentage.setBackground(new java.awt.Color(10, 36, 59));
+        r_percentage.setFont(new java.awt.Font("Microsoft JhengHei", 0, 11)); // NOI18N
         r_percentage.setForeground(new java.awt.Color(255, 255, 255));
         r_percentage.setText("Percentage (%)");
-        r_percentage.setEnabled(false);
         r_percentage.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 r_percentageActionPerformed(evt);
             }
         });
-        jPanel1.add(r_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(104, 109, -1, -1));
+        jPanel1.add(r_percentage, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 110, -1, -1));
 
         r_amount.setBackground(new java.awt.Color(10, 36, 59));
+        r_amount.setFont(new java.awt.Font("Microsoft JhengHei", 0, 11)); // NOI18N
         r_amount.setForeground(new java.awt.Color(255, 255, 255));
         r_amount.setText("Amount");
-        r_amount.setEnabled(false);
         r_amount.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 r_amountActionPerformed(evt);
             }
         });
-        jPanel1.add(r_amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(225, 109, -1, -1));
+        jPanel1.add(r_amount, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Update Salary by :");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 113, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, -1, -1));
 
         txt_percentage.setEditable(false);
         txt_percentage.setBackground(new java.awt.Color(10, 36, 59));
@@ -547,12 +544,13 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         jLabel7.setText("Amount:");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 140, 50, 20));
 
-        updateBTN.setBackground(new java.awt.Color(249, 250, 253));
-        updateBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        updateBTN.setBackground(new java.awt.Color(255, 70, 84));
+        updateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        updateBTN.setForeground(new java.awt.Color(255, 255, 255));
         updateBTN.setText("Update");
+        updateBTN.setBorderPainted(false);
         updateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         updateBTN.setDefaultCapable(false);
-        updateBTN.setEnabled(false);
         updateBTN.setFocusPainted(false);
         updateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -576,11 +574,12 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         lbl_computed_total.setText("0.00");
         jPanel1.add(lbl_computed_total, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 110, 100, 20));
 
-        calculateBTN.setBackground(new java.awt.Color(249, 250, 253));
-        calculateBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        calculateBTN.setBackground(new java.awt.Color(255, 70, 84));
+        calculateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        calculateBTN.setForeground(new java.awt.Color(255, 255, 255));
         calculateBTN.setText("Calculate");
+        calculateBTN.setBorderPainted(false);
         calculateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        calculateBTN.setEnabled(false);
         calculateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calculateBTNActionPerformed(evt);
@@ -602,6 +601,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
+        clearBTN.setBorderPainted(false);
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

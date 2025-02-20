@@ -565,13 +565,13 @@ public final class ManageAdministrators extends javax.swing.JDialog {
         jPanel1.setBackground(new java.awt.Color(10, 36, 59));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 10)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Search Admins");
+        jLabel1.setText("Search Admins:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 30, -1, 20));
 
-        fullnameTF.setEditable(false);
         fullnameTF.setBackground(new java.awt.Color(10, 36, 59));
+        fullnameTF.setForeground(new java.awt.Color(255, 255, 255));
         fullnameTF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 fullnameTFKeyPressed(evt);
@@ -579,27 +579,27 @@ public final class ManageAdministrators extends javax.swing.JDialog {
         });
         jPanel1.add(fullnameTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 160, -1));
 
-        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 0, 10)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("Username");
+        jLabel3.setText("Username:");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, 20));
 
-        usernameTF.setEditable(false);
         usernameTF.setBackground(new java.awt.Color(10, 36, 59));
+        usernameTF.setForeground(new java.awt.Color(255, 255, 255));
         jPanel1.add(usernameTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 150, 160, -1));
 
-        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 10)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Fullname");
+        jLabel2.setText("Fullname:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, -1, 20));
 
-        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 0, 10)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Id");
+        jLabel4.setText("Id:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 20));
 
-        idTF.setEditable(false);
         idTF.setBackground(new java.awt.Color(10, 36, 59));
+        idTF.setForeground(new java.awt.Color(255, 255, 255));
         idTF.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 idTFKeyPressed(evt);
@@ -610,9 +610,9 @@ public final class ManageAdministrators extends javax.swing.JDialog {
         });
         jPanel1.add(idTF, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 160, -1));
 
-        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 10)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Division");
+        jLabel5.setText("Division:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, -1, 20));
 
         searchempBTN.setBackground(new java.awt.Color(10, 36, 59));
@@ -631,6 +631,7 @@ public final class ManageAdministrators extends javax.swing.JDialog {
         jPanel1.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(228, 30, 25, 20));
 
         txt_search.setBackground(new java.awt.Color(10, 36, 59));
+        txt_search.setForeground(new java.awt.Color(255, 255, 255));
         txt_search.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_searchKeyPressed(evt);
@@ -642,8 +643,9 @@ public final class ManageAdministrators extends javax.swing.JDialog {
         jPanel1.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 30, 160, -1));
 
         divisionCB.setBackground(new java.awt.Color(10, 36, 59));
+        divisionCB.setEditable(true);
+        divisionCB.setForeground(new java.awt.Color(255, 255, 255));
         divisionCB.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        divisionCB.setEnabled(false);
         divisionCB.setLightWeightPopupEnabled(false);
         divisionCB.setNextFocusableComponent(fullnameTF);
         divisionCB.addActionListener(new java.awt.event.ActionListener() {
@@ -670,11 +672,13 @@ public final class ManageAdministrators extends javax.swing.JDialog {
 
         updateBTN.setBackground(new java.awt.Color(250, 74, 84));
         updateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 12)); // NOI18N
+        updateBTN.setForeground(new java.awt.Color(255, 255, 255));
         updateBTN.setText("UPDATE");
+        updateBTN.setBorderPainted(false);
         updateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         updateBTN.setDefaultCapable(false);
-        updateBTN.setEnabled(false);
         updateBTN.setFocusPainted(false);
+        updateBTN.setOpaque(true);
         updateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 updateBTNActionPerformed(evt);
@@ -686,10 +690,11 @@ public final class ManageAdministrators extends javax.swing.JDialog {
         deleteBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 12)); // NOI18N
         deleteBTN.setForeground(new java.awt.Color(255, 255, 255));
         deleteBTN.setText("DELETE");
+        deleteBTN.setBorderPainted(false);
         deleteBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         deleteBTN.setDefaultCapable(false);
-        deleteBTN.setEnabled(false);
         deleteBTN.setFocusPainted(false);
+        deleteBTN.setOpaque(true);
         deleteBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteBTNActionPerformed(evt);
@@ -701,9 +706,11 @@ public final class ManageAdministrators extends javax.swing.JDialog {
         clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 12)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("CLEAR");
+        clearBTN.setBorderPainted(false);
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setDefaultCapable(false);
         clearBTN.setFocusPainted(false);
+        clearBTN.setOpaque(true);
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 clearBTNActionPerformed(evt);

@@ -648,7 +648,7 @@ public final class RegisterFrame extends javax.swing.JDialog {
 
         passwordTF.setBackground(new java.awt.Color(10, 36, 59));
         passwordTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        passwordTF.setForeground(new java.awt.Color(102, 102, 102));
+        passwordTF.setForeground(new java.awt.Color(255, 255, 255));
         passwordTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         passwordTF.setDoubleBuffered(true);
         passwordTF.setEchoChar('\u25cf');
@@ -778,7 +778,7 @@ public final class RegisterFrame extends javax.swing.JDialog {
 
         confirmpasswordTF.setBackground(new java.awt.Color(10, 36, 59));
         confirmpasswordTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        confirmpasswordTF.setForeground(new java.awt.Color(102, 102, 102));
+        confirmpasswordTF.setForeground(new java.awt.Color(255, 255, 255));
         confirmpasswordTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         confirmpasswordTF.setDoubleBuffered(true);
         confirmpasswordTF.setEchoChar('\u25cf');
@@ -809,7 +809,7 @@ public final class RegisterFrame extends javax.swing.JDialog {
 
         fullnameTF.setBackground(new java.awt.Color(10, 36, 59));
         fullnameTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        fullnameTF.setForeground(new java.awt.Color(102, 102, 102));
+        fullnameTF.setForeground(new java.awt.Color(255, 255, 255));
         fullnameTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         fullnameTF.setNextFocusableComponent(null);
         fullnameTF.addActionListener(new java.awt.event.ActionListener() {
@@ -839,7 +839,7 @@ public final class RegisterFrame extends javax.swing.JDialog {
 
         usernameTF.setBackground(new java.awt.Color(10, 36, 59));
         usernameTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        usernameTF.setForeground(new java.awt.Color(102, 102, 102));
+        usernameTF.setForeground(new java.awt.Color(255, 255, 255));
         usernameTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         usernameTF.setNextFocusableComponent(null);
         usernameTF.addActionListener(new java.awt.event.ActionListener() {
@@ -862,7 +862,7 @@ public final class RegisterFrame extends javax.swing.JDialog {
 
         userlevelCB.setBackground(new java.awt.Color(10, 36, 59));
         userlevelCB.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
-        userlevelCB.setForeground(new java.awt.Color(102, 102, 102));
+        userlevelCB.setForeground(new java.awt.Color(255, 255, 255));
         userlevelCB.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         userlevelCB.setLightWeightPopupEnabled(false);
         userlevelCB.addActionListener(new java.awt.event.ActionListener() {
@@ -893,7 +893,7 @@ public final class RegisterFrame extends javax.swing.JDialog {
 
         pincodeTF.setBackground(new java.awt.Color(10, 36, 59));
         pincodeTF.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        pincodeTF.setForeground(new java.awt.Color(102, 102, 102));
+        pincodeTF.setForeground(new java.awt.Color(255, 255, 255));
         pincodeTF.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         pincodeTF.setDoubleBuffered(true);
         pincodeTF.setEchoChar('\u25cf');

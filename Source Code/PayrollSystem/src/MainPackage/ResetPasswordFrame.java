@@ -707,8 +707,9 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         pnlMAIN.add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 730, -1));
 
         resetpasswordBTN.setBackground(new java.awt.Color(255, 70, 84));
+        resetpasswordBTN.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         resetpasswordBTN.setText("RESET PASSWORD");
-        resetpasswordBTN.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 24)); // NOI18N
+        resetpasswordBTN.setFont(new java.awt.Font("Tungsten Bold", 1, 20)); // NOI18N
         resetpasswordBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         resetpasswordBTN.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
@@ -720,24 +721,23 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 resetpasswordBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(resetpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 410, -1, 50));
+        pnlMAIN.add(resetpasswordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 370, 180, 50));
 
         backBTN.setBackground(new java.awt.Color(255, 70, 84));
         backBTN.setText("BACK TO LOG IN");
-        backBTN.setFont(new java.awt.Font("Microsoft New Tai Lue", 1, 14)); // NOI18N
-        backBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        backBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        backBTN.setFont(new java.awt.Font("Tungsten Bold", 1, 20)); // NOI18N
+        backBTN.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         backBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 backBTNActionPerformed(evt);
             }
         });
-        pnlMAIN.add(backBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 460, 140, 50));
+        pnlMAIN.add(backBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 430, 180, 50));
 
-        clearBTN.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        clearBTN.setText("CLEAR");
+        clearBTN.setText("Clear");
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setPreferredSize(new java.awt.Dimension(118, 10));
         clearBTN.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -745,7 +745,7 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
                 clearBTNMousePressed(evt);
             }
         });
-        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 390, 50, 20));
+        pnlMAIN.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 360, 50, 20));
 
         confirmpasswordLABEL.setFont(new java.awt.Font("Microsoft JhengHei", 1, 14)); // NOI18N
         confirmpasswordLABEL.setForeground(new java.awt.Color(255, 255, 255));
@@ -823,10 +823,12 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         showpasswordCBold.setBackground(new java.awt.Color(10, 36, 59));
         showpasswordCBold.setToolTipText("Show/Hide Password");
         showpasswordCBold.setBorderPaintedFlat(true);
+        showpasswordCBold.setContentAreaFilled(false);
         showpasswordCBold.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         showpasswordCBold.setDoubleBuffered(true);
         showpasswordCBold.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         showpasswordCBold.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        showpasswordCBold.setOpaque(true);
         showpasswordCBold.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 showpasswordCBoldActionPerformed(evt);

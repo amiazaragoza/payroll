@@ -550,7 +550,7 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE AGENT ALLOWANCE | STEP 2 of 3", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 0, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "MANAGE AGENT ALLOWANCE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 0, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewScroll.setBackground(new java.awt.Color(249, 250, 253));
@@ -853,7 +853,7 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
 
         jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Search Employee ID:");
+        jLabel14.setText("Search Agent ID:");
         jPanel5.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 130, 20));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
@@ -957,13 +957,14 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
         viewpanel.add(tableScroll, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, 840, 234));
 
         calculateBTN.setBackground(new java.awt.Color(255, 70, 84));
-        calculateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        calculateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         calculateBTN.setForeground(new java.awt.Color(255, 255, 255));
         calculateBTN.setText("Calculate");
+        calculateBTN.setBorderPainted(false);
         calculateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         calculateBTN.setDefaultCapable(false);
-        calculateBTN.setEnabled(false);
         calculateBTN.setFocusPainted(false);
+        calculateBTN.setOpaque(true);
         calculateBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         calculateBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -991,9 +992,10 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
         viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 570, 200, 30));
 
         clearBTN.setBackground(new java.awt.Color(255, 70, 84));
-        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
+        clearBTN.setBorderPainted(false);
         clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         clearBTN.setDefaultCapable(false);
         clearBTN.setFocusPainted(false);
@@ -1021,13 +1023,14 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
         viewpanel.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 220, -1, 20));
 
         saveBTN.setBackground(new java.awt.Color(255, 70, 84));
-        saveBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        saveBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 20)); // NOI18N
         saveBTN.setForeground(new java.awt.Color(255, 255, 255));
         saveBTN.setText("Save");
+        saveBTN.setBorderPainted(false);
         saveBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         saveBTN.setDefaultCapable(false);
-        saveBTN.setEnabled(false);
         saveBTN.setFocusPainted(false);
+        saveBTN.setOpaque(true);
         saveBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         saveBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -646,6 +646,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         addrecordBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
         addrecordBTN.setForeground(new java.awt.Color(255, 255, 255));
         addrecordBTN.setText("Add Record");
+        addrecordBTN.setBorderPainted(false);
         addrecordBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         addrecordBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -663,6 +664,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
         clearBTN.setForeground(new java.awt.Color(255, 255, 255));
         clearBTN.setText("Clear");
+        clearBTN.setBorderPainted(false);
         clearBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         clearBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -853,6 +855,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         insertpictureBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         insertpictureBTN.setForeground(new java.awt.Color(255, 255, 255));
         insertpictureBTN.setText("Insert Picture");
+        insertpictureBTN.setBorderPainted(false);
         insertpictureBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 insertpictureBTNActionPerformed(evt);

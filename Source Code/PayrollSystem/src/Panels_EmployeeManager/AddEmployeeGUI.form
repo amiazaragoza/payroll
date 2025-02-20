@@ -614,6 +614,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Add Record"/>
+                    <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="verticalAlignment" type="int" value="3"/>
                   </Properties>
                   <Events>
@@ -638,6 +639,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Clear"/>
+                    <Property name="borderPainted" type="boolean" value="false"/>
                     <Property name="verticalAlignment" type="int" value="3"/>
                   </Properties>
                   <Events>
@@ -1099,6 +1101,7 @@
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Insert Picture"/>
+                    <Property name="borderPainted" type="boolean" value="false"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="insertpictureBTNActionPerformed"/>

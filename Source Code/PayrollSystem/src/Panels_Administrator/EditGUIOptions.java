@@ -1182,26 +1182,27 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(tf16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, 180, 30));
 
         uncheckAllBTN.setBackground(new java.awt.Color(255, 70, 84));
-        uncheckAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
+        uncheckAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         uncheckAllBTN.setForeground(new java.awt.Color(255, 255, 255));
         uncheckAllBTN.setText("Uncheck All");
+        uncheckAllBTN.setBorderPainted(false);
         uncheckAllBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         uncheckAllBTN.setFocusPainted(false);
         uncheckAllBTN.setFocusable(false);
-        uncheckAllBTN.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
+        uncheckAllBTN.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         uncheckAllBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 uncheckAllBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(uncheckAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 120, 40));
+        viewpanel.add(uncheckAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 400, 120, 40));
 
         applyBTN.setBackground(new java.awt.Color(255, 70, 84));
-        applyBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
-        applyBTN.setForeground(new java.awt.Color(153, 153, 153));
+        applyBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        applyBTN.setForeground(new java.awt.Color(255, 255, 255));
         applyBTN.setText("Apply");
+        applyBTN.setBorderPainted(false);
         applyBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        applyBTN.setEnabled(false);
         applyBTN.setFocusPainted(false);
         applyBTN.setFocusable(false);
         applyBTN.addActionListener(new java.awt.event.ActionListener() {
@@ -1209,12 +1210,13 @@ public final class EditGUIOptions extends javax.swing.JDialog {
                 applyBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(applyBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(772, 400, 80, 40));
+        viewpanel.add(applyBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 400, 120, 40));
 
         checkAllBTN.setBackground(new java.awt.Color(255, 70, 84));
-        checkAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
+        checkAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         checkAllBTN.setForeground(new java.awt.Color(255, 255, 255));
         checkAllBTN.setText("Check All");
+        checkAllBTN.setBorderPainted(false);
         checkAllBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         checkAllBTN.setFocusPainted(false);
         checkAllBTN.setFocusable(false);
@@ -1223,12 +1225,13 @@ public final class EditGUIOptions extends javax.swing.JDialog {
                 checkAllBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(checkAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 400, 100, 40));
+        viewpanel.add(checkAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 120, 40));
 
         savechangesBTN.setBackground(new java.awt.Color(255, 70, 84));
-        savechangesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
+        savechangesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         savechangesBTN.setForeground(new java.awt.Color(255, 255, 255));
         savechangesBTN.setText("Save Changes");
+        savechangesBTN.setBorderPainted(false);
         savechangesBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         savechangesBTN.setFocusPainted(false);
         savechangesBTN.setFocusable(false);
@@ -1237,12 +1240,13 @@ public final class EditGUIOptions extends javax.swing.JDialog {
                 savechangesBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(savechangesBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(566, 400, 140, 40));
+        viewpanel.add(savechangesBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 400, 140, 40));
 
         reset2defaultBTN.setBackground(new java.awt.Color(255, 70, 84));
-        reset2defaultBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
+        reset2defaultBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
         reset2defaultBTN.setForeground(new java.awt.Color(255, 255, 255));
         reset2defaultBTN.setText("Reset to Default");
+        reset2defaultBTN.setBorderPainted(false);
         reset2defaultBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         reset2defaultBTN.setFocusPainted(false);
         reset2defaultBTN.setFocusable(false);
@@ -1251,7 +1255,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
                 reset2defaultBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(reset2defaultBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 400, 150, 40));
+        viewpanel.add(reset2defaultBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 400, 150, 40));
 
         txt_emp.setBackground(new java.awt.Color(10, 36, 59));
         txt_emp.setForeground(new java.awt.Color(10, 36, 59));
