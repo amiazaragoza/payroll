@@ -875,6 +875,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         exitButton.setToolTipText("Close");
         exitButton.setBorder(null);
         exitButton.setBorderPainted(false);
+        exitButton.setContentAreaFilled(false);
         exitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         exitButton.setDefaultCapable(false);
         exitButton.setFocusPainted(false);
@@ -908,6 +909,7 @@ public final class LoginFrame extends javax.swing.JFrame {
         minimizeButton.setToolTipText("Minimize");
         minimizeButton.setBorder(null);
         minimizeButton.setBorderPainted(false);
+        minimizeButton.setContentAreaFilled(false);
         minimizeButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         minimizeButton.setDefaultCapable(false);
         minimizeButton.setFocusPainted(false);

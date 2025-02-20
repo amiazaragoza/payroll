@@ -676,7 +676,6 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         pnlTitle.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 6));
 
         lblTitleIcon.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitleIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
         lblTitleIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 lblTitleIconMousePressed(evt);
@@ -741,6 +740,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf1.setEditable(false);
         tf1.setBackground(new java.awt.Color(10, 36, 59));
         tf1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf1.setForeground(new java.awt.Color(255, 255, 255));
         tf1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf1.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -766,6 +766,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf2.setEditable(false);
         tf2.setBackground(new java.awt.Color(10, 36, 59));
         tf2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf2.setForeground(new java.awt.Color(255, 255, 255));
         tf2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf2.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -791,6 +792,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf3.setEditable(false);
         tf3.setBackground(new java.awt.Color(10, 36, 59));
         tf3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf3.setForeground(new java.awt.Color(255, 255, 255));
         tf3.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf3.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -816,6 +818,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf4.setEditable(false);
         tf4.setBackground(new java.awt.Color(10, 36, 59));
         tf4.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf4.setForeground(new java.awt.Color(255, 255, 255));
         tf4.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf4.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -841,6 +844,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf5.setEditable(false);
         tf5.setBackground(new java.awt.Color(10, 36, 59));
         tf5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf5.setForeground(new java.awt.Color(255, 255, 255));
         tf5.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf5.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -866,6 +870,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf6.setEditable(false);
         tf6.setBackground(new java.awt.Color(10, 36, 59));
         tf6.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf6.setForeground(new java.awt.Color(255, 255, 255));
         tf6.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf6.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -896,6 +901,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf7.setEditable(false);
         tf7.setBackground(new java.awt.Color(10, 36, 59));
         tf7.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf7.setForeground(new java.awt.Color(255, 255, 255));
         tf7.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf7.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -921,6 +927,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf8.setEditable(false);
         tf8.setBackground(new java.awt.Color(10, 36, 59));
         tf8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf8.setForeground(new java.awt.Color(255, 255, 255));
         tf8.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf8.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -951,6 +958,7 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         tf9.setEditable(false);
         tf9.setBackground(new java.awt.Color(10, 36, 59));
         tf9.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
+        tf9.setForeground(new java.awt.Color(255, 255, 255));
         tf9.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         tf9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         tf9.setSelectedTextColor(new java.awt.Color(249, 250, 253));
@@ -1174,30 +1182,28 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(tf16, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 250, 180, 30));
 
         uncheckAllBTN.setBackground(new java.awt.Color(255, 70, 84));
-        uncheckAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        uncheckAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         uncheckAllBTN.setForeground(new java.awt.Color(255, 255, 255));
         uncheckAllBTN.setText("Uncheck All");
         uncheckAllBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         uncheckAllBTN.setFocusPainted(false);
         uncheckAllBTN.setFocusable(false);
-        uncheckAllBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        uncheckAllBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        uncheckAllBTN.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         uncheckAllBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 uncheckAllBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(uncheckAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(41, 400, 120, 40));
+        viewpanel.add(uncheckAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 400, 120, 40));
 
         applyBTN.setBackground(new java.awt.Color(255, 70, 84));
-        applyBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
-        applyBTN.setForeground(new java.awt.Color(255, 255, 255));
+        applyBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
+        applyBTN.setForeground(new java.awt.Color(153, 153, 153));
         applyBTN.setText("Apply");
         applyBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         applyBTN.setEnabled(false);
         applyBTN.setFocusPainted(false);
         applyBTN.setFocusable(false);
-        applyBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         applyBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 applyBTNActionPerformed(evt);
@@ -1206,14 +1212,12 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(applyBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(772, 400, 80, 40));
 
         checkAllBTN.setBackground(new java.awt.Color(255, 70, 84));
-        checkAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        checkAllBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         checkAllBTN.setForeground(new java.awt.Color(255, 255, 255));
         checkAllBTN.setText("Check All");
         checkAllBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         checkAllBTN.setFocusPainted(false);
         checkAllBTN.setFocusable(false);
-        checkAllBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        checkAllBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         checkAllBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 checkAllBTNActionPerformed(evt);
@@ -1222,14 +1226,12 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(checkAllBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 400, 100, 40));
 
         savechangesBTN.setBackground(new java.awt.Color(255, 70, 84));
-        savechangesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        savechangesBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         savechangesBTN.setForeground(new java.awt.Color(255, 255, 255));
         savechangesBTN.setText("Save Changes");
         savechangesBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         savechangesBTN.setFocusPainted(false);
         savechangesBTN.setFocusable(false);
-        savechangesBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        savechangesBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         savechangesBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 savechangesBTNActionPerformed(evt);
@@ -1238,14 +1240,12 @@ public final class EditGUIOptions extends javax.swing.JDialog {
         viewpanel.add(savechangesBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(566, 400, 140, 40));
 
         reset2defaultBTN.setBackground(new java.awt.Color(255, 70, 84));
-        reset2defaultBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
+        reset2defaultBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         reset2defaultBTN.setForeground(new java.awt.Color(255, 255, 255));
         reset2defaultBTN.setText("Reset to Default");
         reset2defaultBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         reset2defaultBTN.setFocusPainted(false);
         reset2defaultBTN.setFocusable(false);
-        reset2defaultBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        reset2defaultBTN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         reset2defaultBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 reset2defaultBTNActionPerformed(evt);

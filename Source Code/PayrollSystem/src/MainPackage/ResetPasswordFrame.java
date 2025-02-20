@@ -626,7 +626,6 @@ public final class ResetPasswordFrame extends javax.swing.JFrame {
         guiTitle.setBackground(new java.awt.Color(255, 70, 84));
         guiTitle.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         guiTitle.setForeground(new java.awt.Color(255, 70, 84));
-        guiTitle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
         guiTitle.setText("Reset Password");
         guiTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {

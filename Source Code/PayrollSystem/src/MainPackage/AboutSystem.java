@@ -187,7 +187,7 @@ public final class AboutSystem extends javax.swing.JDialog {
         setType(java.awt.Window.Type.UTILITY);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlTop.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTop.setBackground(new java.awt.Color(255, 70, 84));
         pnlTop.setPreferredSize(new java.awt.Dimension(1024, 30));
         pnlTop.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
@@ -204,7 +204,7 @@ public final class AboutSystem extends javax.swing.JDialog {
         });
         pnlTop.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        pnlActions.setBackground(new java.awt.Color(0, 102, 204));
+        pnlActions.setBackground(new java.awt.Color(255, 70, 84));
         pnlActions.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 pnlActionsMouseEntered(evt);
@@ -216,7 +216,7 @@ public final class AboutSystem extends javax.swing.JDialog {
         pnlActions.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
         pnlTop.add(pnlActions, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, -1, 30));
 
-        pnlTitle.setBackground(new java.awt.Color(0, 102, 204));
+        pnlTitle.setBackground(new java.awt.Color(255, 70, 84));
         pnlTitle.setPreferredSize(new java.awt.Dimension(400, 28));
         pnlTitle.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
@@ -229,7 +229,6 @@ public final class AboutSystem extends javax.swing.JDialog {
         pnlTitle.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT, 5, 6));
 
         lblTitleIcon.setBackground(new java.awt.Color(0, 102, 204));
-        lblTitleIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TOP_ICON_18px.png"))); // NOI18N
         lblTitleIcon.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 lblTitleIconMousePressed(evt);
@@ -240,7 +239,7 @@ public final class AboutSystem extends javax.swing.JDialog {
         lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle.setText("PAYROLL SYSTEM");
+        lblTitle.setText("AGENT PAYROLL SYSTEM");
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 lblTitleMouseMoved(evt);
@@ -261,7 +260,7 @@ public final class AboutSystem extends javax.swing.JDialog {
 
         pnlTop.add(pnlTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 30));
 
-        exitButton.setBackground(new java.awt.Color(0, 102, 204));
+        exitButton.setBackground(new java.awt.Color(255, 70, 84));
         exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_multiply_18px_1.png"))); // NOI18N
         exitButton.setBorder(null);
         exitButton.setBorderPainted(false);
@@ -299,7 +298,7 @@ public final class AboutSystem extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 560, -1));
 
         mainpanel.setBackground(new java.awt.Color(249, 250, 253));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ABOUT", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(0, 102, 204))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ABOUT", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 24), new java.awt.Color(102, 102, 102))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -314,9 +313,9 @@ public final class AboutSystem extends javax.swing.JDialog {
         viewpanel.add(sourceLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 433, -1, 30));
 
         aboutLBL.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        aboutLBL.setForeground(new java.awt.Color(0, 102, 204));
-        aboutLBL.setText("<html><center>Employee Payroll Management System, made by ECoders is used to manage and streamline the process of making payments to employees.<br><br>  Once an employee’s standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.<br><br>  The advantage of using Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to employees, that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.</center></html>");
+        aboutLBL.setText("<html><center>Agent Payroll Management System, made by SENTINELS is used to manage and streamline the process of making payments to employees.<br><br>  Once an employee’s standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.<br><br>  The advantage of using Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to employees, that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.</center></html>");
         viewpanel.add(aboutLBL, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 130, 540, 330));
+        aboutLBL.getAccessibleContext().setAccessibleName("Valorant Agent Payroll Management System, made by SENTINELS is used to manage and streamline the process of making payments to Valorant Agents.  Once an agent's standard payment information is entered into the payroll system, i.e. their wage, the number of hours they work per week and their bank account details, minimal maintenance is required.  The advantage of using Valorant Payroll System is that it relieves accounting personnel of a lot of the administrative tasks associated with making payments to Agents that would otherwise be very time-consuming. It also reduces the instance of mistakes caused by human error.");
 
         rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/about_128px.png"))); // NOI18N
         viewpanel.add(rSPanelImage1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 0, 120, 120));
