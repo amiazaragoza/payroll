@@ -455,7 +455,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADD EMPLOYEE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADD Agent", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -469,8 +469,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Employee id :");
-        viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 15, -1, 20));
+        jLabel5.setText("Agent ID :");
+        viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 15, -1, 20));
 
         jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
