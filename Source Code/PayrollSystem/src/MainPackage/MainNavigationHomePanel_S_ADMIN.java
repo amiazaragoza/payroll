@@ -1352,6 +1352,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         logoutBTN.setToolTipText("");
         logoutBTN.setBorder(null);
         logoutBTN.setBorderPainted(false);
+        logoutBTN.setContentAreaFilled(false);
         logoutBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         logoutBTN.setDefaultCapable(false);
         logoutBTN.setDoubleBuffered(true);
@@ -1431,6 +1432,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         employeemanagerBTN.setToolTipText("");
         employeemanagerBTN.setBorder(null);
         employeemanagerBTN.setBorderPainted(false);
+        employeemanagerBTN.setContentAreaFilled(false);
         employeemanagerBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         employeemanagerBTN.setDefaultCapable(false);
         employeemanagerBTN.setDoubleBuffered(true);
@@ -1470,6 +1472,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         adminpanelBTN.setToolTipText("");
         adminpanelBTN.setBorder(null);
         adminpanelBTN.setBorderPainted(false);
+        adminpanelBTN.setContentAreaFilled(false);
         adminpanelBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         adminpanelBTN.setDefaultCapable(false);
         adminpanelBTN.setDoubleBuffered(true);
