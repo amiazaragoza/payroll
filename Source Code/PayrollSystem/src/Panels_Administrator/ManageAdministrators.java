@@ -595,7 +595,7 @@ public final class ManageAdministrators extends javax.swing.JDialog {
 
         jLabel4.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Id:");
+        jLabel4.setText("ID:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, 20));
 
         idTF.setBackground(new java.awt.Color(10, 36, 59));

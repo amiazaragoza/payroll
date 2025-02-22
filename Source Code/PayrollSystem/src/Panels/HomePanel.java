@@ -262,6 +262,7 @@ public final class HomePanel extends javax.swing.JPanel {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 1310, -1));
 
         jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel4.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         jPanel4.setOpaque(false);
         jPanel4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -276,18 +277,18 @@ public final class HomePanel extends javax.swing.JPanel {
         rSPanelImage3.setLayout(rSPanelImage3Layout);
         rSPanelImage3Layout.setHorizontalGroup(
             rSPanelImage3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
+            .addGap(0, 44, Short.MAX_VALUE)
         );
         rSPanelImage3Layout.setVerticalGroup(
             rSPanelImage3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+            .addGap(0, 37, Short.MAX_VALUE)
         );
 
         dateLABEL.setBackground(new java.awt.Color(255, 255, 255));
-        dateLABEL.setFont(new java.awt.Font("VALORANT", 0, 24)); // NOI18N
+        dateLABEL.setFont(new java.awt.Font("Tungsten Bold", 0, 33)); // NOI18N
         dateLABEL.setForeground(new java.awt.Color(255, 255, 255));
         dateLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        dateLABEL.setText("January 1, 2020");
+        dateLABEL.setText("JANUARY 1, 2020");
 
         dayLABEL.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
         dayLABEL.setForeground(new java.awt.Color(255, 255, 255));
@@ -300,22 +301,23 @@ public final class HomePanel extends javax.swing.JPanel {
             .addComponent(dateLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(dayLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createSequentialGroup()
-                .addGap(68, 68, 68)
+                .addGap(54, 54, 54)
                 .addComponent(rSPanelImage3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
+                .addGap(20, 20, 20)
                 .addComponent(rSPanelImage3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(dateLABEL)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(dayLABEL)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, -1, -1));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 140, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 0));
         jPanel2.setToolTipText("Employees");
@@ -323,7 +325,7 @@ public final class HomePanel extends javax.swing.JPanel {
 
         rSPanelImage1.setBackground(new java.awt.Color(0, 0, 0));
         rSPanelImage1.setForeground(new java.awt.Color(255, 255, 255));
-        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/476485215_3027896070700056_4069909161506228191_n.png"))); // NOI18N
+        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/Free_Agent_Token.png"))); // NOI18N
 
         javax.swing.GroupLayout rSPanelImage1Layout = new javax.swing.GroupLayout(rSPanelImage1);
         rSPanelImage1.setLayout(rSPanelImage1Layout);
@@ -336,7 +338,7 @@ public final class HomePanel extends javax.swing.JPanel {
             .addGap(0, 51, Short.MAX_VALUE)
         );
 
-        totalempTFhome.setFont(new java.awt.Font("VALORANT", 0, 48)); // NOI18N
+        totalempTFhome.setFont(new java.awt.Font("Tungsten Bold", 0, 36)); // NOI18N
         totalempTFhome.setForeground(new java.awt.Color(255, 255, 255));
         totalempTFhome.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         totalempTFhome.setText("1");
@@ -349,16 +351,17 @@ public final class HomePanel extends javax.swing.JPanel {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(totalempTFhome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(totalempTFhome, javax.swing.GroupLayout.DEFAULT_SIZE, 196, Short.MAX_VALUE)
             .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(69, 69, 69)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(rSPanelImage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(70, Short.MAX_VALUE))
+                .addGap(67, 67, 67))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(12, 12, 12)
                 .addComponent(rSPanelImage1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(totalempTFhome)
@@ -367,7 +370,7 @@ public final class HomePanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 140, -1, -1));
 
         jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setOpaque(false);
@@ -379,15 +382,15 @@ public final class HomePanel extends javax.swing.JPanel {
         rSPanelImage4.setLayout(rSPanelImage4Layout);
         rSPanelImage4Layout.setHorizontalGroup(
             rSPanelImage4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
+            .addGap(0, 43, Short.MAX_VALUE)
         );
         rSPanelImage4Layout.setVerticalGroup(
             rSPanelImage4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+            .addGap(0, 39, Short.MAX_VALUE)
         );
 
         currenttimeLABEL.setBackground(new java.awt.Color(255, 255, 255));
-        currenttimeLABEL.setFont(new java.awt.Font("VALORANT", 0, 36)); // NOI18N
+        currenttimeLABEL.setFont(new java.awt.Font("Tungsten Bold", 0, 36)); // NOI18N
         currenttimeLABEL.setForeground(new java.awt.Color(255, 255, 255));
         currenttimeLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         currenttimeLABEL.setText("12:00:01 AM");
@@ -403,22 +406,23 @@ public final class HomePanel extends javax.swing.JPanel {
             .addComponent(currenttimeLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(68, 68, 68)
+                .addGap(39, 39, 39)
                 .addComponent(rSPanelImage4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
                 .addComponent(rSPanelImage4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(currenttimeLABEL)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel21)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 380, -1, -1));
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
         refreshBTNhome.setBackground(new java.awt.Color(249, 250, 253));
         refreshBTNhome.setForeground(new java.awt.Color(249, 250, 253));
