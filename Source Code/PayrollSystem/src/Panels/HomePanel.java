@@ -239,14 +239,14 @@ public final class HomePanel extends javax.swing.JPanel {
         rSPanelImage3 = new rojerusan.RSPanelImage();
         dateLABEL = new javax.swing.JLabel();
         dayLABEL = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        rSPanelImage4 = new rojerusan.RSPanelImage();
-        currenttimeLABEL = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         rSPanelImage1 = new rojerusan.RSPanelImage();
         totalempTFhome = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
+        jPanel5 = new javax.swing.JPanel();
+        rSPanelImage4 = new rojerusan.RSPanelImage();
+        currenttimeLABEL = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
         refreshBTNhome = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
@@ -257,11 +257,11 @@ public final class HomePanel extends javax.swing.JPanel {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("VALORANT", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("HOME PANEL");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1310, -1));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 1310, -1));
 
-        jPanel4.setBackground(new java.awt.Color(255, 102, 0));
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
         jPanel4.setOpaque(false);
         jPanel4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
@@ -269,6 +269,7 @@ public final class HomePanel extends javax.swing.JPanel {
             }
         });
 
+        rSPanelImage3.setBackground(new java.awt.Color(255, 255, 255));
         rSPanelImage3.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/calendar.png"))); // NOI18N
 
         javax.swing.GroupLayout rSPanelImage3Layout = new javax.swing.GroupLayout(rSPanelImage3);
@@ -282,6 +283,7 @@ public final class HomePanel extends javax.swing.JPanel {
             .addGap(0, 51, Short.MAX_VALUE)
         );
 
+        dateLABEL.setBackground(new java.awt.Color(255, 255, 255));
         dateLABEL.setFont(new java.awt.Font("VALORANT", 0, 24)); // NOI18N
         dateLABEL.setForeground(new java.awt.Color(255, 255, 255));
         dateLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -313,63 +315,15 @@ public final class HomePanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 230, -1, -1));
-
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel5.setOpaque(false);
-
-        rSPanelImage4.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/clock.png"))); // NOI18N
-
-        javax.swing.GroupLayout rSPanelImage4Layout = new javax.swing.GroupLayout(rSPanelImage4);
-        rSPanelImage4.setLayout(rSPanelImage4Layout);
-        rSPanelImage4Layout.setHorizontalGroup(
-            rSPanelImage4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 57, Short.MAX_VALUE)
-        );
-        rSPanelImage4Layout.setVerticalGroup(
-            rSPanelImage4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
-        );
-
-        currenttimeLABEL.setFont(new java.awt.Font("VALORANT", 0, 36)); // NOI18N
-        currenttimeLABEL.setForeground(new java.awt.Color(255, 255, 255));
-        currenttimeLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        currenttimeLABEL.setText("12:00:01 AM");
-
-        jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
-        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(currenttimeLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(68, 68, 68)
-                .addComponent(rSPanelImage4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(rSPanelImage4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(currenttimeLABEL)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel21)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 380, -1, -1));
+        jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 160, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 0));
         jPanel2.setToolTipText("Employees");
         jPanel2.setOpaque(false);
 
-        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/members2.png"))); // NOI18N
+        rSPanelImage1.setBackground(new java.awt.Color(0, 0, 0));
+        rSPanelImage1.setForeground(new java.awt.Color(255, 255, 255));
+        rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/476485215_3027896070700056_4069909161506228191_n.png"))); // NOI18N
 
         javax.swing.GroupLayout rSPanelImage1Layout = new javax.swing.GroupLayout(rSPanelImage1);
         rSPanelImage1.setLayout(rSPanelImage1Layout);
@@ -413,11 +367,61 @@ public final class HomePanel extends javax.swing.JPanel {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 80, -1, -1));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 60, -1, -1));
+
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setOpaque(false);
+
+        rSPanelImage4.setBackground(new java.awt.Color(255, 255, 255));
+        rSPanelImage4.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/476429750_998217335557242_9034859112218560101_n.png"))); // NOI18N
+
+        javax.swing.GroupLayout rSPanelImage4Layout = new javax.swing.GroupLayout(rSPanelImage4);
+        rSPanelImage4.setLayout(rSPanelImage4Layout);
+        rSPanelImage4Layout.setHorizontalGroup(
+            rSPanelImage4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 57, Short.MAX_VALUE)
+        );
+        rSPanelImage4Layout.setVerticalGroup(
+            rSPanelImage4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 51, Short.MAX_VALUE)
+        );
+
+        currenttimeLABEL.setBackground(new java.awt.Color(255, 255, 255));
+        currenttimeLABEL.setFont(new java.awt.Font("VALORANT", 0, 36)); // NOI18N
+        currenttimeLABEL.setForeground(new java.awt.Color(255, 255, 255));
+        currenttimeLABEL.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        currenttimeLABEL.setText("12:00:01 AM");
+
+        jLabel21.setFont(new java.awt.Font("Segoe UI", 0, 11)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(currenttimeLABEL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addGap(68, 68, 68)
+                .addComponent(rSPanelImage4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(rSPanelImage4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(currenttimeLABEL)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel21)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 380, -1, -1));
 
         refreshBTNhome.setBackground(new java.awt.Color(249, 250, 253));
         refreshBTNhome.setForeground(new java.awt.Color(249, 250, 253));
-        refreshBTNhome.setText("Refresh");
         refreshBTNhome.setBorderPainted(false);
         refreshBTNhome.setContentAreaFilled(false);
         refreshBTNhome.setDefaultCapable(false);
@@ -430,22 +434,28 @@ public final class HomePanel extends javax.swing.JPanel {
         });
         jPanel1.add(refreshBTNhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 550, -1, -1));
 
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/462541856_871389728542571_2579036375259697284_n.png"))); // NOI18N
         jLabel2.setText("jLabel2");
         jLabel2.setName("jLabel2"); // NOI18N
+        jLabel2.addHierarchyListener(new java.awt.event.HierarchyListener() {
+            public void hierarchyChanged(java.awt.event.HierarchyEvent evt) {
+                jLabel2HierarchyChanged(evt);
+            }
+        });
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1310, 570));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1313, Short.MAX_VALUE)
+            .addGap(0, 1380, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 573, Short.MAX_VALUE)
+            .addGap(0, 571, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -462,6 +472,10 @@ public final class HomePanel extends javax.swing.JPanel {
             Logger.getLogger(HomePanel.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_refreshBTNhomeActionPerformed
+
+    private void jLabel2HierarchyChanged(java.awt.event.HierarchyEvent evt) {//GEN-FIRST:event_jLabel2HierarchyChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel2HierarchyChanged
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
