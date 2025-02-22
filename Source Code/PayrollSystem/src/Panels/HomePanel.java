@@ -248,6 +248,7 @@ public final class HomePanel extends javax.swing.JPanel {
         totalempTFhome = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         refreshBTNhome = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(249, 250, 253));
         setPreferredSize(new java.awt.Dimension(1313, 571));
@@ -261,7 +262,7 @@ public final class HomePanel extends javax.swing.JPanel {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 1310, -1));
 
         jPanel4.setBackground(new java.awt.Color(255, 102, 0));
-        jPanel4.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel4.setOpaque(false);
         jPanel4.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseMoved(java.awt.event.MouseEvent evt) {
                 jPanel4MouseMoved(evt);
@@ -314,8 +315,9 @@ public final class HomePanel extends javax.swing.JPanel {
 
         jPanel1.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 230, -1, -1));
 
-        jPanel5.setBackground(new java.awt.Color(0, 153, 102));
-        jPanel5.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel5.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        jPanel5.setOpaque(false);
 
         rSPanelImage4.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/clock.png"))); // NOI18N
 
@@ -364,8 +366,8 @@ public final class HomePanel extends javax.swing.JPanel {
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 380, -1, -1));
 
         jPanel2.setBackground(new java.awt.Color(204, 204, 0));
-        jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jPanel2.setToolTipText("Employees");
+        jPanel2.setOpaque(false);
 
         rSPanelImage1.setImagen(new javax.swing.ImageIcon(getClass().getResource("/Images/members2.png"))); // NOI18N
 
@@ -428,6 +430,11 @@ public final class HomePanel extends javax.swing.JPanel {
         });
         jPanel1.add(refreshBTNhome, new org.netbeans.lib.awtextra.AbsoluteConstraints(1240, 550, -1, -1));
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/462541856_871389728542571_2579036375259697284_n.png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jLabel2.setName("jLabel2"); // NOI18N
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1310, 570));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
@@ -463,6 +470,7 @@ public final class HomePanel extends javax.swing.JPanel {
     private javax.swing.JLabel dayLABEL;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
