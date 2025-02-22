@@ -385,7 +385,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SEARCH EMPLOYEE", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SEARCH AGENT", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -398,7 +398,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
 
         jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Employee id :");
+        jLabel5.setText("Agent ID :");
         viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 21, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
@@ -817,7 +817,7 @@ public final class SearchEmployeeGUI extends javax.swing.JDialog {
 
         jLabel19.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel19.setText("Search Employee ID :");
+        jLabel19.setText("Search Agent ID :");
         mainpanel.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, 20));
 
         getContentPane().add(mainpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 900, 530));

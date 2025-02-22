@@ -347,7 +347,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 580, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "EMPLOYEE PAYROLL SLIP", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "AGENT PAYROLL SLIP", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -363,7 +363,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Employee id :");
+        jLabel6.setText("Agent ID :");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 28, -1, 20));
 
         txt_id.setEditable(false);
@@ -527,7 +527,7 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
 
         jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel11.setText("Search Employee ID :");
+        jLabel11.setText("Search Agent ID :");
         jPanel4.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 12, -1, -1));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));

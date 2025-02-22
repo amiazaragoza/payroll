@@ -1496,10 +1496,9 @@ public final class MainNavigationHomePanel extends javax.swing.JFrame {
         lblTitle1.setBackground(new java.awt.Color(250, 74, 84));
         lblTitle1.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
         lblTitle1.setForeground(new java.awt.Color(255, 255, 255));
-        lblTitle1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/notification_16px.png"))); // NOI18N
         lblTitle1.setText("Notifications");
         pnlDown.add(lblTitle1);
-        lblTitle1.setBounds(10, 0, 120, 28);
+        lblTitle1.setBounds(30, 0, 120, 28);
 
         useronlineTF.setBackground(new java.awt.Color(250, 74, 84));
         useronlineTF.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
@@ -1510,7 +1509,7 @@ public final class MainNavigationHomePanel extends javax.swing.JFrame {
         notifTime.setFont(new java.awt.Font("VALORANT", 1, 10)); // NOI18N
         notifTime.setForeground(new java.awt.Color(255, 255, 255));
         notifTime.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        notifTime.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(0, 0, 255)));
+        notifTime.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 1, 0, 0, new java.awt.Color(250, 74, 84)));
         pnlDown.add(notifTime);
         notifTime.setBounds(1160, 0, 138, 28);
 
@@ -1539,8 +1538,6 @@ public final class MainNavigationHomePanel extends javax.swing.JFrame {
         themeLABEL.setFont(new java.awt.Font("VALORANT", 1, 11)); // NOI18N
         themeLABEL.setForeground(new java.awt.Color(255, 255, 255));
         themeLABEL.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        themeLABEL.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/defaulttheme_16px.png"))); // NOI18N
-        themeLABEL.setText("Default Theme");
         pnlDown.add(themeLABEL);
         themeLABEL.setBounds(350, 0, 160, 28);
 

@@ -331,7 +331,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "UPDATE EMPLOYEE SALARY", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "UPDATE AGENT SALARY", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setForeground(new java.awt.Color(255, 255, 255));
         mainpanel.setPreferredSize(new java.awt.Dimension(560, 340));
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -349,7 +349,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
 
         jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel14.setText("Search Employee ID:");
+        jLabel14.setText("Search Agent ID:");
         jPanel4.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 120, 20));
 
         searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
@@ -428,7 +428,7 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
 
         jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Employee id :");
+        jLabel5.setText("Agent ID:");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 22, -1, -1));
 
         jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
