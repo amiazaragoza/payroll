@@ -1143,7 +1143,6 @@ public final class AgentDeductionGUI_STEP3 extends javax.swing.JDialog {
         int salary = Integer.parseInt(txt_salary.getText());
         if(r_percentage.isSelected()== true){
             int percentage = Integer.parseInt(txt_percentage.getText());
-            //calculate the total hours of overtime
             int total_percentage_deduction = salary /100 * percentage;
             String x = String.valueOf(total_percentage_deduction);
             int sal = salary - total_percentage_deduction;
