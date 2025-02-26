@@ -158,9 +158,9 @@ public final class SplashGUI extends javax.swing.JFrame {
         kGradientPanel1.add(mainIcon);
         mainIcon.setBounds(0, 23, 270, 50);
 
-        progress.setBackground(new java.awt.Color(249, 250, 253));
+        progress.setBackground(new java.awt.Color(255, 255, 255));
         progress.setFont(new java.awt.Font("Segoe UI", 0, 5)); // NOI18N
-        progress.setForeground(new java.awt.Color(0, 153, 204));
+        progress.setForeground(new java.awt.Color(0, 0, 0));
         progress.setBorderPainted(false);
         kGradientPanel1.add(progress);
         progress.setBounds(0, 162, 270, 8);
