@@ -34,7 +34,7 @@ import javax.swing.KeyStroke;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-public final class EmployeeDeductionGUI extends javax.swing.JDialog {
+public final class AgentDeductionGUI extends javax.swing.JDialog {
     Connection conn;
     ResultSet rs=null;
     PreparedStatement pst=null;
@@ -71,7 +71,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
      * @throws java.sql.SQLException
      * @throws java.io.IOException
      */
-    public EmployeeDeductionGUI() throws SQLException, IOException {
+    public AgentDeductionGUI() throws SQLException, IOException {
         initComponents();
         //connection to database
         DBconnection c=new DBconnection();
@@ -1090,7 +1090,7 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
                 String values = dateString;
                 String val = lbl_emp.getText();
 
-                String reg= "insert into Audit (emp_id, date, status) values ('"+val+"','"+value0+" / "+values+"','Deduction of Employee #"+txt_id.getText()+" is Updated by: "+val+"')";
+                String reg= "insert into Audit (emp_id, date, status) values ('"+val+"','"+value0+" / "+values+"','Deduction of Agent #"+txt_id.getText()+" is Updated by: "+val+"')";
                 pst=conn.prepareStatement(reg);
                 pst.execute();
                 refreshtableBTN.doClick();
@@ -1224,17 +1224,17 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
                         removerowBTN.setEnabled(true);
                         
                     } else {
-                        JOptionPane.showMessageDialog(null,"Employee not found.", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
+                        JOptionPane.showMessageDialog(null,"Agent not found.", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
                         clearall();
                         defaultTable();
                         setCellsAlignmentToCenter();
                         refreshtableBTN.setEnabled(false);
                         
                     }   } catch (SQLException ex) {
-                        Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
                     }
             } catch (SQLException ex) {
-                Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
             }
     }//GEN-LAST:event_searchempBTNActionPerformed
 
@@ -1406,9 +1406,9 @@ public final class EmployeeDeductionGUI extends javax.swing.JDialog {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             try {
-                new EmployeeDeductionGUI().setVisible(true);
+                new AgentDeductionGUI().setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
     }

@@ -738,8 +738,8 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
                 myDocument.add(new Paragraph("PAY SLIP",FontFactory.getFont(FontFactory.TIMES_BOLD,20,Font.BOLD )));
                 myDocument.add(new Paragraph(new Date().toString()));
                 myDocument.add(new Paragraph("-------------------------------------------------------------------------------------------"));
-                myDocument.add((new Paragraph("EMPLOYEE DETAILS",FontFactory.getFont(FontFactory.TIMES_ROMAN,15,Font.BOLD))));
-                myDocument.add((new Paragraph("Name of Employee: " +value + " "+value0,FontFactory.getFont(FontFactory.TIMES_ROMAN,10,Font.PLAIN))));
+                myDocument.add((new Paragraph("AGENT DETAILS",FontFactory.getFont(FontFactory.TIMES_ROMAN,15,Font.BOLD))));
+                myDocument.add((new Paragraph("Name of Agent: " +value + " "+value0,FontFactory.getFont(FontFactory.TIMES_ROMAN,10,Font.PLAIN))));
                 myDocument.add((new Paragraph("Designation: "+value2,FontFactory.getFont(FontFactory.TIMES_ROMAN,10,Font.PLAIN))));
                 myDocument.add((new Paragraph("Department: "+value3,FontFactory.getFont(FontFactory.TIMES_ROMAN,10,Font.PLAIN))));
                 myDocument.add(new Paragraph("-------------------------------------------------------------------------------------------"));
@@ -878,10 +878,10 @@ public final class SalarySlipGUI extends javax.swing.JDialog {
             }
             
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_searchempBTNActionPerformed
 

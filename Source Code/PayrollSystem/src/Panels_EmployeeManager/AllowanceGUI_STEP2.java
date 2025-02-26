@@ -343,12 +343,12 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
     
     //proceed to step 3 - manage employee deduction
     public void stepthree_deduction() throws SQLException, IOException {
-        int step = JOptionPane.showConfirmDialog(null, "<html><center>Do you want to proceed on:<br>Step Three (Manage Employee Deduction)?</center></html>", mainnameString, JOptionPane.YES_NO_OPTION);
+        int step = JOptionPane.showConfirmDialog(null, "<html><center>Do you want to proceed on:<br>Step Three (Manage Agent Deduction)?</center></html>", mainnameString, JOptionPane.YES_NO_OPTION);
         if (step == 0) {
             AllowanceGUI_STEP2.this.dispose();
             this.setVisible(false);
             stepexitBTN.doClick();
-            EmployeeDeductionGUI_STEP3 step3 = new EmployeeDeductionGUI_STEP3();
+            AgentDeductionGUI_STEP3 step3 = new AgentDeductionGUI_STEP3();
             String empid_step3_string = txt_empid.getText();
             step3.empid_step3_Void(empid_step3_string); //set the emp-id from here to 2nd step
             step3.setVisible(true);
@@ -372,7 +372,7 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
                     String values = dateString;
                     String val = txt_emp.getText();
 
-                    String reg= "insert into Audit (emp_id, date, status) values ('"+val+"','"+value0+" / "+values+"','Allowance of Employee #"+txt_empid.getText()+" is Updated by: "+val+"')";
+                    String reg= "insert into Audit (emp_id, date, status) values ('"+val+"','"+value0+" / "+values+"','Allowance of Agent #"+txt_empid.getText()+" is Updated by: "+val+"')";
                     try (PreparedStatement pstAudit = conn.prepareStatement(reg)) {
                         pstAudit.executeUpdate();
                         pstAudit.close();
@@ -1355,10 +1355,10 @@ public final class AllowanceGUI_STEP2 extends javax.swing.JDialog {
             }
             
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_searchempBTNActionPerformed
 

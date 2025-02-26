@@ -38,7 +38,7 @@ import javax.swing.Timer;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import Panels.AdminMenusPanel;
-import Panels.EmployeeManagerMenusPanel;
+import Panels.AgentManagerMenusPanel;
 import Panels.HomePanel;
 import Panels_EmployeeManager.Emp;
 import java.awt.AWTException;
@@ -68,7 +68,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
 
     GridBagLayout layout = new GridBagLayout();
     HomePanel p1;
-    EmployeeManagerMenusPanel p2;
+    AgentManagerMenusPanel p2;
     AdminMenusPanel p3;
 
     //others
@@ -200,7 +200,7 @@ public final class MainNavigationHomePanel_S_ADMIN extends javax.swing.JFrame {
         this.setFocusTraversalKeys(KeyboardFocusManager.UP_CYCLE_TRAVERSAL_KEYS, Collections.EMPTY_SET);
 
         p1 = new HomePanel();
-        p2 = new EmployeeManagerMenusPanel();
+        p2 = new AgentManagerMenusPanel();
         p3 = new AdminMenusPanel();
         pnlDisplay.setLayout(layout);
         GridBagConstraints gbc = new GridBagConstraints();

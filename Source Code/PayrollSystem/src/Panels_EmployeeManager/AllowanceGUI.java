@@ -1316,10 +1316,10 @@ public final class AllowanceGUI extends javax.swing.JDialog {
             }
             
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_searchempBTNActionPerformed
 

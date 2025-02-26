@@ -793,7 +793,7 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
             dialog.setCurrentDirectory(new File(locationPrintEXCEL));
             //dialog = new JFileChooser(FileSystemView.getFileSystemView().getDefaultDirectory());
             dialog.setPreferredSize(new Dimension(600, 550)); //width and height
-            dialog.setSelectedFile(new File("All Employees Main Data "+exactdatetimefile+".xls"));
+            dialog.setSelectedFile(new File("All Agents Main Data "+exactdatetimefile+".xls"));
             dialog.setDragEnabled(false);
             dialog.setDialogTitle(mainnameString); //title
             //dialog.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES); //<-- Show folders only
@@ -816,7 +816,7 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
                     // Creating Header
                     CellStyle styleheader = workbook.createCellStyle();
                     Header header = worksheet.getHeader();
-                    header.setCenter("Employees Data");
+                    header.setCenter("Agents Data");
                     org.apache.poi.ss.usermodel.Font fontheader = workbook.createFont();
                     fontheader.setFontHeightInPoints((short)20);
                     fontheader.setFontName("Segoe UI");
@@ -891,14 +891,14 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
                 }
                 
                 
-                int opendata = JOptionPane.showConfirmDialog(null, "Do You Want To Open the Main Employees Data?", mainnameString, JOptionPane.YES_NO_OPTION);
+                int opendata = JOptionPane.showConfirmDialog(null, "Do You Want To Open the Main Agents Data?", mainnameString, JOptionPane.YES_NO_OPTION);
                 if (opendata == 0) { 
                     try {   
                         printingwaitToast.showToast(); 
                         File file = new File(filePathExcelPrint+"");
                         if(!Desktop.isDesktopSupported()) { //check if Desktop is supported by Platform or not  
                             //System.out.println("not supported");
-                            JOptionPane.showMessageDialog(null, "Opening of employees data not supported!","ERROR", JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Opening of agents data not supported!","ERROR", JOptionPane.ERROR_MESSAGE);
                             return;  
                         }
                         Desktop desktop = Desktop.getDesktop();  
@@ -935,7 +935,7 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
             dialog.setCurrentDirectory(new File(locationPrintEXCEL));
             //dialog = new JFileChooser(FileSystemView.getFileSystemView().getDefaultDirectory());
             dialog.setPreferredSize(new Dimension(600, 550)); //width and height
-            dialog.setSelectedFile(new File("Employee Allowance Report "+exactdatetimefile+""+".pdf"));
+            dialog.setSelectedFile(new File("Agent Allowance Report "+exactdatetimefile+""+".pdf"));
             dialog.setDragEnabled(false);
             dialog.setDialogTitle(mainnameString); //title
             //dialog.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES); //<-- Show folders only
@@ -962,7 +962,7 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
 
                 table.setWidthPercentage(100); //set table width to 100%
            
-                myDocument.add(new Paragraph("Employees Allowance List",FontFactory.getFont(FontFactory.TIMES_BOLD,20,Font.BOLD )));
+                myDocument.add(new Paragraph("Agents Allowance List",FontFactory.getFont(FontFactory.TIMES_BOLD,20,Font.BOLD )));
                 myDocument.add(new Paragraph(new Date().toString()));
                 myDocument.add(new Paragraph(" "));
                 table.addCell(new PdfPCell(new Paragraph("ID",FontFactory.getFont(FontFactory.TIMES_ROMAN,10,Font.BOLD))));
@@ -1000,13 +1000,13 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "<html><center>Report was successfully generated! <br>File Path: "+filePath+"</center></html>",mainnameString, JOptionPane.INFORMATION_MESSAGE);
                 auditPrintAllowance();
                 
-                int opendata = JOptionPane.showConfirmDialog(null, "Do You Want To Open the Employees Allowance Report?", mainnameString, JOptionPane.YES_NO_OPTION);
+                int opendata = JOptionPane.showConfirmDialog(null, "Do You Want To Open the Agent Allowance Report?", mainnameString, JOptionPane.YES_NO_OPTION);
                 if (opendata == 0) {
                     try {  
                         loadingwaitToast.showToast();
                         File file = new File(filePath+"");
                         if(!Desktop.isDesktopSupported()) { //check if Desktop is supported by Platform or not   
-                            JOptionPane.showMessageDialog(null, "Opening of employees data is not supported!", mainErrorString, JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Opening of Agent data is not supported!", mainErrorString, JOptionPane.ERROR_MESSAGE);
                             return;
                         }  
                             Desktop desktop = Desktop.getDesktop();  
@@ -1054,7 +1054,7 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
             dialog.setCurrentDirectory(new File(locationPrintEXCEL));
             //dialog = new JFileChooser(FileSystemView.getFileSystemView().getDefaultDirectory());
             dialog.setPreferredSize(new Dimension(600, 550)); //width and height
-            dialog.setSelectedFile(new File("Employee Deduction Report "+exactdatetimefile+""+".pdf"));
+            dialog.setSelectedFile(new File("Agent Deduction Report "+exactdatetimefile+""+".pdf"));
             dialog.setDragEnabled(false);
             dialog.setDialogTitle(mainnameString); //title
             //dialog.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES); //<-- Show folders only
@@ -1081,7 +1081,7 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
 
                 table.setWidthPercentage(100); //set table width to 100%
 
-                myDocument.add(new Paragraph("Employees Deduction List",FontFactory.getFont(FontFactory.TIMES_BOLD,20,Font.BOLD )));
+                myDocument.add(new Paragraph("Agent Deduction List",FontFactory.getFont(FontFactory.TIMES_BOLD,20,Font.BOLD )));
                 myDocument.add(new Paragraph(new Date().toString()));
                 myDocument.add(new Paragraph(" "));
                 table.addCell(new PdfPCell(new Paragraph("ID",FontFactory.getFont(FontFactory.TIMES_ROMAN,10,Font.BOLD))));
@@ -1113,13 +1113,13 @@ public final class AdminMenusPanel extends javax.swing.JPanel {
                 JOptionPane.showMessageDialog(null, "<html><center>Report was successfully generated! <br>File Path: "+filePath+"</center></html>",mainnameString, JOptionPane.INFORMATION_MESSAGE);
                 auditPrintDeduction();
                 
-                int opendata = JOptionPane.showConfirmDialog(null, "Do You Want To Open the Employees Deduction Report?", mainnameString, JOptionPane.YES_NO_OPTION);
+                int opendata = JOptionPane.showConfirmDialog(null, "Do You Want To Open the Agents Deduction Report?", mainnameString, JOptionPane.YES_NO_OPTION);
                 if (opendata == 0) {
                     try {  
                         loadingwaitToast.showToast();
                         File file = new File(filePath+"");
                         if(!Desktop.isDesktopSupported()) { //check if Desktop is supported by Platform or not   
-                            JOptionPane.showMessageDialog(null, "Opening of employees data is not supported!", mainErrorString, JOptionPane.ERROR_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "Opening of agents data is not supported!", mainErrorString, JOptionPane.ERROR_MESSAGE);
                             return;
                         }  
                             Desktop desktop = Desktop.getDesktop();  

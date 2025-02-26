@@ -14,7 +14,7 @@ import java.util.logging.Logger;
 import javax.swing.KeyStroke;
 import Panels_EmployeeManager.*;
 
-public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
+public final class AgentManagerMenusPanel extends javax.swing.JPanel {
     //for Database Connection Variable
     Connection conn;
     
@@ -39,7 +39,7 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
      * @throws java.sql.SQLException
      */
       
-    public EmployeeManagerMenusPanel() throws IOException, SQLException {
+    public AgentManagerMenusPanel() throws IOException, SQLException {
         initComponents();
         
         DBconnection c=new DBconnection();
@@ -197,7 +197,7 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
                 .addComponent(totalmembersTFhome2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel31)
-                .addContainerGap(7, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(addemployeeBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 90, 270, 180));
@@ -487,10 +487,10 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
                 }
                 //close code
                 addemployeeBTN.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); //cursor default
-                AddEmployeeGUI panel = new AddEmployeeGUI();
+                AddAgentGUI panel = new AddAgentGUI();
                 panel.setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
         }).start();
     }//GEN-LAST:event_addemployeeBTNMousePressed
@@ -506,10 +506,10 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
                 }
                 //close code
                 searchemployeeBTN.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); //cursor default
-                SearchEmployeeGUI panel = new SearchEmployeeGUI();
+                SearchAgentGUI panel = new SearchAgentGUI();
                 panel.setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
         }).start();
     }//GEN-LAST:event_searchemployeeBTNMousePressed
@@ -528,7 +528,7 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
                 AllowanceGUI panel = new AllowanceGUI();
                 panel.setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
         }).start();
     }//GEN-LAST:event_employeeallowanceBTNMousePressed
@@ -547,7 +547,7 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
                 UpdateSalaryGUI panel = new UpdateSalaryGUI();
                 panel.setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
         }).start();
     }//GEN-LAST:event_updatesalaryBTNMousePressed
@@ -563,10 +563,10 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
                 }
                 //close code
                 deductionBTN.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR)); //cursor default
-                EmployeeDeductionGUI panel = new EmployeeDeductionGUI();
+                AgentDeductionGUI panel = new AgentDeductionGUI();
                 panel.setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
         }).start();
     }//GEN-LAST:event_deductionBTNMousePressed
@@ -585,7 +585,7 @@ public final class EmployeeManagerMenusPanel extends javax.swing.JPanel {
                 SalarySlipGUI panel = new SalarySlipGUI();
                 panel.setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentManagerMenusPanel.class.getName()).log(Level.SEVERE, null, ex);
             }
         }).start();
     }//GEN-LAST:event_paymentBTNMousePressed

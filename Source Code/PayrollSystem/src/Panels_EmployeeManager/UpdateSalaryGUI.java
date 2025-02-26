@@ -874,15 +874,15 @@ public final class UpdateSalaryGUI extends javax.swing.JDialog {
             r_percentage.setEnabled(true);
                         
             } else {
-                JOptionPane.showMessageDialog(null,"Employee not found.", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
+                JOptionPane.showMessageDialog(null,"Agent not found.", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
                 clearall();
                         
                 }
                 } catch (SQLException ex) {
-                        Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
                 }
             } catch (SQLException ex) {
-                Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
             }
     }//GEN-LAST:event_searchempBTNActionPerformed
 

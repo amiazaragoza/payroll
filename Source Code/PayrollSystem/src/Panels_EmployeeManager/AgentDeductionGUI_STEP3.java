@@ -34,7 +34,7 @@ import javax.swing.KeyStroke;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
-public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
+public final class AgentDeductionGUI_STEP3 extends javax.swing.JDialog {
     Connection conn;
     ResultSet rs=null;
     PreparedStatement pst=null;
@@ -71,7 +71,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
      * @throws java.sql.SQLException
      * @throws java.io.IOException
      */
-    public EmployeeDeductionGUI_STEP3() throws SQLException, IOException {
+    public AgentDeductionGUI_STEP3() throws SQLException, IOException {
         initComponents();
         //connection to database
         DBconnection c=new DBconnection();
@@ -310,7 +310,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         int step = JOptionPane.showConfirmDialog(null, "<html><center>Steps is Almost done!<br>Do you want to dispose this GUI now?</center></html>", mainnameString, JOptionPane.YES_NO_OPTION);
         if (step == 0) {
             stepexitBTN.doClick();
-            EmployeeDeductionGUI_STEP3.this.dispose();
+            AgentDeductionGUI_STEP3.this.dispose();
         } else {
             clearall();
         }
@@ -1123,7 +1123,7 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
             }
            
         } catch (IOException ex) {
-            Logger.getLogger(EmployeeDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_saveBTNActionPerformed
 
@@ -1242,17 +1242,17 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
                         removerowBTN.setEnabled(true);
                         
                     } else {
-                        JOptionPane.showMessageDialog(null,"Employee not found.", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
+                        JOptionPane.showMessageDialog(null,"Agent not found.", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
                         clearall();
                         defaultTable();
                         setCellsAlignmentToCenter();
                         refreshtableBTN.setEnabled(false);
                         
                     }   } catch (SQLException ex) {
-                        Logger.getLogger(EmployeeDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
+                        Logger.getLogger(AgentDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
                     }
             } catch (SQLException ex) {
-                Logger.getLogger(EmployeeDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
             }
     }//GEN-LAST:event_searchempBTNActionPerformed
 
@@ -1428,9 +1428,9 @@ public final class EmployeeDeductionGUI_STEP3 extends javax.swing.JDialog {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             try {
-                new EmployeeDeductionGUI_STEP3().setVisible(true);
+                new AgentDeductionGUI_STEP3().setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(EmployeeDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(AgentDeductionGUI_STEP3.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
     }

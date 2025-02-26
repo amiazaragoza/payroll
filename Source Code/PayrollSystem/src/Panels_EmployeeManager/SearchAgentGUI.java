@@ -1,7 +1,7 @@
 package Panels_EmployeeManager;
 
 import ImageBrowse_JFileChooser_API.ImageBrowsePreview_CLASS_API;
-import JFileChooser_Locations_API.FileLastLocation1;
+import JFileChooser_Locations_API.FileLastLocation3;
 import SystemDB.DBconnection;
 import MainPackage.ToastManager;
 import UppercaseTypeFilterPackage.UppercaseDocumentFilter_API;
@@ -42,11 +42,11 @@ import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.AbstractDocument;
 import javax.swing.text.DocumentFilter;
 
-public final class AddEmployeeGUI extends javax.swing.JDialog {
+public final class SearchAgentGUI extends javax.swing.JDialog {
     Connection conn;
     ResultSet rs=null;
     PreparedStatement pst=null;
-
+    
     //for app name
     String mainAppNameFromDB; ///this string will get DATA from db
     
@@ -71,7 +71,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
     final int yPosToast = (dimToast.width-heightvatToast)/2;
     final ToastManager printToast = new ToastManager(printwait, xPosToast, yPosToast);
     
-    //filter for Uppercase on first letter of the Sentence.
     DocumentFilter typefilter = new UppercaseDocumentFilter_API();
     
     //Button Group for GENDER
@@ -82,24 +81,23 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
      * @throws java.sql.SQLException
      * @throws java.io.IOException
      */
-    public AddEmployeeGUI() throws SQLException, IOException {
+    public SearchAgentGUI() throws SQLException, IOException {
         initComponents();
         //connection to database
         DBconnection c=new DBconnection();
         conn= c.getconnection();
-
         
         Toolkit toolkit = getToolkit();
         Dimension size = toolkit.getScreenSize();
-        setLocation(size.width/2 - getWidth()/2, size.height/2 - getHeight()/2);
+        setLocation(size.width/2 - getWidth()/2, 
+        size.height/2 - getHeight()/2);
         txt_emp.setText(String.valueOf(Emp.empId));
-        this.setModal(true); //this.setAlwaysOnTop(true);
+        
         this.getRootPane().setBorder(new LineBorder(new Color(0,102,204)));
         this.setIconImage(new ImageIcon(getClass().getResource("/Images/TASKBAR_ICON.png")).getImage());
-        employeeid();
+        this.setModal(true); //this.setAlwaysOnTop(true);
+        txt_search.setDocument(new JTextFieldLimitAPI(10));
         GUINaming_DATA();
-        txt_firstname.requestFocusInWindow();
-        //clearall(); //<-- clear all void not allowed because of clearing selection of button group.
         
         //--------------------- DISABLE the AUTO TAB AND SHIFT in JTextFields UI ---------------------// 
         //this.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS, null);
@@ -150,7 +148,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 //set the GUI Title
                 mainAppNameFromDB = rsGNaming.getString("MainAppName");
                 lblTitle.setText(mainAppNameFromDB);
-                //this.setTitle(mainAppNameFromDB);
+                this.setTitle(mainAppNameFromDB);
                 
                 //company name
                 companyNameFromDB = rsGNaming.getString("MainCompanyName");
@@ -180,33 +178,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         
         //string 4 panel   //string from db data
         //mainAppNameString = mainAppNameFromDB;
-    }
-    
-    //GENERATE EMPLOYEE ID VOID
-    public void employeeid() {
-            
-    try {
-        Statement stCount = conn.createStatement();
-        ResultSet rsCount = stCount.executeQuery("select max(id) from EmployeesRecord");
-        rsCount.next();
-                
-        rsCount.getString("max(id)");
-                
-        if(rsCount.getString("max(id)")== null) {
-            txt_id.setText("1");
-                    
-        } else {
-            long id = Long.parseLong(rsCount.getString("max(id)"));
-            id++;
-            txt_id.setText(String.format("%01d", id));
-            stCount.close();
-            rsCount.close();
-            }
-                
-        } catch (SQLException ex) {
-            //Logger.getLogger(AddEmployeeGUI.class.getName()).log(Level.SEVERE, null, ex);
-            //JOptionPane.showMessageDialog(null, "Something went wrong! ERR: "+ex, mainErrorString, JOptionPane.ERROR_MESSAGE);
-        }
+
     }
     
     public void clearall() {
@@ -227,10 +199,12 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         txt_apt.setText("");
         txt_doj.setText("");
         lbl_img.setIcon(null);
-        r_male.setSelected(false);
-        r_female.setSelected(false);
+        txt_search.setText("");
+        txt_search.requestFocusInWindow();
         
-        txt_firstname.requestFocusInWindow();
+        updateBTN.setEnabled(false);
+        deleteBTN.setEnabled(false);
+        insertpictureBTN.setEnabled(false);
         
         //for gender
         r_male.setEnabled(true);
@@ -241,52 +215,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         
         //clear selection of gender
         genderBTNgroup.clearSelection();
-        
-        //employee count void
-        employeeid();
-    }
-    
-    //audit added new employee
-    public void auditAddEmp() {
-        try {
-            Date currentDate = GregorianCalendar.getInstance().getTime();
-            DateFormat df = DateFormat.getDateInstance();
-            String dateString = df.format(currentDate);
-
-            Date d = new Date();
-            SimpleDateFormat sdf = new SimpleDateFormat("h:mm aa");
-            String timeString = sdf.format(d);
-
-            String value0 = timeString;
-            String value1 = dateString;
-            String val = txt_emp.getText();
-            String fullname = ""+txt_firstname.getText()+" "+txt_surname.getText()+"";
-                
-            String reg= "insert into Audit (emp_id, date, status) values ('"+val+"','"+value0+" / "+value1+"','Added New Employee #"+txt_id.getText()+"-("+fullname+") by Admin: "+val+"')";
-            try (PreparedStatement pstADD = conn.prepareStatement(reg)) {
-                pstADD.executeUpdate();
-                pstADD.close();
-            }
-        } catch (SQLException ex) {
-            //JOptionPane.showMessageDialog(null,ex);
-        }
-    }
-    
-    //proceed to step two - manage employee allowance
-    public void steptwo_allowance() throws SQLException, IOException {
-        int step = JOptionPane.showConfirmDialog(null, "<html><center>Do you want to proceed on:<br>Step Two (Manage Employee Allowance)?</center></html>", mainnameString, JOptionPane.YES_NO_OPTION);
-        if (step == 0) {
-            stepexitBTN.doClick();
-            conn.close();
-            AllowanceGUI_STEP2 step2 = new AllowanceGUI_STEP2();
-            String empid_step2_string = txt_id.getText();
-            step2.empid_step2_Void(empid_step2_string); //set the emp-id from here to 2nd step
-            step2.setVisible(true);
-            this.dispose();
-        } else {
-            clearall();
-            employeeid();
-        }
     }
     
     /**
@@ -323,8 +251,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         txt_job = new javax.swing.JTextField();
         jDesktopPane1 = new javax.swing.JDesktopPane();
         lbl_img = new javax.swing.JLabel();
-        addrecordBTN = new javax.swing.JButton();
-        clearBTN = new javax.swing.JButton();
         jLabel20 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -348,11 +274,15 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         txt_email = new javax.swing.JTextField();
         txt_emp = new javax.swing.JLabel();
         insertpictureBTN = new javax.swing.JButton();
-        stepexitBTN = new javax.swing.JButton();
+        updateBTN = new javax.swing.JButton();
+        deleteBTN = new javax.swing.JButton();
+        clearBTN = new javax.swing.JButton();
+        searchempBTN = new javax.swing.JButton();
+        txt_search = new javax.swing.JTextField();
+        jLabel19 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setBackground(new java.awt.Color(249, 250, 253));
-        setName("add_step1"); // NOI18N
         setUndecorated(true);
         setResizable(false);
         setType(java.awt.Window.Type.UTILITY);
@@ -386,7 +316,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         pnlActions.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
-        lblClose.setBackground(new java.awt.Color(255, 70, 84));
+        lblClose.setBackground(new java.awt.Color(0, 102, 204));
         lblClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/icons8_multiply_18px_1.png"))); // NOI18N
         lblClose.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         lblClose.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -429,7 +359,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         pnlTitle.add(lblTitleIcon);
 
-        lblTitle.setBackground(new java.awt.Color(255, 70, 84));
+        lblTitle.setBackground(new java.awt.Color(0, 102, 204));
         lblTitle.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         lblTitle.setForeground(new java.awt.Color(255, 255, 255));
         lblTitle.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -455,8 +385,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         getContentPane().add(pnlTop, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 900, -1));
 
         mainpanel.setBackground(new java.awt.Color(10, 36, 59));
-        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "ADD Agent", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
-        mainpanel.setForeground(new java.awt.Color(255, 255, 255));
+        mainpanel.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "SEARCH AGENT", javax.swing.border.TitledBorder.CENTER, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("VALORANT", 1, 24), new java.awt.Color(255, 255, 255))); // NOI18N
         mainpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jScrollPane1.setBackground(new java.awt.Color(249, 250, 253));
@@ -467,30 +396,28 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.setForeground(new java.awt.Color(255, 255, 255));
         viewpanel.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Agent ID :");
-        viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 15, -1, 20));
+        viewpanel.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 21, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First name :");
-        viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(36, 42, -1, -1));
+        viewpanel.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 45, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Surname :");
-        viewpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 68, -1, -1));
+        viewpanel.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 68, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Date of Birth :");
-        viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 94, -1, -1));
+        viewpanel.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 94, -1, -1));
 
         txt_dob.setBackground(new java.awt.Color(10, 36, 59));
-        txt_dob.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_dob.setForeground(new java.awt.Color(255, 255, 255));
-        txt_dob.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_dob.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_dobKeyPressed(evt);
@@ -499,9 +426,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_dob, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 94, 168, -1));
 
         txt_surname.setBackground(new java.awt.Color(10, 36, 59));
-        txt_surname.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_surname.setForeground(new java.awt.Color(255, 255, 255));
-        txt_surname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_surname.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_surnameKeyPressed(evt);
@@ -510,9 +435,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_surname, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 68, 168, -1));
 
         txt_firstname.setBackground(new java.awt.Color(10, 36, 59));
-        txt_firstname.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_firstname.setForeground(new java.awt.Color(255, 255, 255));
-        txt_firstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_firstname.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_firstnameActionPerformed(evt);
@@ -527,45 +450,29 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         txt_id.setEditable(false);
         txt_id.setBackground(new java.awt.Color(10, 36, 59));
-        txt_id.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_id.setForeground(new java.awt.Color(255, 255, 255));
-        txt_id.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
-        txt_id.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_idKeyTyped(evt);
-            }
-        });
         viewpanel.add(txt_id, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 15, 168, -1));
 
         txt_dep.setBackground(new java.awt.Color(10, 36, 59));
-        txt_dep.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_dep.setForeground(new java.awt.Color(255, 255, 255));
-        txt_dep.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_dep.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_depKeyPressed(evt);
             }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txt_depKeyTyped(evt);
-            }
         });
-        viewpanel.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 15, 160, -1));
+        viewpanel.add(txt_dep, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 11, 160, -1));
 
         txt_desig.setBackground(new java.awt.Color(10, 36, 59));
-        txt_desig.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_desig.setForeground(new java.awt.Color(255, 255, 255));
-        txt_desig.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_desig.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_desigKeyPressed(evt);
             }
         });
-        viewpanel.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 42, 160, -1));
+        viewpanel.add(txt_desig, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 37, 160, -1));
 
         txt_status.setBackground(new java.awt.Color(10, 36, 59));
-        txt_status.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_status.setForeground(new java.awt.Color(255, 255, 255));
-        txt_status.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_status.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_statusKeyPressed(evt);
@@ -574,9 +481,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_status, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 68, 160, -1));
 
         txt_doj.setBackground(new java.awt.Color(10, 36, 59));
-        txt_doj.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_doj.setForeground(new java.awt.Color(255, 255, 255));
-        txt_doj.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_doj.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_dojKeyPressed(evt);
@@ -585,9 +490,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_doj, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 94, 160, -1));
 
         txt_salary.setBackground(new java.awt.Color(10, 36, 59));
-        txt_salary.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_salary.setForeground(new java.awt.Color(255, 255, 255));
-        txt_salary.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_salary.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_salaryActionPerformed(evt);
@@ -601,12 +504,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 txt_salaryKeyTyped(evt);
             }
         });
-        viewpanel.add(txt_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 120, 160, -1));
+        viewpanel.add(txt_salary, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 125, 160, -1));
 
         txt_job.setBackground(new java.awt.Color(10, 36, 59));
-        txt_job.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_job.setForeground(new java.awt.Color(255, 255, 255));
-        txt_job.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_job.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_jobActionPerformed(evt);
@@ -618,8 +519,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
             }
         });
         viewpanel.add(txt_job, new org.netbeans.lib.awtextra.AbsoluteConstraints(414, 151, 160, -1));
-
-        lbl_img.setBackground(new java.awt.Color(255, 255, 255));
 
         jDesktopPane1.setLayer(lbl_img, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -636,75 +535,43 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lbl_img, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
+                .addComponent(lbl_img, javax.swing.GroupLayout.DEFAULT_SIZE, 145, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        viewpanel.add(jDesktopPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 11, -1, 200));
+        viewpanel.add(jDesktopPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 11, -1, -1));
 
-        addrecordBTN.setBackground(new java.awt.Color(255, 70, 84));
-        addrecordBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
-        addrecordBTN.setForeground(new java.awt.Color(255, 255, 255));
-        addrecordBTN.setText("Add Record");
-        addrecordBTN.setBorderPainted(false);
-        addrecordBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        addrecordBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addrecordBTNActionPerformed(evt);
-            }
-        });
-        addrecordBTN.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                addrecordBTNKeyPressed(evt);
-            }
-        });
-        viewpanel.add(addrecordBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 321, 134, 44));
-
-        clearBTN.setBackground(new java.awt.Color(255, 70, 84));
-        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 24)); // NOI18N
-        clearBTN.setForeground(new java.awt.Color(255, 255, 255));
-        clearBTN.setText("Clear");
-        clearBTN.setBorderPainted(false);
-        clearBTN.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
-        clearBTN.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                clearBTNActionPerformed(evt);
-            }
-        });
-        viewpanel.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(709, 321, 134, 44));
-
-        jLabel20.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Job Title :");
-        viewpanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(343, 151, -1, -1));
+        viewpanel.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 154, -1, -1));
 
-        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Basic Salary :");
-        viewpanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(324, 120, -1, -1));
+        viewpanel.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 128, -1, -1));
 
-        jLabel18.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("Date Hired :");
-        viewpanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 94, -1, -1));
+        viewpanel.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 97, -1, -1));
 
-        jLabel17.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setText("Status :");
-        viewpanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 68, -1, -1));
+        viewpanel.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 71, -1, -1));
 
-        jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Designation :");
-        viewpanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 42, -1, -1));
+        viewpanel.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 40, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Department :");
-        viewpanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, 15, -1, -1));
+        viewpanel.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(322, 14, -1, -1));
 
         r_female.setBackground(new java.awt.Color(10, 36, 59));
-        r_female.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         r_female.setForeground(new java.awt.Color(255, 255, 255));
         r_female.setText("Female");
         r_female.addActionListener(new java.awt.event.ActionListener() {
@@ -717,10 +584,9 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 r_femaleKeyPressed(evt);
             }
         });
-        viewpanel.add(r_female, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 124, -1, -1));
+        viewpanel.add(r_female, new org.netbeans.lib.awtextra.AbsoluteConstraints(187, 124, -1, -1));
 
         r_male.setBackground(new java.awt.Color(10, 36, 59));
-        r_male.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
         r_male.setForeground(new java.awt.Color(255, 255, 255));
         r_male.setText("Male");
         r_male.addActionListener(new java.awt.event.ActionListener() {
@@ -733,47 +599,45 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 r_maleKeyPressed(evt);
             }
         });
-        viewpanel.add(r_male, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 124, -1, -1));
+        viewpanel.add(r_male, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 124, -1, -1));
 
-        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Gender:");
-        viewpanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 128, -1, -1));
+        viewpanel.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 128, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Email :");
-        viewpanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(65, 154, -1, -1));
+        viewpanel.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 154, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Contact :");
-        viewpanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 180, -1, -1));
+        viewpanel.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Address Line 1 :");
         viewpanel.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 206, -1, -1));
 
-        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setText("Address Line 2 :");
         viewpanel.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 232, -1, -1));
 
-        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setText("Apt./House No :");
-        viewpanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 263, -1, -1));
+        viewpanel.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 263, -1, -1));
 
-        jLabel16.setFont(new java.awt.Font("Microsoft JhengHei", 1, 12)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
         jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setText("Postal Code :");
-        viewpanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 294, -1, -1));
+        jLabel16.setText("Post Code :");
+        viewpanel.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 294, -1, -1));
 
         txt_pc.setBackground(new java.awt.Color(10, 36, 59));
-        txt_pc.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_pc.setForeground(new java.awt.Color(255, 255, 255));
-        txt_pc.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_pc.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_pcKeyPressed(evt);
@@ -785,9 +649,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_pc, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 291, 168, -1));
 
         txt_apt.setBackground(new java.awt.Color(10, 36, 59));
-        txt_apt.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_apt.setForeground(new java.awt.Color(255, 255, 255));
-        txt_apt.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_apt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_aptActionPerformed(evt);
@@ -801,9 +663,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_apt, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 260, 168, -1));
 
         txt_add2.setBackground(new java.awt.Color(10, 36, 59));
-        txt_add2.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_add2.setForeground(new java.awt.Color(255, 255, 255));
-        txt_add2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_add2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_add2KeyPressed(evt);
@@ -812,9 +672,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_add2, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 229, 168, -1));
 
         txt_address.setBackground(new java.awt.Color(10, 36, 59));
-        txt_address.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_address.setForeground(new java.awt.Color(255, 255, 255));
-        txt_address.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_address.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_addressKeyPressed(evt);
@@ -823,9 +681,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_address, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 203, 168, -1));
 
         txt_tel.setBackground(new java.awt.Color(10, 36, 59));
-        txt_tel.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_tel.setForeground(new java.awt.Color(255, 255, 255));
-        txt_tel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_tel.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_telKeyPressed(evt);
@@ -837,9 +693,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         viewpanel.add(txt_tel, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 177, 168, -1));
 
         txt_email.setBackground(new java.awt.Color(10, 36, 59));
-        txt_email.setFont(new java.awt.Font("Microsoft JhengHei", 1, 10)); // NOI18N
         txt_email.setForeground(new java.awt.Color(255, 255, 255));
-        txt_email.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255)));
         txt_email.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txt_emailKeyPressed(evt);
@@ -847,36 +701,124 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         });
         viewpanel.add(txt_email, new org.netbeans.lib.awtextra.AbsoluteConstraints(136, 151, 168, -1));
 
-        txt_emp.setForeground(new java.awt.Color(10, 36, 59));
+        txt_emp.setForeground(new java.awt.Color(253, 253, 253));
         txt_emp.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 330, 20));
+        txt_emp.setText("emp");
+        viewpanel.add(txt_emp, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 480, 170, 20));
 
         insertpictureBTN.setBackground(new java.awt.Color(255, 70, 84));
-        insertpictureBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        insertpictureBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 14)); // NOI18N
         insertpictureBTN.setForeground(new java.awt.Color(255, 255, 255));
-        insertpictureBTN.setText("Insert Picture");
+        insertpictureBTN.setText("Update/Insert Picture");
         insertpictureBTN.setBorderPainted(false);
+        insertpictureBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        insertpictureBTN.setDefaultCapable(false);
+        insertpictureBTN.setFocusPainted(false);
         insertpictureBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 insertpictureBTNActionPerformed(evt);
             }
         });
-        viewpanel.add(insertpictureBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 220, 110, 30));
+        viewpanel.add(insertpictureBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(592, 184, -1, -1));
+
+        updateBTN.setBackground(new java.awt.Color(255, 70, 84));
+        updateBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        updateBTN.setForeground(new java.awt.Color(255, 255, 255));
+        updateBTN.setText("Update Record");
+        updateBTN.setBorderPainted(false);
+        updateBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        updateBTN.setDefaultCapable(false);
+        updateBTN.setFocusPainted(false);
+        updateBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                updateBTNActionPerformed(evt);
+            }
+        });
+        updateBTN.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                updateBTNKeyPressed(evt);
+            }
+        });
+        viewpanel.add(updateBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 230, -1, 44));
+
+        deleteBTN.setBackground(new java.awt.Color(255, 70, 84));
+        deleteBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        deleteBTN.setForeground(new java.awt.Color(255, 255, 255));
+        deleteBTN.setText("Delete Record");
+        deleteBTN.setBorderPainted(false);
+        deleteBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        deleteBTN.setDefaultCapable(false);
+        deleteBTN.setFocusPainted(false);
+        deleteBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteBTNActionPerformed(evt);
+            }
+        });
+        viewpanel.add(deleteBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 230, -1, 44));
+
+        clearBTN.setBackground(new java.awt.Color(255, 70, 84));
+        clearBTN.setFont(new java.awt.Font("Tungsten Bold", 0, 18)); // NOI18N
+        clearBTN.setForeground(new java.awt.Color(255, 255, 255));
+        clearBTN.setText("Clear");
+        clearBTN.setBorderPainted(false);
+        clearBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        clearBTN.setDefaultCapable(false);
+        clearBTN.setFocusPainted(false);
+        clearBTN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearBTNActionPerformed(evt);
+            }
+        });
+        viewpanel.add(clearBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 280, 125, 40));
 
         jScrollPane1.setViewportView(viewpanel);
 
-        mainpanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 880, 480));
+        mainpanel.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 880, 450));
 
-        stepexitBTN.setBorderPainted(false);
-        stepexitBTN.setContentAreaFilled(false);
-        stepexitBTN.setDefaultCapable(false);
-        stepexitBTN.setFocusPainted(false);
-        stepexitBTN.addActionListener(new java.awt.event.ActionListener() {
+        searchempBTN.setBackground(new java.awt.Color(249, 250, 253));
+        searchempBTN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/search-outline 2.png"))); // NOI18N
+        searchempBTN.setToolTipText("Search");
+        searchempBTN.setBorder(null);
+        searchempBTN.setBorderPainted(false);
+        searchempBTN.setContentAreaFilled(false);
+        searchempBTN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        searchempBTN.setDefaultCapable(false);
+        searchempBTN.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                stepexitBTNActionPerformed(evt);
+                searchempBTNActionPerformed(evt);
             }
         });
-        mainpanel.add(stepexitBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 0, 50, 10));
+        mainpanel.add(searchempBTN, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 41, 25, 20));
+
+        txt_search.setBackground(new java.awt.Color(10, 36, 59));
+        txt_search.setForeground(new java.awt.Color(255, 255, 255));
+        txt_search.addContainerListener(new java.awt.event.ContainerAdapter() {
+            public void componentRemoved(java.awt.event.ContainerEvent evt) {
+                txt_searchComponentRemoved(evt);
+            }
+        });
+        txt_search.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_searchActionPerformed(evt);
+            }
+        });
+        txt_search.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txt_searchKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txt_searchKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txt_searchKeyTyped(evt);
+            }
+        });
+        mainpanel.add(txt_search, new org.netbeans.lib.awtextra.AbsoluteConstraints(145, 40, 440, -1));
+
+        jLabel19.setFont(new java.awt.Font("Microsoft JhengHei", 0, 12)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel19.setText("Search Agent ID :");
+        mainpanel.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, 20));
 
         getContentPane().add(mainpanel, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 900, 530));
 
@@ -896,7 +838,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
     }//GEN-LAST:event_lblCloseMouseExited
 
     private void lblCloseMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCloseMousePressed
-        //this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_lblCloseMousePressed
 
@@ -967,92 +908,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_jobActionPerformed
 
-    private void addrecordBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addrecordBTNActionPerformed
-
-        try {
-            String fullnameString = ""+txt_firstname.getText()+" "+txt_surname.getText()+"";
-            
-            Statement stADD = conn.createStatement();
-            ResultSet rsADD=stADD.executeQuery("select fullname from EmployeesRecord where fullname like '"+'%'+fullnameString+'%'+"'");
-            
-            if (txt_firstname.getText().isEmpty() | txt_surname.getText().isEmpty() | txt_dob.getText().isEmpty() | txt_email.getText().isEmpty()  | txt_tel.getText().isEmpty()  | txt_address.getText().isEmpty()  | txt_dep.getText().isEmpty()  | txt_salary.getText().isEmpty()  | txt_address.getText().isEmpty()  | txt_apt.getText().isEmpty()  | txt_pc.getText().isEmpty()  | txt_desig.getText().isEmpty()  | txt_status.getText().isEmpty()  | txt_doj.getText().isEmpty()  | txt_salary.getText().isEmpty()  | txt_job.getText().isEmpty()) {
-                getToolkit().beep();
-                JOptionPane.showMessageDialog(null,"One of the required field is empty!", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
-                txt_firstname.requestFocusInWindow();
-                
-            } else if(rsADD.next()) {
-                getToolkit().beep();
-                JOptionPane.showMessageDialog(null,"Employee is already exists on the Database", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
-                txt_firstname.requestFocusInWindow();
-                //clearall();
-                rsADD.close();
-                stADD.close();
-               
-            //check if the Gender is Selected or not!
-            } else if (genderBTNgroup.getSelection() == null) { 
-                JOptionPane.showMessageDialog(null,"Gender is not selected!", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
-                r_male.requestFocusInWindow();
-            
-            //check if the image if empty or not   
-            } else if (person_image==null) {
-                 JOptionPane.showMessageDialog(null,"You cannot save data without a employee image!", mainErrorString,JOptionPane.ERROR_MESSAGE,null);               
-                 insertpictureBTN.requestFocusInWindow();
-                 
-            } else {
-                int p = JOptionPane.showConfirmDialog(null, "Are you sure you want to add record?", mainnameString,JOptionPane.YES_NO_OPTION);
-                if(p==0){
-                    
-                    try {
-                        String sql ="insert into EmployeesRecord"
-                                + "(first_name,surname,fullname,Dob,Email,"
-                                + "Telephone,Address,Department,"
-                                + "Image,Salary,Gender,Address2,"
-                                + "Post_code, Designation,Status,job_title,Apartment,Date_hired) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) ";
-                        
-                        pst=conn.prepareStatement(sql);
-                        pst.setString(1,txt_firstname.getText());
-                        pst.setString(2,txt_surname.getText());
-                        pst.setString(3,fullnameString);
-                        pst.setString(4,txt_dob.getText());
-                        pst.setString(5,txt_email.getText());
-                        pst.setString(6,txt_tel.getText());
-                        pst.setString(7,txt_address.getText());
-                        pst.setString(8,txt_dep.getText());
-                        pst.setBytes(9,person_image);
-                        
-                        pst.setString(10,txt_salary.getText());
-                        pst.setString(11,gender);
-                        pst.setString(12,txt_add2.getText());
-                        pst.setString(13,txt_pc.getText());
-                        pst.setString(14,txt_desig.getText());
-                        pst.setString(15,txt_status.getText());
-                        pst.setString(16,txt_job.getText());
-                        pst.setString(17,txt_apt.getText());
-                        pst.setString(18,txt_doj.getText());
-                        
-                        pst.executeUpdate();
-                        pst.close();
-                        JOptionPane.showMessageDialog(null,"Data of Employee #"+txt_id.getText()+" is saved successfully!", mainnameString,JOptionPane.INFORMATION_MESSAGE,null);
-                        auditAddEmp();
-                        steptwo_allowance();
-                        clearall();
-                        
-                    } catch (HeadlessException | SQLException | IOException e) {
-                        //JOptionPane.showMessageDialog(null,e);
-                    }
-                    //Logger.getLogger(AddEmployeeGUI.class.getName()).log(Level.SEVERE, null, ex);
-                    
-                }
-            }
-        } catch (SQLException ex) {
-            //Logger.getLogger(AddEmployeeGUI.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_addrecordBTNActionPerformed
-
-    private void clearBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBTNActionPerformed
-        clearall();
-    }//GEN-LAST:event_clearBTNActionPerformed
-
     private void r_femaleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_r_femaleActionPerformed
         // TODO add your handling code here:
         gender ="Female";
@@ -1073,7 +928,8 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
     }//GEN-LAST:event_txt_aptActionPerformed
 
     private void insertpictureBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_insertpictureBTNActionPerformed
-        String locationFilePIC = FileLastLocation1.FileLocation.get(System.getProperty("user.home"));
+        
+        String locationFilePIC = FileLastLocation3.FileLocation.get(System.getProperty("user.home"));
         JFileChooser chooser = new JFileChooser();
         chooser.setCurrentDirectory(new File(locationFilePIC));
         chooser.setPreferredSize(new Dimension(600, 550)); //width and height
@@ -1088,11 +944,10 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         int photo = chooser.showDialog(this, "Select");
         if (photo==JFileChooser.APPROVE_OPTION) {
         File f = chooser.getSelectedFile();
-        FileLastLocation1.FileLocation.put(f.getParentFile().getAbsolutePath());
+        FileLastLocation3.FileLocation.put(f.getParentFile().getAbsolutePath());
         filename =f.getAbsolutePath();
         ImageIcon imageIcon = new ImageIcon(new ImageIcon(filename).getImage().getScaledInstance(lbl_img.getWidth(), lbl_img.getHeight(), Image.SCALE_DEFAULT));
         lbl_img.setIcon(imageIcon);
-        
       try {
 
             File image = new File(filename);
@@ -1112,9 +967,343 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
         }
         }
+       
     }//GEN-LAST:event_insertpictureBTNActionPerformed
 
-    private void txt_idKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_idKeyTyped
+    private void txt_searchComponentRemoved(java.awt.event.ContainerEvent evt) {//GEN-FIRST:event_txt_searchComponentRemoved
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_searchComponentRemoved
+
+    private void txt_searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_searchActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_searchActionPerformed
+
+    private void txt_searchKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_searchKeyReleased
+
+    }//GEN-LAST:event_txt_searchKeyReleased
+
+    private void updateBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_updateBTNActionPerformed
+        
+        if (txt_firstname.getText().isEmpty() | txt_surname.getText().isEmpty() | txt_dob.getText().isEmpty() | txt_email.getText().isEmpty()  | txt_tel.getText().isEmpty()  | txt_address.getText().isEmpty()  | txt_dep.getText().isEmpty()  | txt_salary.getText().isEmpty()  | txt_address.getText().isEmpty()  | txt_apt.getText().isEmpty()  | txt_pc.getText().isEmpty()  | txt_desig.getText().isEmpty()  | txt_status.getText().isEmpty()  | txt_doj.getText().isEmpty()  | txt_salary.getText().isEmpty()  | txt_job.getText().isEmpty()) {
+            getToolkit().beep();
+            JOptionPane.showMessageDialog(null,"One of the required field is empty!", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
+            txt_firstname.requestFocusInWindow();
+            
+        //check if the Gender is Selected or not!
+        } else if (genderBTNgroup.getSelection() == null) { 
+            JOptionPane.showMessageDialog(null,"Gender is not selected!", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
+            r_male.requestFocusInWindow();
+        } else {
+        int p = JOptionPane.showConfirmDialog(null, "Are you sure you want to update?", mainnameString,JOptionPane.YES_NO_OPTION);
+        if(p==0) {
+            try {
+
+                String value1 = txt_id.getText();
+                String query1;
+                
+                String value2 = txt_id.getText();
+                String query2="";
+                
+                //with image
+                if (person_image!=null) {
+                                                      //1     2           3        4      5        6          7           8          9       10       11       12          13          14          15           16        17           18
+                query1 = "UPDATE EmployeesRecord SET id=?,first_name=?,surname=?,Dob=?,Email=?,Telephone=?,Address=?,Department=?,Image=?,Gender=?,Salary=?,Address2=?,Apartment=?,Post_code=?,Designation=?,Status=?,Date_hired=?,job_title=? WHERE id='"+value1+"'";
+
+                pst = conn.prepareStatement(query1);
+                
+                pst.setString(1, txt_id.getText());
+                pst.setString(2, txt_firstname.getText());
+                pst.setString(3, txt_surname.getText());
+                pst.setString(4, txt_dob.getText());
+                pst.setString(5, txt_email.getText());
+                pst.setString(6, txt_tel.getText());
+                pst.setString(7, txt_address.getText());
+                pst.setString(8, txt_dep.getText());
+                
+                if (person_image!=null) {
+                    pst.setBytes(9, person_image);
+                }
+                
+                String genderString = null;
+                if (r_male.isSelected()) {
+                    genderString = "Male";
+                }
+                if (r_female.isSelected()) {
+                    genderString = "Female";
+                }
+                
+                pst.setString(10, genderString);
+                pst.setString(11, txt_salary.getText());
+                pst.setString(12, txt_add2.getText());
+                pst.setString(13, txt_apt.getText());
+                pst.setString(14, txt_pc.getText());
+                pst.setString(15, txt_desig.getText());
+                pst.setString(16, txt_status.getText());
+                pst.setString(17, txt_doj.getText());
+                pst.setString(18, txt_job.getText());
+                
+                pst.executeUpdate();
+                JOptionPane.showMessageDialog(null,"Record Updated", mainnameString,JOptionPane.INFORMATION_MESSAGE,null);    
+
+                //clearall();
+                
+                //without image
+                } else {
+                    
+                                                          //1     2            3        4     5         6          7          8          9         10       11         12         13            14          15        16           17       
+                    query2 = "UPDATE EmployeesRecord SET id=?,first_name=?,surname=?,Dob=?,Email=?,Telephone=?,Address=?,Department=?,Gender=?,Salary=?,Address2=?,Apartment=?,Post_code=?,Designation=?,Status=?,Date_hired=?,job_title=? WHERE id='"+value2+"'";
+                }
+                
+                pst = conn.prepareStatement(query2);
+                
+                pst.setString(1, txt_id.getText());
+                pst.setString(2, txt_firstname.getText());
+                pst.setString(3, txt_surname.getText());
+                pst.setString(4, txt_dob.getText());
+                pst.setString(5, txt_email.getText());
+                pst.setString(6, txt_tel.getText());
+                pst.setString(7, txt_address.getText());
+                pst.setString(8, txt_dep.getText());
+                
+                String genderString = null;
+                if (r_male.isSelected()) {
+                    genderString = "Male";
+                }
+                if (r_female.isSelected()) {
+                    genderString = "Female";
+                }
+                
+                pst.setString(9, genderString);
+                pst.setString(10, txt_salary.getText());
+                pst.setString(11, txt_add2.getText());
+                pst.setString(12, txt_apt.getText());
+                pst.setString(13, txt_pc.getText());
+                pst.setString(14, txt_desig.getText());
+                pst.setString(15, txt_status.getText());
+                pst.setString(16, txt_doj.getText());
+                pst.setString(17, txt_job.getText());
+                
+                pst.executeUpdate();
+                JOptionPane.showMessageDialog(null,"Record Updated", mainnameString,JOptionPane.INFORMATION_MESSAGE,null);    
+
+                //clearall();
+
+            } catch(HeadlessException | SQLException e) {
+                //JOptionPane.showMessageDialog(null, e);
+            }
+
+            Date currentDate = GregorianCalendar.getInstance().getTime();
+            DateFormat df = DateFormat.getDateInstance();
+            String dateString = df.format(currentDate);
+
+            Date d = new Date();
+            SimpleDateFormat sdf = new SimpleDateFormat("h:mm aa");
+            String timeString = sdf.format(d);
+
+            String value0 = timeString;
+            String values = dateString;
+            String val = txt_emp.getText();
+            try{
+                String reg= "insert into Audit (emp_id, date, status) values ('"+val+"','"+value0+" / "+values+"','Record of Employee #"+txt_id.getText()+" is Updated by: "+val+"')";
+                pst=conn.prepareStatement(reg);
+                pst.execute();
+            } catch (SQLException e) {
+                //JOptionPane.showMessageDialog(null,e);
+            } finally {
+
+                try {
+                    rs.close();
+                    pst.close();
+                    clearall();
+                } catch(SQLException e) {
+
+                }
+            }
+        }
+        }
+    }//GEN-LAST:event_updateBTNActionPerformed
+
+    private void deleteBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteBTNActionPerformed
+        // TODO add your handling code here:
+
+        int p = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete record?","Delete",JOptionPane.YES_NO_OPTION);
+        if(p==0){
+            Date currentDate = GregorianCalendar.getInstance().getTime();
+            DateFormat df = DateFormat.getDateInstance();
+            String dateString = df.format(currentDate);
+
+            Date d = new Date();
+            SimpleDateFormat sdf = new SimpleDateFormat("h:mm aa");
+            String timeString = sdf.format(d);
+
+            String value0 = timeString;
+            String value1 = dateString;
+            String val = txt_emp.getText();
+            try{
+                String reg= "insert into Audit (emp_id, date, status) values ('"+val+"','"+value0+" / "+value1+"','Record of Employee #"+txt_id.getText()+" is Deleted by: "+val+"')";
+                pst=conn.prepareStatement(reg);
+                pst.execute();
+            }
+            catch (SQLException e)
+
+            {
+                JOptionPane.showMessageDialog(null,e);
+            }
+            String sql ="delete from EmployeesRecord where id=? ";
+            try{
+                pst=conn.prepareStatement(sql);
+                pst.setString(1, txt_id.getText());
+                pst.execute();
+
+                JOptionPane.showMessageDialog(null,"Record Deleted", mainnameString,JOptionPane.INFORMATION_MESSAGE,null);    
+
+            }catch(HeadlessException | SQLException e){
+
+                JOptionPane.showMessageDialog(null, e);
+            }finally {
+
+                try{
+                    rs.close();
+                    pst.close();
+                    clearall();
+                }
+                catch(SQLException e){
+
+                }
+            }
+            try{
+
+                String sq ="delete from Users where emp_id =?";
+                pst=conn.prepareStatement(sq);
+                pst.setString(1, txt_id.getText());
+                pst.execute();
+
+            }catch(SQLException e){
+
+            }
+
+        }
+    }//GEN-LAST:event_deleteBTNActionPerformed
+
+    private void clearBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearBTNActionPerformed
+        clearall();
+    }//GEN-LAST:event_clearBTNActionPerformed
+
+    private void searchempBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchempBTNActionPerformed
+        try {
+            if(txt_search.getText().isEmpty()) {
+                updateBTN.setEnabled(false);
+                deleteBTN.setEnabled(false);
+                insertpictureBTN.setEnabled(false);
+                
+                txt_search.setText("");
+                txt_search.requestFocusInWindow();
+            }
+        
+            String sql ="select * from EmployeesRecord where id=? ";
+
+            pst=conn.prepareStatement(sql);
+            pst.setString(1,txt_search.getText());
+            rs=pst.executeQuery();
+        try {
+            if (rs.next()) {
+
+            String add1 =rs.getString("id");
+            txt_id.setText(add1);
+
+            String add2 =rs.getString("first_name");
+            txt_firstname.setText(add2);
+
+            String add3 =rs.getString("surname");
+            txt_surname.setText(add3);
+
+            String add4 =rs.getString("Dob");
+            txt_dob.setText(add4);
+
+            String add5 =rs.getString("Email");
+            txt_email.setText(add5);
+
+            String add6 =rs.getString("Telephone");
+            txt_tel.setText(add6);
+
+            String add7 =rs.getString("Address");
+            txt_address.setText(add7);
+
+            String add8 =rs.getString("Department");
+            txt_dep.setText(add8);
+
+            String genderFULLNAME = rs.getString("Gender");
+            if (genderFULLNAME.equals("Male")) {
+                r_male.setSelected(true);
+
+            } else if(genderFULLNAME.equals("Female")) {
+                r_female.setSelected(true);
+            }
+
+            String add10 =rs.getString("Salary");
+            txt_salary.setText(add10);
+
+            String add11 =rs.getString("Address2");
+            txt_add2.setText(add11);
+
+            String add12 =rs.getString("Apartment");
+            txt_apt.setText(add12);
+
+            String add13 =rs.getString("Post_code");
+            txt_pc.setText(add13);
+
+            String add14 =rs.getString("Status");
+            txt_status.setText(add14);
+
+            String add15 =rs.getString("Date_hired");
+            txt_doj.setText(add15);
+
+            String add16 =rs.getString("job_title");
+            txt_job.setText(add16);
+
+            String add17 =rs.getString("Designation");
+            txt_desig.setText(add17);
+
+            byte[] img = rs.getBytes("Image");
+            ImageIcon imageIcon = new ImageIcon(new ImageIcon(img).getImage().getScaledInstance(lbl_img.getWidth(), lbl_img.getHeight(), Image.SCALE_SMOOTH));
+            lbl_img.setIcon(imageIcon);
+            
+            rs.close();
+            pst.close();
+            
+            updateBTN.setEnabled(true);
+            deleteBTN.setEnabled(true);
+            insertpictureBTN.setEnabled(true);
+            txt_search.requestFocusInWindow();     
+            } else {
+                
+                JOptionPane.showMessageDialog(null,"Employee not found.", mainErrorString,JOptionPane.ERROR_MESSAGE,null);
+                clearall();
+                txt_search.setText("");
+                txt_search.requestFocusInWindow();
+            }
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        } catch (SQLException ex) {
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }//GEN-LAST:event_searchempBTNActionPerformed
+
+    private void txt_searchKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_searchKeyPressed
+        if(evt.getKeyCode() == KeyEvent.VK_ENTER) {
+            searchempBTN.doClick();
+        } else if(txt_search.getText().isEmpty()|| evt.getKeyCode() == KeyEvent.VK_BACK_SPACE|| evt.getKeyCode() == KeyEvent.VK_DELETE) {
+            clearall();
+            updateBTN.setEnabled(false);
+            deleteBTN.setEnabled(false);
+            insertpictureBTN.setEnabled(false);
+        }
+    }//GEN-LAST:event_txt_searchKeyPressed
+
+    private void txt_searchKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_searchKeyTyped
         //numbers only.
         char c=evt.getKeyChar();
         //if (!(Character.isDigit(c1))) {
@@ -1125,7 +1314,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
                 (c==KeyEvent.VK_TAB))) {
             evt.consume();
         }
-    }//GEN-LAST:event_txt_idKeyTyped
+    }//GEN-LAST:event_txt_searchKeyTyped
 
     private void txt_firstnameKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_firstnameKeyPressed
         if(evt.getKeyCode() == KeyEvent.VK_ENTER ||  evt.getKeyCode() == KeyEvent.VK_TAB) {
@@ -1225,27 +1414,16 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
 
     private void txt_jobKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_jobKeyPressed
         if(evt.getKeyCode() == KeyEvent.VK_ENTER ||  evt.getKeyCode() == KeyEvent.VK_TAB) {
-            addrecordBTN.requestFocusInWindow();
-            addrecordBTN.doClick();
+            updateBTN.requestFocusInWindow();
+            updateBTN.doClick();
         }
     }//GEN-LAST:event_txt_jobKeyPressed
 
-    private void addrecordBTNKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addrecordBTNKeyPressed
+    private void updateBTNKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_updateBTNKeyPressed
         if(evt.getKeyCode() == KeyEvent.VK_ENTER ||  evt.getKeyCode() == KeyEvent.VK_TAB) {
             txt_firstname.requestFocusInWindow();
         }
-    }//GEN-LAST:event_addrecordBTNKeyPressed
-
-    private void stepexitBTNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stepexitBTNActionPerformed
-        try {
-            pst.clearBatch();
-            pst.close();
-            this.dispose();
-        } catch (SQLException ex) {
-            Logger.getLogger(AddEmployeeGUI.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-    }//GEN-LAST:event_stepexitBTNActionPerformed
+    }//GEN-LAST:event_updateBTNKeyPressed
 
     private void txt_pcKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_pcKeyTyped
         char c=evt.getKeyChar();
@@ -1286,10 +1464,6 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_txt_telKeyTyped
 
-    private void txt_depKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txt_depKeyTyped
-        
-    }//GEN-LAST:event_txt_depKeyTyped
-
     /**
      * @param args the command line arguments
      */
@@ -1309,16 +1483,16 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(() -> {
             try {
-                new AddEmployeeGUI().setVisible(true);
+                new SearchAgentGUI().setVisible(true);
             } catch (SQLException | IOException ex) {
-                Logger.getLogger(AddEmployeeGUI.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(SearchAgentGUI.class.getName()).log(Level.SEVERE, null, ex);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addrecordBTN;
     private javax.swing.JButton clearBTN;
+    private javax.swing.JButton deleteBTN;
     private javax.swing.JButton insertpictureBTN;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
@@ -1330,6 +1504,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
@@ -1349,7 +1524,7 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
     private javax.swing.JPanel pnlTop;
     private javax.swing.JRadioButton r_female;
     private javax.swing.JRadioButton r_male;
-    private javax.swing.JButton stepexitBTN;
+    private javax.swing.JButton searchempBTN;
     private javax.swing.JTextField txt_add2;
     private javax.swing.JTextField txt_address;
     private javax.swing.JTextField txt_apt;
@@ -1364,9 +1539,11 @@ public final class AddEmployeeGUI extends javax.swing.JDialog {
     private javax.swing.JTextField txt_job;
     private javax.swing.JTextField txt_pc;
     private javax.swing.JTextField txt_salary;
+    private javax.swing.JTextField txt_search;
     private javax.swing.JTextField txt_status;
     private javax.swing.JTextField txt_surname;
     private javax.swing.JTextField txt_tel;
+    private javax.swing.JButton updateBTN;
     private javax.swing.JPanel viewpanel;
     // End of variables declaration//GEN-END:variables
 

@@ -3,7 +3,7 @@ package Panels_Administrator;
 import SystemDB.DBconnection;
 import MainPackage.ToastManager;
 import Panels_EmployeeManager.Emp;
-import Panels_EmployeeManager.EmployeeDeductionGUI;
+import Panels_EmployeeManager.AgentDeductionGUI;
 import com.formdev.flatlaf.FlatLightLaf;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -999,10 +999,10 @@ public final class ManageAdministrators extends javax.swing.JDialog {
             }
             
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
         } catch (SQLException ex) {
-            Logger.getLogger(EmployeeDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(AgentDeductionGUI.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_searchempBTNActionPerformed
 
