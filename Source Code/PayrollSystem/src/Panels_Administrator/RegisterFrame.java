@@ -696,6 +696,7 @@ public final class RegisterFrame extends javax.swing.JDialog {
         exitButton.setToolTipText("Close");
         exitButton.setBorder(null);
         exitButton.setBorderPainted(false);
+        exitButton.setContentAreaFilled(false);
         exitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         exitButton.setDefaultCapable(false);
         exitButton.setFocusPainted(false);
